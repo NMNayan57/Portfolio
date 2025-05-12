@@ -1,219 +1,167 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="icon" href="img/favicon.png" type="image/png">
-        <title>My Projects</title>
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="css/bootstrap.css">
-        <link rel="stylesheet" href="vendors/linericon/style.css">
-        <link rel="stylesheet" href="css/font-awesome.min.css">
-        <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
-        <link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css">
-        <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
-        <link rel="stylesheet" href="vendors/animate-css/animate.css">
-        <link rel="stylesheet" href="vendors/popup/magnific-popup.css">
-        <link rel="stylesheet" href="vendors/flaticon/flaticon.css">
-        <!-- main css -->
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/responsive.css">
-    </head>
-    <body>
-        
-        <!--================Header Menu Area =================-->
-        <header class="header_area">
-            <div class="main_menu">
-                <nav class="navbar navbar-expand-lg navbar-light">
-                    <div class="container box_1620">
-                        <!-- Brand and toggle get grouped for better mobile display -->
-                            <a class="navbar-brand logo_h" href="index.html"><h3 style="color: white"> ℕ𝕄 ℕ𝔸Y𝔸ℕ</h3></a>
-
-                        <a class="navbar-brand logo_h" href="index.html"><img src="#" alt=""></a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <!-- Collect the nav links, forms, and other content for toggling -->
-                        <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
-                            <ul class="nav navbar-nav menu_nav ml-auto">
-                                <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li> 
-                                <li class="nav-item"><a class="nav-link" href="Research.html">Research And Publications</a></li> 
-                                <li class="nav-item"><a class="nav-link" href="workexperince.html">Work Experince</a></li> 
-                                <li class="nav-item"><a class="nav-link" href="project.html">Projects</a></li>
-                                
-                                <li class="nav-item submenu dropdown">
-                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More</a>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="photo.html">Photo Gallary</a></li>
-                                    </ul>
-                                </li> 
-                                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                            </ul>
-                        </div> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projects by Nasim Mahmud Nayan, showcasing AI/ML, Computer Vision, and Generative AI expertise.">
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <title>Projects - Nasim Mahmud Nayan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white dark:bg-gray-800 shadow-md">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-indigo-600 dark:text-indigo-400">NM NAYAN</a>
+            <ul class="flex space-x-6">
+                <li><a href="index.html" class="hover:text-indigo-600 dark:hover:text-indigo-400">Home</a></li>
+                <li><a href="Research.html" class="hover:text-indigo-600 dark:hover:text-indigo-400">Research</a></li>
+                <li><a href="workexperince.html" class="hover:text-indigo-600 dark:hover:text-indigo-400">Experience</a></li>
+                <li><a href="project.html" class="hover:text-indigo-600 dark:hover:text-indigo-400">Projects</a></li>
+                <li>
+                    <div class="relative group">
+                        <button class="hover:text-indigo-600 dark:hover:text-indigo-400">More</button>
+                        <ul class="absolute hidden group-hover:block bg-white dark:bg-gray-800 shadow-lg rounded-md mt-2 w-32">
+                            <li><a href="skills.html" class="block px-4 py-2 hover:bg-indigo-100 dark:hover:bg-indigo-700">Skills</a></li>
+                            <li><a href="photo.html" class="block px-4 py-2 hover:bg-indigo-100 dark:hover:bg-indigo-700">Gallery</a></li>
+                        </ul>
                     </div>
-                </nav>
+                </li>
+                <li><a href="contact.html" class="hover:text-indigo-600 dark:hover:text-indigo-400">Contact</a></li>
+            </ul>
+            <button id="theme-toggle" class="text-gray-500 dark:text-gray-400">Toggle Theme</button>
+        </nav>
+    </header>
+
+    <!-- Projects Section -->
+    <section class="py-16">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-8">My Projects</h2>
+            <p class="text-center mb-8">Explore my work in Machine Learning, Computer Vision, and Generative AI.</p>
+            <!-- Filter Buttons -->
+            <div class="flex justify-center space-x-4 mb-8">
+                <button class="filter-btn px-4 py-2 bg-indigo-600 text-white rounded-md" data-filter="all">All</button>
+                <button class="filter-btn px-4 py-2 bg-gray-200 text-gray-900 rounded-md" data-filter="ml">Machine Learning</button>
+                <button class="filter-btn px-4 py-2 bg-gray-200 text-gray-900 rounded-md" data-filter="cv">Computer Vision</button>
+                <button class="filter-btn px-4 py-2 bg-gray-200 text-gray-900 rounded-md" data-filter="genai">Generative AI</button>
             </div>
-        </header>
-        <!--================Header Menu Area =================-->
-        
-        <!--================Home Banner Area =================-->
-        <section class="banner_area">
-            <div class="box_1620">
-				<div class="banner_inner d-flex align-items-center">
-					<div class="container">
-						<div class="banner_content text-center">
-							<h2>Project</h2>
-							<div class="page_link">
-								<a href="index.html">Home</a>
-								<a href="project.html">Project</a>
-							</div>
-						</div>
-					</div>
-				</div>
-            </div>
-        </section>
-        <!--================End Home Banner Area =================-->
-        
-        <!--================Home Gallery Area =================-->
-        <section class="home_gallery_area p_120">
-        	<div class="container">
-        		<div class="main_title">
-        			<h2>My Latest Projects</h2>
-        			<p>Projects on Machine Learning and Others</p>
-        		</div>
-        		<div class="isotope_fillter">
-        			
-        		</div>
-        	</div>
-        	<div class="container">
-        		<div class="gallery_f_inner row imageGallery1">
-                     
-        			<div class="col-lg-4 col-md-4 col-sm-6 brand manipul design print">
+            <!-- Project Gallery -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 project-gallery">
+                <div class="project-item ml bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md">
+                    <img src="img/maternal_app.png" alt="Maternal App" class="w-full h-48 object-cover rounded-md mb-4" loading="lazy">
+                    <h3 class="text-xl font-semibold mb-2">Maternal App for Health Risk Prediction</h3>
+                    <p class="mb-4">Mobile app using IoT and XGBoost (99% accuracy) for real-time maternal health risk prediction.</p>
+                    <a href="#" class="text-indigo-600 hover:underline">Live Demo</a> |
+                    <a href="https://github.com/NMNayan57/Maternal-App" class="text-indigo-600 hover:underline">GitHub</a>
+                </div>
+                <div class="project-item ml bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md">
+                    <img src="img/multiple_disease.png" alt="Multiple Disease Prediction" class="w-full h-48 object-cover rounded-md mb-4" loading="lazy">
+                    <h3 class="text-xl font-semibold mb-2">Multiple Disease Prediction System</h3>
+                    <p class="mb-4">Streamlit-based web app for real-time health monitoring using ML.</p>
+                    <a href="https://trq11137-predictiondiseases-main-1741qs.streamlit.app/" class="text-indigo-600 hover:underline">Live Demo</a> |
+                    <a href="https://github.com/NMNayan57/Multiple-Diseases-Prediction" class="text-indigo-600 hover:underline">GitHub</a>
+                </div>
+                <div class="project-item cv bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md">
+                    <img src="img/fish_disease.png" alt="Fish Disease Detection" class="w-full h-48 object-cover rounded-md mb-4" loading="lazy">
+                    <h3 class="text-xl font-semibold mb-2">Dual-Mode Fish Disease Detection</h3>
+                    <p class="mb-4">CNN-based system with 98.99% accuracy using Edge-Guided Analysis.</p>
+                    <a href="#" class="text-indigo-600 hover:underline">Details</a> |
+                    <a href="https://github.com/NMNayan57/Fish-Disease-Detection" class="text-indigo-600 hover:underline">GitHub</a>
+                </div>
+                <div class="project-item cv bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md">
+                    <img src="img/posture_detection.png" alt="Posture Detection System" class="w-full h-48 object-cover rounded-md mb-4" loading="lazy">
+                    <h3 class="text-xl font-semibold mb-2">Posture Detection System</h3>
+                    <p class="mb-4">Real-time posture correction system using MediaPipe and OpenCV for AI fitness guidance.</p>
+                    <a href="#" class="text-indigo-600 hover:underline">Live Demo</a> |
+                    <a href="https://github.com/NMNayan57/Posture-Detection" class="text-indigo-600 hover:underline">GitHub</a>
+                </div>
+                <div class="project-item genai bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md">
+                    <img src="img/voice_sales_agent.png" alt="Voice-Based AI Sales Agent" class="w-full h-48 object-cover rounded-md mb-4" loading="lazy">
+                    <h3 class="text-xl font-semibold mb-2">Voice-Based AI Sales Agent</h3>
+                    <p class="mb-4">Virtual sales agent for real estate using RAG, LangChain, DSPy, and FastAPI.</p>
+                    <a href="#" class="text-indigo-600 hover:underline">Live Demo</a> |
+                    <a href="https://github.com/NMNayan57/Voice-Sales-Agent" class="text-indigo-600 hover:underline">GitHub</a>
+                </div>
 
-
-        				<div class="h_gallery_item">
-        					  <div class="g_img_item">
-                                <img class="img-fluid"  src="img/website_view.png" alt="">
-                                 <a class="light" href="img/web1.png"><img src="img/gallery/icon.png" alt=""></a> 
-                            </div>
-        					<div class="g_item_text">
-        						<h4>Muliple Diseases Prediction</h4>
-                                <p>Thesis Project</p>
-                                <a href="https://trq11137-predictiondiseases-main-1741qs.streamlit.app/?fbclid=IwAR0yg8s_upFZF4LVzcoApB4bxWR82Y8ONijFG8zcfj2sccjTWG-085aH1u0">Live, </a>
-                               
-                                <a href="https://github.com/NMNayan57/Multiple-Diseases-Prediction.git">Github</a>
-        						
-        					</div>
-        				</div>
-        			</div>
-                  
-        			<div class="col-lg-4 col-md-4 col-sm-6 brand manipul creative">
-        				<div class="h_gallery_item">
-                            <div class="g_img_item">
-                                <img class="img-fluid"  src="img/breast_cancer.png" alt="">
-                                 <a class="light" href="img/web1.png"><img src="img/gallery/icon.png" alt=""></a> 
-                            </div>
-                            <div class="g_item_text">
-                                <h4>Breast Cancer Detection </h4>
-                                <p>Personal Project Using Flask Api</p>
-                                 <a href="http://18.139.108.19:8081">Live, </a>
-                               
-                                <a href="https://github.com/NMNayan57/Breast_Cancer.git">Github</a>
-                            </div>
-                        </div>
-        			</div>
-        			<div class="col-lg-4 col-md-4 col-sm-6 manipul creative design print">
-        				<div class="h_gallery_item">
-        					<div class="g_img_item">
-        						<img class="img-fluid" src="img/web6.png" alt="">
-        						<a class="light" href="img/gallery/project-3.jpg"><img src="img/gallery/icon.png" alt=""></a>
-        					</div>
-        					<div class="g_item_text">
-        						<h4>E-commerce Website for Outfit only</h4>
-        						<p>University Project</p>
-                                 <a href="https://www.linkedin.com/feed/update/urn:li:activity:6770980646195216384/">Live, </a>
-                               
-                                <a href="https://github.com/NMNayan57/E-commerce-Website.git">Github</a>
-        					</div>
-        				</div>
-        			</div>
-        			
-        			
-        		</div>
-        		<div class="more_btn">
-        			<a class="main_btn" href="https://github.com/NMNayan57">See More</a>
-        		</div>
-        	</div>
-        </section>
-        <!--================End Home Gallery Area =================-->
-        
-      <!--================Footer Area =================-->
-        <footer class="footer_area p_120">
-            <div class="container">
-                <div class="row footer_inner">
-                    
-                    <div class="col-lg-5 col-sm-6">
-                        <aside class="f_widget news_widget">
-                            <div class="f_title">
-                                <h3>Navigation</h3>
-                                <br>
-                                 <ul>
-                        <li > <a href="index.html" style="text-decoration: none; color:gray">Home</a></li>
-                      <li> <a href="Research.html" style="text-decoration: none; color:gray">Research And Publications</a></li>
-                       <li> <a href="project.html" style="text-decoration: none; color:gray">Projects</a></li>
-                       <li> <a href="more.html" style="text-decoration: none; color:gray">More</a></li><li>
-                        <a href="workexperince" style="text-decoration: none; color:gray">WorkExperince</a></li>
-                        <li> <a href="contact" style="text-decoration: none; color:gray">Contact</a></li>
-                    </ul>
-                            </div>
-                            
-                            
-                        </aside>
-                    </div>
-
-                    <div class="col-lg-2">
-                        <aside class="f_widget social_widget">
-                            <div class="f_title">
-                                <h3>Follow Me</h3>
-                            </div>
-                            <p>Let us be social</p>
-                            <ul class="list">
-                                <li><a href="https://www.facebook.com/profile.php?id=100015827795246"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="https://github.com/NMNayan57"><i class="fa fa-github"></i></a></li>
-                                <li><a href="https://www.instagram.com/nm__nayan/"><i class="fa fa-instagram"></i></a></li>
-                                <li><a href="https://www.linkedin.com/in/nm-nayan-8475211b9/"><i class="fa fa-linkedin"></i></a></li>
-                            </ul>
-                            <p>Stay updated with my latest trends</p>
-                        </aside>
-                    </div>
-
+                     <div class="project-item genai bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md">
+                    <img src="img/Voice based fitness guide.png" alt="Voice based fitness guide" class="w-full h-48 object-cover rounded-md mb-4" loading="lazy">
+                    <h3 class="text-xl font-semibold mb-2">Voice based fitness guide</h3>
+                    <p class="mb-4">Voice based fitness guide using RAG, LangChain, DSPy, and FastAPI.</p>
+                    <a href="#" class="text-indigo-600 hover:underline">Live Demo</a> |
+                    <a href="https://github.com/NMNayan57/Voice-Sales-Agent" class="text-indigo-600 hover:underline">GitHub</a>
                 </div>
             </div>
-        </footer>
-        <!--================End Footer Area =================-->
-        
-        
-        
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="js/jquery-3.3.1.min.js"></script>
-        <script src="js/popper.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/stellar.js"></script>
-        <script src="vendors/lightbox/simpleLightbox.min.js"></script>
-        <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
-        <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
-        <script src="vendors/isotope/isotope.pkgd.min.js"></script>
-        <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
-        <script src="vendors/popup/jquery.magnific-popup.min.js"></script>
-        <script src="js/jquery.ajaxchimp.min.js"></script>
-        <script src="vendors/counter-up/jquery.waypoints.min.js"></script>
-        <script src="vendors/counter-up/jquery.counterup.min.js"></script>
-        <script src="js/mail-script.js"></script>
-        <script src="js/theme.js"></script>
-    </body>
+            <div class="text-center mt-8">
+                <a href="https://github.com/NMNayan57" class="bg-indigo-600 text-white px-6 py-3 rounded-md">See More on GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-10">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Navigation</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-indigo-400">Home</a></li>
+                        <li><a href="Research.html" class="hover:text-indigo-400">Research</a></li>
+                        <li><a href="project.html" class="hover:text-indigo-400">Projects</a></li>
+                        <li><a href="workexperince.html" class="hover:text-indigo-400">Experience</a></li>
+                        <li><a href="contact.html" class="hover:text-indigo-400">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Connect</h3>
+                    <ul class="space-y-2">
+                        <li><a href="https://scholar.google.com/citations?user=zAuBXLUAAAAJ&hl=en" class="hover:text-indigo-400">Google Scholar</a></li>
+                        <li><a href="https://www.researchgate.net/profile/Nasim-Nayan" class="hover:text-indigo-400">ResearchGate</a></li>
+                        <li><a href="https://orcid.org/0009-0003-4157-3518" class="hover:text-indigo-400">ORCID</a></li>
+                        <li><a href="https://www.linkedin.com/in/nm-nayan-8475211b9/" class="hover:text-indigo-400">LinkedIn</a></li>
+                        <li><a href="https://github.com/NMNayan57" class="hover:text-indigo-400">GitHub</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact</h3>
+                    <p>j-block Baridhara, Dhaka, Bangladesh</p>
+                    <p>Email: <a href="mailto:nm.nayan670@gmail.com" class="hover:text-indigo-400">nm.nayan670@gmail.com</a></p>
+                    <p>Phone: +8801742957256</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script>
+        // Theme Toggle
+        const toggle = document.getElementById('theme-toggle');
+        toggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark');
+        });
+
+        // Project Filter
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const projectItems = document.querySelectorAll('.project-item');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const filter = button.getAttribute('data-filter');
+                filterButtons.forEach(btn => btn.classList.remove('bg-indigo-600', 'text-white'));
+                filterButtons.forEach(btn => btn.classList.add('bg-gray-200', 'text-gray-900'));
+                button.classList.add('bg-indigo-600', 'text-white');
+                button.classList.remove('bg-gray-200', 'text-gray-900');
+
+                projectItems.forEach(item => {
+                    if (filter === 'all' || item.classList.contains(filter)) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
 </html>
