@@ -9,6 +9,7 @@
     <title>Skills - Nasim Mahmud Nayan</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
 </head>
 <body class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
     <!-- Header -->
@@ -20,8 +21,14 @@
                 <li><a href="Research.html" class="hover:text-indigo-600 dark:hover:text-indigo-400">Research</a></li>
                 <li><a href="workexperince.html" class="hover:text-indigo-600 dark:hover:text-indigo-400">Experience</a></li>
                 <li><a href="project.html" class="hover:text-indigo-600 dark:hover:text-indigo-400">Projects</a></li>
-                <li><a href="skills.html" class="hover:text-indigo-600 dark:hover:text-indigo-400">Skills</a></li>
-                <li><a href="photo.html" class="hover:text-indigo-600 dark:hover:text-indigo-400">Gallery</a></li>
+                <li>
+                    <div class="relative group">
+                        <button class="hover:text-indigo-600 dark:hover:text-indigo-400">More</button>
+                        <ul class="absolute hidden group-hover:block bg-white dark:bg-gray-800 shadow-lg rounded-md mt-2 w-32">
+                            <li><a href="skills.html" class="block px-4 py-2 hover:bg-indigo-100 dark:hover:bg-indigo-700">Skills</a></li>
+                            <li><a href="photo.html" class="block px-4 py-2 hover:bg-indigo-100 dark:hover:bg-indigo-700">Gallery</a></li>
+                        </ul>
+                    </div>
                 </li>
                 <li><a href="contact.html" class="hover:text-indigo-600 dark:hover:text-indigo-400">Contact</a></li>
             </ul>
@@ -120,7 +127,15 @@
                     <li>Fastest Problem Solver, UITS Victory Day Programming Contest, 2021</li>
                     <li>2nd/45, Inter-university Programming Contest, UITS, 2022</li>
                     <li>1st/25, Inter-university PowerPoint Presentation Competition, UITS, 2020</li>
-                    <li>Employee of the Month (August), Primacy Infotech Ltd, 2023</li>
+                    <li>Employee of the Month (August 2023), Primacy Infotech Ltd</li>
+                </ul>
+                <p class="mt-4"><strong>Certificates</strong>:</p>
+                <ul class="list-disc pl-6">
+                    <li>Certificate of Presentation, IEEE ISCC 2023, for "SMOTE Oversampling and Near Miss Undersampling Based Diabetes Diagnosis" <a href="img/smote.jpg" data-lightbox="certificates" data-title="Certificate of Presentation, IEEE ISCC 2023" class="text-indigo-600 hover:underline">[View Certificate]</a></li>
+                    <li>Certificate of Presentation, Springer ICETIC 2023, for "Investigation of Air Effluence Using IoT and Machine Learning" <a href="certificates/springer_icetic_2023.jpg" data-lightbox="certificates" data-title="Certificate of Presentation, Springer ICETIC 2023" class="text-indigo-600 hover:underline">[View Certificate]</a></li>
+                    <li>Certificate of Presentation, AETIC 2024, for "Air Pollution Monitoring Using IoT and Machine Learning in the Perspective of Bangladesh" <a href="photos/seeda.png" data-lightbox="certificates" data-title="Certificate of Presentation, AETIC 2024" class="text-indigo-600 hover:underline">[View Certificate]</a></li>
+                    <li>Best Presentation Certificate, UCEC literature Meet, 2019, for outstanding presentation skills <a href="photos/presentation.pdf" data-lightbox="certificates" data-title="Best Presentation Certificate, UCEC literature Meet, 2019" class="text-indigo-600 hover:underline">[View Certificate]</a></li>
+                    <li>Course Certificate, Course Certificate, Agentic Ai, for completing <a href="certificates/course_certificate_202x.jpg" data-lightbox="certificates" data-title="Course Certificate, Agentic Ai, 2025" class="text-indigo-600 hover:underline">[View Certificate]</a></li>
                 </ul>
             </div>
         </div>
@@ -143,13 +158,11 @@
                 <div>
                     <h3 class="text-xl font-bold mb-4">Connect</h3>
                     <ul class="space-y-2">
-                        <li><a href="index.html" class="hover:text-indigo-400">Home</a></li>
-                        <li><a href="Research.html" class="hover:text-indigo-400">Research</a></li>
-                        <li><a href="project.html" class="hover:text-indigo-400">Projects</a></li>
-                        <li><a href="workexperince.html" class="hover:text-indigo-400">Experience</a></li>
-                        <li><a href="contact.html" class="hover:text-indigo-400">Contact</a></li>
-                        <li><a href="skills.html" class="hover:text-indigo-400">Skills</a></li>
-                        <li><a href="photo.html" class="hover:text-indigo-400">Photo</a></li>
+                        <li><a href="https://scholar.google.com/citations?user=zAuBXLUAAAAJ&hl=en" class="hover:text-indigo-400">Google Scholar</a></li>
+                        <li><a href="https://www.researchgate.net/profile/Nasim-Nayan" class="hover:text-indigo-400">ResearchGate</a></li>
+                        <li><a href="https://orcid.org/0009-0003-4157-3518" class="hover:text-indigo-400">ORCID</a></li>
+                        <li><a href="https://www.linkedin.com/in/nm-nayan-8475211b9/" class="hover:text-indigo-400">LinkedIn</a></li>
+                        <li><a href="https://github.com/NMNayan57" class="hover:text-indigo-400">GitHub</a></li>
                     </ul>
                 </div>
                 <div>
@@ -164,6 +177,7 @@
 
     <!-- Scripts -->
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
     <script>
         // Theme Toggle
         const toggle = document.getElementById('theme-toggle');
