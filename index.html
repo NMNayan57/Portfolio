@@ -1,244 +1,136 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="icon" href="img/favicon.png" type="image/png">
-        <title> Portfolio</title>
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="css/bootstrap.css">
-        <link rel="stylesheet" href="vendors/linericon/style.css">
-        <link rel="stylesheet" href="css/font-awesome.min.css">
-        <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
-        <link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css">
-        <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
-        <link rel="stylesheet" href="vendors/animate-css/animate.css">
-        <link rel="stylesheet" href="vendors/popup/magnific-popup.css">
-        <link rel="stylesheet" href="vendors/flaticon/flaticon.css">
-        <!-- main css -->
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/responsive.css">
-    </head>
-    <body>
-        
-        <!--================Header Menu Area =================-->
-        <header class="header_area">
-            <div class="main_menu">
-            	<nav class="navbar navbar-expand-lg navbar-light">
-					<div class="container box_1620">
-						<!-- Brand and toggle get grouped for better mobile display -->
-							<a class="navbar-brand logo_h" href="index.html"><h3 style="color: white"> ℕ𝕄 ℕ𝔸Y𝔸ℕ</h3></a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Nasim Mahmud Nayan, AI/ML Engineer and Researcher aiming for a PhD in Artificial Intelligence.">
+    <meta name="keywords" content="AI, Machine Learning, Researcher, PhD, Portfolio, Nasim Mahmud Nayan">
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <title>Nasim Mahmud Nayan - AI/ML Researcher</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white dark:bg-gray-800 shadow-md">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-indigo-600 dark:text-indigo-400">NM NAYAN</a>
+            <ul class="flex space-x-6">
+                <li><a href="index.html" class="hover:text-indigo-600 dark:hover:text-indigo-400">Home</a></li>
+                <li><a href="Research.html" class="hover:text-indigo-600 dark:hover:text-indigo-400">Research</a></li>
+                <li><a href="workexperince.html" class="hover:text-indigo-600 dark:hover:text-indigo-400">Experience</a></li>
+                <li><a href="project.html" class="hover:text-indigo-600 dark:hover:text-indigo-400">Projects</a></li>
+                <li><a href="skills.html" class="hover:text-indigo-600 dark:hover:text-indigo-400">Skills</a></li>
+                <li><a href="photo.html" class="hover:text-indigo-600 dark:hover:text-indigo-400">Gallery</a></li>
+                </li>
+                <li><a href="contact.html" class="hover:text-indigo-600 dark:hover:text-indigo-400">Contact</a></li>
+            </ul>
+            <button id="theme-toggle" class="text-gray-500 dark:text-gray-400">Toggle Theme</button>
+        </nav>
+    </header>
 
-						<a class="navbar-brand logo_h" href="index.html"><img src="#" alt=""></a>
-						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-						<!-- Collect the nav links, forms, and other content for toggling -->
-						<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
-							<ul class="nav navbar-nav menu_nav ml-auto">
-								<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li> 
-								<li class="nav-item"><a class="nav-link" href="Research.html">Research And Publications</a></li> 
-								<li class="nav-item"><a class="nav-link" href="workexperince.html">Work Experince</a></li> 
-								<li class="nav-item"><a class="nav-link" href="project.html">Projects</a></li>
-								
-								<li class="nav-item submenu dropdown">
-									<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More</a>
-									<ul class="dropdown-menu">
-										<li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
-										<li class="nav-item"><a class="nav-link" href="photo.html">Photo Gallary</a></li>
-									</ul>
-								</li> 
-								<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-							</ul>
-						</div> 
-					</div>
-            	</nav>
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-indigo-500 to-cyan-500 text-white py-20">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2">
+                <img src="photos/profile.png" alt="Nasim Mahmud Nayan" class="rounded-full w-64 h-64 mx-auto mb-6">
             </div>
-        </header>
-        <!--================Header Menu Area =================-->
-        
-
-
-        <!--================Home Banner Area =================-->
-        <section class="home_banner_area">
-           	<div class="container box_1620">
-           		<div class="banner_inner d-flex align-items-center">
-					<div class="banner_content">
-						<div class="media">
-							<div class="d-flex">
-								<img src="photos/profile.png" alt="">
-							</div>
-							<div class="media-body">
-								<div class="personal_text">
-									<h6>Hello Everybody, i am</h6>
-									<h3>Nasim Mahmud Nayan</h3>
-									<h4>Junior Researcher and ML Engineer</h4>
-									<p>Pursuing an advanced degree with dedication to Machine Learning (ML) and medical cyber systems, driven by research passion and interdisciplinary collaboration. I aim to excel, innovate, and contribute meaningfully to my field with dedication, discipline, honesty, and teamwork.</p>
-									<ul class="list basic_info">
-										<li><a href="#"><i class="lnr lnr-calendar-full"></i> 2nd july, 1999</a></li>
-										<li><a href="#"><i class="lnr lnr-phone-handset"></i> 01742957256</a></li>
-										<li><a href="#"><i class="lnr lnr-envelope"></i> smnoyan670@gmail.com</a></li>
-										<li><a href="#"><i class="lnr lnr-home"></i> j-block Baridhara Dhaka</a></li>
-									</ul>
-									<ul class="list personal_social">
-									
-										<li><a href="https://github.com/NMNayan57"><i class="fa fa-github"></i></a></li>
-										<li><a href="https://www.linkedin.com/in/nasim-mahmud-nayan-8475211b9/"><i class="fa fa-linkedin"></i></a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+            <div class="md:w-1/2 text-center md:text-left">
+                <h1 class="text-4xl font-bold mb-4">Nasim Mahmud Nayan</h1>
+                <h2 class="text-2xl mb-4">Junior Researcher & AI/ML Engineer</h2>
+                <p class="mb-6">Passionate about advancing AI and Machine Learning through research and innovation. Aspiring PhD candidate dedicated to solving real-world problems with cutting-edge technology.</p>
+                <a href="CV_Nayan.pdf" class="bg-white text-indigo-600 px-6 py-3 rounded-md font-semibold hover:bg-indigo-100">Download CV</a>
             </div>
-        </section>
-        <!--================End Home Banner Area =================-->
-        
-        <!--================Welcome Area =================-->
-        <section class="welcome_area p_120">
-        	<div class="container">
-        		
-        
-        				<div class="welcome_text">
-        					<h4>About Myself</h4>
-        					<p>I am Nasim Mahmud Nayan, a dedicated Machine Learning engineer with a strong passion for groundbreaking technologies, particularly in the realm of research. Throughout my professional journey, I have been deeply involved in the field of artificial intelligence, specializing in machine learning, medical cyber-physical systems, IoT, and computer vision. My primary focus and proudest achievements revolve around my research endeavors.
+        </div>
+    </section>
 
-                            I have had the privilege of publishing numerous research papers in esteemed journals, and I currently have several more in progress. My commitment to advancing the field through rigorous research is unwavering. As I continue to advance in my career, I am actively considering further studies, with the aim of pursuing a Ph.D. or Master's degree to further enhance my expertise.
+    <!-- About Section -->
+    <section class="py-16">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-8">About Me</h2>
+            <p class="max-w-2xl mx-auto text-center">I am Nasim Mahmud Nayan, a dedicated AI/ML engineer with a strong focus on research in machine learning, medical cyber-physical systems, IoT, and computer vision. My work includes multiple published papers and ongoing projects aimed at solving critical healthcare challenges. I am pursuing advanced studies to contribute to the field through a PhD.</p>
+        </div>
+    </section>
 
-                            If you share my enthusiasm for research and the transformative potential of technology, I am open to connecting and exploring potential collaborations in this exciting field. </p>
-        					<br>
-        					
-
-        			<a class="main_btn" href="CV_Nayan .pdf">DOWNLOAD CV</a>
-        		
-        			
-
-        				
-        				
-        			</div>
-
-        			</div>
-
-        			
-							
-        </section>
-
-
-
-
-
-        <!--================End Welcome Area =================-->
-        
-        
-        <!--================Feature Area =================-->
-        <section class="feature_area p_120">
-        	<div class="container">
-        		<div class="main_title">
-        			<h2>offerings </h2>
-        			
-        		</div>
-        		<div class="feature_inner row">
-        			<div class="col-lg-4 col-md-6">
-        				<div class="feature_item">
-        			
-
-        					 <img src="fonts/web3.png">
-        					 <h4>ML Projects</h4>
-        					<p> I can help you to make Machine learning based  projects in realtime.</p>
-        				
-        				</div>
-        			</div>
-        			<div class="col-lg-4 col-md-6">
-        				<div class="feature_item">
-                    
-                      <img src="fonts/web4.png">
-        					<h4>AI Tools</h4>
-        					<p>I have small team and we could make Ai tools as per your demand.</p>
-        				</div>
-        			</div>
-        			<div class="col-lg-4 col-md-6">
-        				<div class="feature_item">
-        			 <img src="fonts/icon.png">
-
-        						<h4>Research Paper Writting</h4>
-        					<p>I Can help you to write research article(Journal,Conference,Book chapter. </p>
-        				</div>
-        			</div>
-        		</div>
-        	</div>
-        </section>
-        <!--================End Feature Area =================-->
-        
-       
-      <!--================Footer Area =================-->
-        <footer class="footer_area p_120">
-            <div class="container">
-                <div class="row footer_inner">
-                    
-                    <div class="col-lg-5 col-sm-6">
-                        <aside class="f_widget news_widget">
-                            <div class="f_title">
-                                <h3>Navigation</h3>
-                                <br>
-                                 <ul>
-                        <li > <a href="index.html" style="text-decoration: none; color:gray">Home</a></li>
-                      <li> <a href="Research.html" style="text-decoration: none; color:gray">Research And Publications</a></li>
-                       <li> <a href="project.html" style="text-decoration: none; color:gray">Projects</a></li>
-                       <li> <a href="more.html" style="text-decoration: none; color:gray">More</a></li><li>
-                        <a href="workexperince" style="text-decoration: none; color:gray">WorkExperince</a></li>
-                        <li> <a href="contact" style="text-decoration: none; color:gray">Contact</a></li>
-                    </ul>
-                            </div>
-                            
-                            
-                        </aside>
-                    </div>
-
-                    <div class="col-lg-2">
-                        <aside class="f_widget social_widget">
-                            <div class="f_title">
-                                <h3>Follow Me</h3>
-                            </div>
-                            <p>Let us be social</p>
-                            <ul class="list">
-                                <li><a href="https://www.facebook.com/profile.php?id=100015827795246"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="https://github.com/NMNayan57"><i class="fa fa-github"></i></a></li>
-                                <li><a href="https://www.instagram.com/nm__nayan/"><i class="fa fa-instagram"></i></a></li>
-                                <li><a href="https://www.linkedin.com/in/nm-nayan-8475211b9/"><i class="fa fa-linkedin"></i></a></li>
-                            </ul>
-                            <p>Stay updated with my latest trends</p>
-                        </aside>
-                    </div>
-
+    <!-- Offerings Section -->
+    <section class="bg-gray-200 dark:bg-gray-800 py-16">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-8">What I Offer</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md text-center">
+                    <img src="fonts/web3.png" alt="ML Projects" class="w-16 mx-auto mb-4">
+                    <h3 class="text-xl font-semibold mb-2">ML Projects</h3>
+                    <p>Building real-time machine learning solutions for complex problems.</p>
+                </div>
+                <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md text-center">
+                    <img src="fonts/web4.png" alt="AI Tools" class="w-16 mx-auto mb-4">
+                    <h3 class="text-xl font-semibold mb-2">AI Tools</h3>
+                    <p>Developing custom AI tools tailored to your needs.</p>
+                </div>
+                <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md text-center">
+                    <img src="fonts/icon.png" alt="Research Writing" class="w-16 mx-auto mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Research Writing</h3>
+                    <p>Authoring high-quality research papers for journals and conferences.</p>
                 </div>
             </div>
-        </footer>
-        <!--================End Footer Area =================-->
-        
-        
-        
-        
-        
-        
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="js/jquery-3.3.1.min.js"></script>
-        <script src="js/popper.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/stellar.js"></script>
-        <script src="vendors/lightbox/simpleLightbox.min.js"></script>
-        <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
-        <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
-        <script src="vendors/isotope/isotope.pkgd.min.js"></script>
-        <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
-        <script src="vendors/popup/jquery.magnific-popup.min.js"></script>
-        <script src="js/jquery.ajaxchimp.min.js"></script>
-        <script src="vendors/counter-up/jquery.waypoints.min.js"></script>
-        <script src="vendors/counter-up/jquery.counterup.min.js"></script>
-        <script src="js/mail-script.js"></script>
-        <script src="js/theme.js"></script>
-    </body>
+        </div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section class="py-16">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-4">Stay Updated</h2>
+            <p class="mb-6">Subscribe to my newsletter for the latest research insights and AI/ML updates.</p>
+            <form class="max-w-md mx-auto">
+                <input type="email" placeholder="Enter your email" class="w-full p-3 rounded-md mb-4">
+                <button type="submit" class="bg-indigo-600 text-white px-6 py-3 rounded-md">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-10">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Navigation</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-indigo-400">Home</a></li>
+                        <li><a href="Research.html" class="hover:text-indigo-400">Research</a></li>
+                        <li><a href="project.html" class="hover:text-indigo-400">Projects</a></li>
+                        <li><a href="workexperince.html" class="hover:text-indigo-400">Experience</a></li>
+                        <li><a href="contact.html" class="hover:text-indigo-400">Contact</a></li>
+                        <li><a href="skills.html" class="hover:text-indigo-400">Skills</a></li>
+                        <li><a href="photo.html" class="hover:text-indigo-400">Photo</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Follow Me</h3>
+                    <ul class="flex space-x-4">
+                        <li><a href="https://www.facebook.com/profile.php?id=100015827795246"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://github.com/NMNayan57"><i class="fa fa-github"></i></a></li>
+                        <li><a href="https://www.instagram.com/nm__nayan/"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/nm-nayan-8475211b9/"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact</h3>
+                    <p>j-block Baridhara, Dhaka, Bangladesh</p>
+                    <p>Email: <a href="mailto:nm.nayan670@gmail.com">nm.nayan670@gmail.com</a></p>
+                    <p>Phone: 01742957256</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script>
+        // Theme Toggle
+        const toggle = document.getElementById('theme-toggle');
+        toggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark');
+        });
+    </script>
+</body>
 </html>
