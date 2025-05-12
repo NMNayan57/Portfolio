@@ -1,265 +1,126 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="icon" href="img/favicon.png" type="image/png">
-        <title> privacy</title>
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="css/bootstrap.css">
-        <link rel="stylesheet" href="vendors/linericon/style.css">
-        <link rel="stylesheet" href="css/font-awesome.min.css">
-        <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
-        <link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css">
-        <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
-        <link rel="stylesheet" href="vendors/animate-css/animate.css">
-        <link rel="stylesheet" href="vendors/popup/magnific-popup.css">
-        <!-- main css -->
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/responsive.css">
-    </head>
-    <body>
-        
-        <!--================Header Menu Area =================-->
-        <header class="header_area">
-            <div class="main_menu">
-                <nav class="navbar navbar-expand-lg navbar-light">
-                    <div class="container box_1620">
-                        <!-- Brand and toggle get grouped for better mobile display -->
-                            <a class="navbar-brand logo_h" href="index.html"><h3 style="color: white"> ℕ𝕄 ℕ𝔸Y𝔸ℕ</h3></a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Photo gallery of Nasim Mahmud Nayan, showcasing professional and personal achievements.">
+    <meta name="keywords" content="Photo Gallery, AI, Machine Learning, Nasim Mahmud Nayan">
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <title>Photo Gallery - Nasim Mahmud Nayan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+</head>
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white dark:bg-gray-800 shadow-md">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-indigo-600 dark:text-indigo-400">NM NAYAN</a>
+            <ul class="flex space-x-6">
+                <li><a href="index.html" class="hover:text-indigo-600 dark:hover:text-indigo-400">Home</a></li>
+                <li><a href="Research.html" class="hover:text-indigo-600 dark:hover:text-indigo-400">Research</a></li>
+                <li><a href="workexperince.html" class="hover:text-indigo-600 dark:hover:text-indigo-400">Experience</a></li>
+                <li><a href="project.html" class="hover:text-indigo-600 dark:hover:text-indigo-400">Projects</a></li>
+                <li><a href="skills.html" class="hover:text-indigo-600 dark:hover:text-indigo-400">Skills</a></li>
+                <li><a href="photo.html" class="hover:text-indigo-600 dark:hover:text-indigo-400">Gallery</a></li>
+                </li>
+                <li><a href="contact.html" class="hover:text-indigo-600 dark:hover:text-indigo-400">Contact</a></li>
+            </ul>
+            <button id="theme-toggle" class="text-gray-500 dark:text-gray-400">Toggle Theme</button>
+        </nav>
+    </header>
 
-                        <a class="navbar-brand logo_h" href="index.html"><img src="#" alt=""></a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <!-- Collect the nav links, forms, and other content for toggling -->
-                        <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
-                            <ul class="nav navbar-nav menu_nav ml-auto">
-                                <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li> 
-                                <li class="nav-item"><a class="nav-link" href="Research.html">Research And Publications</a></li> 
-                                <li class="nav-item"><a class="nav-link" href="workexperince.html">Work Experince</a></li> 
-                                <li class="nav-item"><a class="nav-link" href="project.html">Projects</a></li>
-                                
-                                <li class="nav-item submenu dropdown">
-                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More</a>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="photo.html">Photo Gallary</a></li>
-                                    </ul>
-                                </li> 
-                                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                            </ul>
-                        </div> 
-                    </div>
-                </nav>
-            </div>
-        </header>
-        <!--================Header Menu Area =================-->
-        
-        <!--================Home Banner Area =================-->
-        <section class="banner_area">
-            <div class="box_1620">
-                <div class="banner_inner d-flex align-items-center">
-                    <div class="container">
-                        <div class="banner_content text-center">
-                            <h2>Photo Gallary</h2>
-                            <div class="page_link">
-                                <a href="index.html">Home</a>
-                                <a href="photo.html">Photo</a>
-                            </div>
-                        </div>
-                    </div>
+    <!-- Photo Gallery Section -->
+    <section class="py-16">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-8">Photo Gallery</h2>
+            <p class="text-center mb-8">Moments from my professional and academic journey.</p>
+            <div class="columns-1 md:columns-2 lg:columns-3 gap-4">
+                <div class="mb-4 break-inside-avoid">
+                    <a href="photos/victory day.jpg" data-lightbox="gallery" data-title="Fastest Problem Solver, UITS Victory Day Programming Contest, 2021">
+                        <img src="photos/victory day.jpg" alt="Victory Day Contest" class="w-full rounded-lg shadow-md" loading="lazy">
+                    </a>
+                    <p class="mt-2 text-center">Fastest Problem Solver, UITS Victory Day Programming Contest, 2021.</p>
+                </div>
+                <div class="mb-4 break-inside-avoid">
+                    <a href="photos/robi.jpg" data-lightbox="gallery" data-title="Receiving gift from Robi Team">
+                        <img src="photos/robi.jpg" alt="Robi Quiz Award" class="w-full rounded-lg shadow-md" loading="lazy">
+                    </a>
+                    <p class="mt-2 text-center">Gift from Robi Team for Fastest Quiz Solver.</p>
+                </div>
+                <div class="mb-4 break-inside-avoid">
+                    <a href="photos/basis.jpg" data-lightbox="gallery" data-title="Visiting BASIS">
+                        <img src="photos/basis.jpg" alt="BASIS Visit" class="w-full rounded-lg shadow-md" loading="lazy">
+                    </a>
+                    <p class="mt-2 text-center">Visiting Bangladesh Association of Software and Information Services.</p>
+                </div>
+                <div class="mb-4 break-inside-avoid">
+                    <a href="photos/conduct.jpg" data-lightbox="gallery" data-title="Conducting AI Trainee Batch, EDGE Project">
+                        <img src="photos/conduct.jpg" alt="AI Trainee Batch" class="w-full rounded-lg shadow-md" loading="lazy">
+                    </a>
+                    <p class="mt-2 text-center">Conducting AI Trainee Batch, EDGE Project, 2023.</p>
+                </div>
+                <div class="mb-4 break-inside-avoid">
+                    <a href="photos/interview.jpg" data-lightbox="gallery" data-title="Taking Intern Interview, Primacy Infotech Ltd">
+                        <img src="photos/interview.jpg" alt="Intern Interview" class="w-full rounded-lg shadow-md" loading="lazy">
+                    </a>
+                    <p class="mt-2 text-center">Taking intern interview at Primacy Infotech Ltd, 2023.</p>
+                </div>
+                <div class="mb-4 break-inside-avoid">
+                    <a href="photos/football.jpg" data-lightbox="gallery" data-title="Football Victory">
+                        <img src="photos/football.jpg" alt="Football Victory" class="w-full rounded-lg shadow-md" loading="lazy">
+                    </a>
+                    <p class="mt-2 text-center">Victorious moment in football.</p>
                 </div>
             </div>
-        </section>
-        <!--================End Home Banner Area =================-->
-        <br><br><br><br>
-        <!--================privacy Area =================-->
-        
-        <div class="container">
-            <div class="gallery_f_inner row imageGallery1">
-                     
-                    <div class="col-lg-4 col-md-4 col-sm-6 brand manipul design print">
-
-
-                        <div class="h_gallery_item">
-                              <div class="g_img_ite">
-                                <img class="img-"  src="photos/victory day.jpg" alt="">
-                                
-                            </div>
-                            <div class="g_item_text">
-                                
-                                <p>I was attending the UITS victory day programming contest with my team members.</p>
-                               
-                                
-                            </div>
-                        </div>
-                    </div>
-                  
-                    <div class="col-lg-4 col-md-4 col-sm-6 brand manipul creative">
-                        <div class="h_gallery_item">
-                            <div class="g_img_ite">
-                                <img class="img-"  src="photos/robi.jpg" alt="">
-                                
-                            </div>
-                            <div class="g_item_text">
-                                
-                                <p>Delighted to receive this special gift from the Robi Team for being crowned the Fastest Quiz Solve </p>
-                                 
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-6 manipul creative design print">
-                        <div class="h_gallery_item">
-                            <div class="g_img_ite">
-                                <img class="img-" src="photos/basis.jpg" alt="">
-                               
-                            </div>
-                            <div class="g_item_text">
-                               
-                                <p> Visiting Bangladesh Association of Software and Information Services</p>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    
-                    
-                </div>
-
-
-
-
-
-
-<div class="gallery_f_inner row imageGallery1">
-                     
-                    <div class="col-lg-4 col-md-4 col-sm-6 brand manipul design print">
-
-
-                        <div class="h_gallery_item">
-                              <div class="g_img_ite">
-                                <img class="img-"  src="photos/conduct.jpg" alt="">
-                                
-                            </div>
-                            <div class="g_item_text">
-                           
-                                <p>After successfully conducting my first AI trainee batch under the EDEGE program</p>
-                               
-                                
-                            </div>
-                        </div>
-                    </div>
-                  
-                    <div class="col-lg-4 col-md-4 col-sm-6 brand manipul creative">
-                        <div class="h_gallery_item">
-                            <div class="g_img_ite">
-                                <img class="img-"  src="photos/interview.jpg" alt="">
-                                
-                            </div>
-                            <div class="g_item_text">
-                                
-                                <p>Taking intern interview alongside with HR head at primacy info tec ltd</p>
-                                 
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-6 manipul creative design print">
-                        <div class="h_gallery_item">
-                            <div class="g_img_ite">
-                                <img class="img-" src="photos/football.jpg" alt="">
-                               
-                            </div>
-                            <div class="g_item_text">
-                                
-                                <p>Victorious Moment in the World of Football.</p>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    
-                    
-                </div>
-
-
-
-
-
-
-
-
-
-
         </div>
-        <!--================end privacy Area =================-->
-           <br><br><br><br>
+    </section>
 
-           
- <!--================Footer Area =================-->
-        <footer class="footer_area p_120">
-            <div class="container">
-                <div class="row footer_inner">
-                    
-                    <div class="col-lg-5 col-sm-6">
-                        <aside class="f_widget news_widget">
-                            <div class="f_title">
-                                <h3>Navigation</h3>
-                                <br>
-                                 <ul>
-                        <li > <a href="index.html" style="text-decoration: none; color:gray">Home</a></li>
-                      <li> <a href="Research.html" style="text-decoration: none; color:gray">Research And Publications</a></li>
-                       <li> <a href="project.html" style="text-decoration: none; color:gray">Projects</a></li>
-                       <li> <a href="more.html" style="text-decoration: none; color:gray">More</a></li><li>
-                        <a href="workexperince" style="text-decoration: none; color:gray">WorkExperince</a></li>
-                        <li> <a href="contact" style="text-decoration: none; color:gray">Contact</a></li>
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-10">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Navigation</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-indigo-400">Home</a></li>
+                        <li><a href="Research.html" class="hover:text-indigo-400">Research</a></li>
+                        <li><a href="project.html" class="hover:text-indigo-400">Projects</a></li>
+                        <li><a href="workexperince.html" class="hover:text-indigo-400">Experience</a></li>
+                        <li><a href="contact.html" class="hover:text-indigo-400">Contact</a></li>
                     </ul>
-                            </div>
-                            
-                            
-                        </aside>
-                    </div>
-
-                    <div class="col-lg-2">
-                        <aside class="f_widget social_widget">
-                            <div class="f_title">
-                                <h3>Follow Me</h3>
-                            </div>
-                            <p>Let us be social</p>
-                            <ul class="list">
-                                <li><a href="https://www.facebook.com/profile.php?id=100015827795246"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="https://github.com/NMNayan57"><i class="fa fa-github"></i></a></li>
-                                <li><a href="https://www.instagram.com/nm__nayan/"><i class="fa fa-instagram"></i></a></li>
-                                <li><a href="https://www.linkedin.com/in/nm-nayan-8475211b9/"><i class="fa fa-linkedin"></i></a></li>
-                            </ul>
-                            <p>Stay updated with my latest trends</p>
-                        </aside>
-                    </div>
-
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Connect</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-indigo-400">Home</a></li>
+                        <li><a href="Research.html" class="hover:text-indigo-400">Research</a></li>
+                        <li><a href="project.html" class="hover:text-indigo-400">Projects</a></li>
+                        <li><a href="workexperince.html" class="hover:text-indigo-400">Experience</a></li>
+                        <li><a href="contact.html" class="hover:text-indigo-400">Contact</a></li>
+                        <li><a href="skills.html" class="hover:text-indigo-400">Skills</a></li>
+                        <li><a href="photo.html" class="hover:text-indigo-400">Photo</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact</h3>
+                    <p>j-block Baridhara, Dhaka, Bangladesh</p>
+                    <p>Email: <a href="mailto:nm.nayan670@gmail.com" class="hover:text-indigo-400">nm.nayan670@gmail.com</a></p>
+                    <p>Phone: +8801742957256</p>
                 </div>
             </div>
-        </footer>
-        <!--================End Footer Area =================-->
-        
-        
-        
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="js/jquery-3.3.1.min.js"></script>
-        <script src="js/popper.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/stellar.js"></script>
-        <script src="vendors/lightbox/simpleLightbox.min.js"></script>
-        <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
-        <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
-        <script src="vendors/isotope/isotope.pkgd.min.js"></script>
-        <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
-        <script src="vendors/popup/jquery.magnific-popup.min.js"></script>
-        <script src="js/jquery.ajaxchimp.min.js"></script>
-        <script src="vendors/counter-up/jquery.waypoints.min.js"></script>
-        <script src="vendors/counter-up/jquery.counterup.min.js"></script>
-        <script src="js/mail-script.js"></script>
-        <script src="js/theme.js"></script>
-    </body>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <script>
+        // Theme Toggle
+        const toggle = document.getElementById('theme-toggle');
+        toggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark');
+        });
+    </script>
+</body>
 </html>
