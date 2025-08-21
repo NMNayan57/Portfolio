@@ -3,122 +3,283 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of Nasim Mahmud Nayan, AI/ML Engineer and Researcher aiming for a PhD in Artificial Intelligence.">
-    <meta name="keywords" content="AI, Machine Learning, Researcher, PhD, Portfolio, Nasim Mahmud Nayan">
+    <meta name="description" content="Nasim Mahmud Nayan - AI/ML Researcher specializing in trustworthy AI for healthcare, medical cyber-physical systems, and bias mitigation frameworks.">
+    <meta name="keywords" content="AI Research, Machine Learning, Healthcare AI, Medical AI, Bias Mitigation, Computer Vision, IoT, Nasim Mahmud Nayan">
     <link rel="icon" href="img/favicon.png" type="image/png">
     <title>Nasim Mahmud Nayan - AI/ML Researcher</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="css/style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'research-navy': '#1e3a8a',
+                        'research-gray': '#64748b',
+                        'research-light': '#f8fafc'
+                    }
+                }
+            }
+        }
+    </script>
 </head>
-<body class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+<body class="bg-research-light dark:bg-gray-900 text-gray-900 dark:text-gray-100 font-sans">
     <!-- Header -->
-    <header class="sticky top-0 z-50 bg-white dark:bg-gray-800 shadow-md">
+    <header class="sticky top-0 z-50 bg-white dark:bg-gray-800 shadow-sm border-b border-gray-200 dark:border-gray-700">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="index.html" class="text-2xl font-bold text-indigo-600 dark:text-indigo-400">NM NAYAN</a>
-            <ul class="flex space-x-6">
-                <li><a href="index.html" class="hover:text-indigo-600 dark:hover:text-indigo-400">Home</a></li>
-                <li><a href="Research.html" class="hover:text-indigo-600 dark:hover:text-indigo-400">Research</a></li>
-                <li><a href="workexperince.html" class="hover:text-indigo-600 dark:hover:text-indigo-400">Experience</a></li>
-                <li><a href="project.html" class="hover:text-indigo-600 dark:hover:text-indigo-400">Projects</a></li>
-                <li><a href="skills.html" class="hover:text-indigo-600 dark:hover:text-indigo-400">Skills</a></li>
-                <li><a href="photo.html" class="hover:text-indigo-600 dark:hover:text-indigo-400">Gallery</a></li>
-                </li>
-                <li><a href="contact.html" class="hover:text-indigo-600 dark:hover:text-indigo-400">Contact</a></li>
+            <div class="flex items-center space-x-3">
+                <a href="index.html" class="text-2xl font-bold text-research-navy dark:text-white">Nasim Mahmud Nayan</a>
+                <span class="text-sm text-research-gray dark:text-gray-400 hidden md:block">AI/ML Researcher</span>
+            </div>
+            <ul class="flex space-x-8">
+                <li><a href="index.html" class="text-research-gray hover:text-research-navy dark:hover:text-white transition-colors">Home</a></li>
+                <li><a href="Research.html" class="text-research-gray hover:text-research-navy dark:hover:text-white transition-colors">Publications</a></li>
+                <li><a href="project.html" class="text-research-gray hover:text-research-navy dark:hover:text-white transition-colors">Research</a></li>
+                <li><a href="workexperince.html" class="text-research-gray hover:text-research-navy dark:hover:text-white transition-colors">Experience</a></li>
+                <li><a href="skills.html" class="text-research-gray hover:text-research-navy dark:hover:text-white transition-colors">About</a></li>
+                <li><a href="contact.html" class="text-research-gray hover:text-research-navy dark:hover:text-white transition-colors">Contact</a></li>
+                <li><a href="CV_Nayan.pdf" class="bg-research-navy text-white px-4 py-2 rounded-md hover:bg-blue-800 transition-colors" download>CV</a></li>
             </ul>
-            <button id="theme-toggle" class="text-gray-500 dark:text-gray-400">Toggle Theme</button>
+            <button id="theme-toggle" class="text-research-gray dark:text-gray-400 hover:text-research-navy dark:hover:text-white">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                </svg>
+            </button>
         </nav>
     </header>
 
     <!-- Hero Section -->
-    <section class="bg-gradient-to-r from-indigo-500 to-cyan-500 text-white py-20">
-        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
-            <div class="md:w-1/2">
-                <img src="photos/profile.png" alt="Nasim Mahmud Nayan" class="rounded-full w-64 h-64 mx-auto mb-6">
-            </div>
-            <div class="md:w-1/2 text-center md:text-left">
-                <h1 class="text-4xl font-bold mb-4">Nasim Mahmud Nayan</h1>
-                <h2 class="text-2xl mb-4">Junior Researcher & AI/ML Engineer</h2>
-                <p class="mb-6">Passionate about advancing AI and Machine Learning through research and innovation. Aspiring PhD candidate dedicated to solving real-world problems with cutting-edge technology.</p>
-                <a href="CV_Nayan.pdf" class="bg-white text-indigo-600 px-6 py-3 rounded-md font-semibold hover:bg-indigo-100">Download CV</a>
+    <section class="bg-white dark:bg-gray-800 py-20 border-b border-gray-200 dark:border-gray-700">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/3">
+                    <img src="photos/profile.png" alt="Nasim Mahmud Nayan" class="rounded-full w-64 h-64 mx-auto shadow-lg">
+                </div>
+                <div class="md:w-2/3 text-center md:text-left">
+                    <h1 class="text-4xl font-bold text-research-navy dark:text-white mb-2">Nasim Mahmud Nayan</h1>
+                    <h2 class="text-xl text-research-gray dark:text-gray-300 mb-4">AI/ML Researcher & Engineer</h2>
+                    <p class="text-lg text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
+                        Developing trustworthy AI methods for healthcare in resource-limited settings. 
+                        My research spans multimodal medical AI systems, bias mitigation frameworks, 
+                        and cross-modal analysis in clinical AI systems.
+                    </p>
+                    
+                    <!-- Research Metrics -->
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-6">
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-research-navy dark:text-white">9</div>
+                            <div class="text-sm text-research-gray dark:text-gray-400">Publications</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-research-navy dark:text-white">80+</div>
+                            <div class="text-sm text-research-gray dark:text-gray-400">Citations</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-research-navy dark:text-white">4</div>
+                            <div class="text-sm text-research-gray dark:text-gray-400">h-index</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-research-navy dark:text-white">3</div>
+                            <div class="text-sm text-research-gray dark:text-gray-400">Under Review</div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                        <a href="CV_Nayan.pdf" class="bg-research-navy text-white px-6 py-3 rounded-md hover:bg-blue-800 transition-colors" download>
+                            Download CV
+                        </a>
+                        <a href="Research.html" class="border border-research-navy text-research-navy px-6 py-3 rounded-md hover:bg-research-navy hover:text-white transition-colors">
+                            View Publications
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section class="py-16">
+    <!-- Research Areas Section -->
+    <section class="py-16 bg-gray-50 dark:bg-gray-800">
         <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center mb-8">About Me</h2>
-            <p class="max-w-2xl mx-auto text-center">I am Nasim Mahmud Nayan, a dedicated AI/ML engineer with a strong focus on research in machine learning, medical cyber-physical systems, IoT, and computer vision. My work includes multiple published papers and ongoing projects aimed at solving critical healthcare challenges. I am pursuing advanced studies to contribute to the field through a PhD.</p>
+            <h2 class="text-3xl font-bold text-center mb-12 text-research-navy dark:text-white">Research Areas</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-sm border border-gray-200 dark:border-gray-600">
+                    <div class="w-12 h-12 bg-research-navy bg-opacity-10 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-research-navy" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2 text-research-navy dark:text-white">Medical AI</h3>
+                    <p class="text-research-gray dark:text-gray-300 text-sm">Trustworthy AI systems for healthcare, maternal health prediction, and medical diagnosis</p>
+                </div>
+                <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-sm border border-gray-200 dark:border-gray-600">
+                    <div class="w-12 h-12 bg-research-navy bg-opacity-10 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-research-navy" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2 text-research-navy dark:text-white">Bias Mitigation</h3>
+                    <p class="text-research-gray dark:text-gray-300 text-sm">Fairness-aware ML, algorithmic bias reduction, and equitable AI systems</p>
+                </div>
+                <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-sm border border-gray-200 dark:border-gray-600">
+                    <div class="w-12 h-12 bg-research-navy bg-opacity-10 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-research-navy" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2 text-research-navy dark:text-white">Computer Vision</h3>
+                    <p class="text-research-gray dark:text-gray-300 text-sm">Medical imaging, multimodal diagnosis, and explainable AI visualization</p>
+                </div>
+                <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-sm border border-gray-200 dark:border-gray-600">
+                    <div class="w-12 h-12 bg-research-navy bg-opacity-10 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-research-navy" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2 text-research-navy dark:text-white">IoT Systems</h3>
+                    <p class="text-research-gray dark:text-gray-300 text-sm">Medical cyber-physical systems, environmental monitoring, and edge AI</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Offerings Section -->
-    <section class="bg-gray-200 dark:bg-gray-800 py-16">
+    <!-- Recent Publications Section -->
+    <section class="py-16 bg-white dark:bg-gray-900">
         <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center mb-8">What I Offer</h2>
+            <h2 class="text-3xl font-bold text-center mb-12 text-research-navy dark:text-white">Recent Publications</h2>
+            <div class="space-y-6 max-w-4xl mx-auto">
+                <div class="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg border-l-4 border-research-navy">
+                    <div class="flex items-start justify-between mb-2">
+                        <h3 class="text-lg font-semibold text-research-navy dark:text-white">A Medical Cyber-Physical System for Predicting Maternal Health in Developing Countries Using Machine Learning</h3>
+                        <span class="text-sm text-green-600 bg-green-100 px-2 py-1 rounded">Published</span>
+                    </div>
+                    <p class="text-research-gray dark:text-gray-300 mb-2">Healthcare Analytics 2024, 100285</p>
+                    <div class="flex items-center space-x-4 text-sm text-research-gray dark:text-gray-400">
+                        <span>📊 38 citations</span>
+                        <span>🏥 Medical AI</span>
+                        <span>📅 2024</span>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg border-l-4 border-research-navy">
+                    <div class="flex items-start justify-between mb-2">
+                        <h3 class="text-lg font-semibold text-research-navy dark:text-white">SMOTE Oversampling and Near Miss Undersampling Based Diabetes Diagnosis from Imbalanced Dataset with XAI Visualization</h3>
+                        <span class="text-sm text-green-600 bg-green-100 px-2 py-1 rounded">Published</span>
+                    </div>
+                    <p class="text-research-gray dark:text-gray-300 mb-2">IEEE ISCC 2023, pp. 1–6</p>
+                    <div class="flex items-center space-x-4 text-sm text-research-gray dark:text-gray-400">
+                        <span>📊 13 citations</span>
+                        <span>🤖 ML Methods</span>
+                        <span>📅 2023</span>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg border-l-4 border-yellow-500">
+                    <div class="flex items-start justify-between mb-2">
+                        <h3 class="text-lg font-semibold text-research-navy dark:text-white">A Multi-Disease Prediction Framework: Leveraging Machine Learning and Real-Time Applications for Improved Health Outcomes</h3>
+                        <span class="text-sm text-yellow-600 bg-yellow-100 px-2 py-1 rounded">Under Review</span>
+                    </div>
+                    <p class="text-research-gray dark:text-gray-300 mb-2">PLOS ONE (Scopus-indexed)</p>
+                    <div class="flex items-center space-x-4 text-sm text-research-gray dark:text-gray-400">
+                        <span>🔄 Under Review</span>
+                        <span>🏥 Healthcare AI</span>
+                        <span>📅 2024</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-8">
+                <a href="Research.html" class="bg-research-navy text-white px-6 py-3 rounded-md hover:bg-blue-800 transition-colors">
+                    View All Publications
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Research Projects -->
+    <section class="py-16 bg-gray-50 dark:bg-gray-800">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 text-research-navy dark:text-white">Featured Research Projects</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md text-center">
-                    <img src="fonts/web3.png" alt="ML Projects" class="w-16 mx-auto mb-4">
-                    <h3 class="text-xl font-semibold mb-2">ML Projects</h3>
-                    <p>Building real-time machine learning solutions for complex problems.</p>
+                <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-sm border border-gray-200 dark:border-gray-600">
+                    <div class="h-2 bg-research-navy rounded-t-lg mb-4"></div>
+                    <h3 class="text-xl font-semibold mb-3 text-research-navy dark:text-white">M-TRUST Framework</h3>
+                    <p class="text-research-gray dark:text-gray-300 mb-4">Open-source bias mitigation toolkit for medical AI with 4 fairness metrics, achieving 30.8% bias reduction.</p>
+                    <div class="flex items-center space-x-2 text-sm text-research-gray dark:text-gray-400 mb-4">
+                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded">PyPI Package</span>
+                        <span class="bg-green-100 text-green-800 px-2 py-1 rounded">Open Source</span>
+                    </div>
+                    <a href="project.html" class="text-research-navy hover:underline">Learn More →</a>
                 </div>
-                <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md text-center">
-                    <img src="fonts/web4.png" alt="AI Tools" class="w-16 mx-auto mb-4">
-                    <h3 class="text-xl font-semibold mb-2">AI Tools</h3>
-                    <p>Developing custom AI tools tailored to your needs.</p>
+                
+                <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-sm border border-gray-200 dark:border-gray-600">
+                    <div class="h-2 bg-research-navy rounded-t-lg mb-4"></div>
+                    <h3 class="text-xl font-semibold mb-3 text-research-navy dark:text-white">Maternal Health AI</h3>
+                    <p class="text-research-gray dark:text-gray-300 mb-4">ML-based risk stratification system achieving 99% accuracy with homomorphic encryption for privacy.</p>
+                    <div class="flex items-center space-x-2 text-sm text-research-gray dark:text-gray-400 mb-4">
+                        <span class="bg-red-100 text-red-800 px-2 py-1 rounded">Healthcare</span>
+                        <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded">Privacy</span>
+                    </div>
+                    <a href="project.html" class="text-research-navy hover:underline">Learn More →</a>
                 </div>
-                <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md text-center">
-                    <img src="fonts/icon.png" alt="Research Writing" class="w-16 mx-auto mb-4">
-                    <h3 class="text-xl font-semibold mb-2">Research Writing</h3>
-                    <p>Authoring high-quality research papers for journals and conferences.</p>
+                
+                <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-sm border border-gray-200 dark:border-gray-600">
+                    <div class="h-2 bg-research-navy rounded-t-lg mb-4"></div>
+                    <h3 class="text-xl font-semibold mb-3 text-research-navy dark:text-white">Multimodal Diagnosis</h3>
+                    <p class="text-research-gray dark:text-gray-300 mb-4">CheXNet-based system for 14 thoracic diseases with bias analysis and fairness constraints.</p>
+                    <div class="flex items-center space-x-2 text-sm text-research-gray dark:text-gray-400 mb-4">
+                        <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded">Computer Vision</span>
+                        <span class="bg-gray-100 text-gray-800 px-2 py-1 rounded">Multimodal</span>
+                    </div>
+                    <a href="project.html" class="text-research-navy hover:underline">Learn More →</a>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Newsletter Signup -->
-    <section class="py-16">
-        <div class="container mx-auto px-6 text-center">
-            <h2 class="text-3xl font-bold mb-4">Stay Updated</h2>
-            <p class="mb-6">Subscribe to my newsletter for the latest research insights and AI/ML updates.</p>
-            <form class="max-w-md mx-auto">
-                <input type="email" placeholder="Enter your email" class="w-full p-3 rounded-md mb-4">
-                <button type="submit" class="bg-indigo-600 text-white px-6 py-3 rounded-md">Subscribe</button>
-            </form>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-10">
+    <footer class="bg-research-navy text-white py-12">
         <div class="container mx-auto px-6">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                 <div>
-                    <h3 class="text-xl font-bold mb-4">Navigation</h3>
-                    <ul class="space-y-2">
-                        <li><a href="index.html" class="hover:text-indigo-400">Home</a></li>
-                        <li><a href="Research.html" class="hover:text-indigo-400">Research</a></li>
-                        <li><a href="project.html" class="hover:text-indigo-400">Projects</a></li>
-                        <li><a href="workexperince.html" class="hover:text-indigo-400">Experience</a></li>
-                        <li><a href="contact.html" class="hover:text-indigo-400">Contact</a></li>
-                        <li><a href="skills.html" class="hover:text-indigo-400">Skills</a></li>
-                        <li><a href="photo.html" class="hover:text-indigo-400">Photo</a></li>
+                    <h3 class="text-xl font-bold mb-4">Nasim Mahmud Nayan</h3>
+                    <p class="text-gray-300 mb-4">AI/ML Researcher specializing in trustworthy AI for healthcare and bias mitigation frameworks.</p>
+                    <div class="text-sm text-gray-400">
+                        <p>📊 9 Publications</p>
+                        <p>🎯 80+ Citations</p>
+                        <p>📈 h-index: 4</p>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
+                        <li><a href="Research.html" class="hover:text-white transition-colors">Publications</a></li>
+                        <li><a href="project.html" class="hover:text-white transition-colors">Research Projects</a></li>
+                        <li><a href="workexperince.html" class="hover:text-white transition-colors">Experience</a></li>
+                        <li><a href="CV_Nayan.pdf" class="hover:text-white transition-colors" download>Download CV</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h3 class="text-xl font-bold mb-4">Follow Me</h3>
-                    <ul class="flex space-x-4">
-                        <li><a href="https://www.facebook.com/profile.php?id=100015827795246"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="https://github.com/NMNayan57"><i class="fa fa-github"></i></a></li>
-                        <li><a href="https://www.instagram.com/nm__nayan/"><i class="fa fa-instagram"></i></a></li>
-                        <li><a href="https://www.linkedin.com/in/nm-nayan-8475211b9/"><i class="fa fa-linkedin"></i></a></li>
+                    <h3 class="text-lg font-semibold mb-4">Research Profiles</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="https://scholar.google.com/citations?user=kfLMmJMAAAAJ&hl=en&oi=ao" class="hover:text-white transition-colors">Google Scholar</a></li>
+                        <li><a href="https://www.researchgate.net/profile/Nasim-Nayan" class="hover:text-white transition-colors">ResearchGate</a></li>
+                        <li><a href="https://orcid.org/0009-0003-4157-3518" class="hover:text-white transition-colors">ORCID</a></li>
+                        <li><a href="https://github.com/NMNayan57" class="hover:text-white transition-colors">GitHub</a></li>
+                        <li><a href="https://www.linkedin.com/in/nm-nayan-8475211b9/" class="hover:text-white transition-colors">LinkedIn</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h3 class="text-xl font-bold mb-4">Contact</h3>
-                    <p>j-block Baridhara, Dhaka, Bangladesh</p>
-                    <p>Email: <a href="mailto:nm.nayan670@gmail.com">nm.nayan670@gmail.com</a></p>
-                    <p>Phone: 01742957256</p>
+                    <h3 class="text-lg font-semibold mb-4">Contact</h3>
+                    <div class="text-gray-300 space-y-2">
+                        <p>📍 J-Block Baridhara, Dhaka, Bangladesh</p>
+                        <p>📧 <a href="mailto:nm.nayan670@gmail.com" class="hover:text-white transition-colors">nm.nayan670@gmail.com</a></p>
+                        <p>📞 +8801742957256</p>
+                    </div>
                 </div>
+            </div>
+            <div class="border-t border-blue-800 pt-6 mt-8 text-center text-gray-400">
+                <p>&copy; 2024 Nasim Mahmud Nayan. All rights reserved. | AI/ML Researcher</p>
             </div>
         </div>
     </footer>

@@ -3,181 +3,372 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Technical and interpersonal skills of Nasim Mahmud Nayan, AI/ML Engineer and Researcher.">
-    <meta name="keywords" content="AI, Machine Learning, Skills, Programming, Research, Nasim Mahmud Nayan">
+    <meta name="description" content="About Nasim Mahmud Nayan - AI/ML Researcher specializing in trustworthy AI, bias mitigation, and medical cyber-physical systems.">
+    <meta name="keywords" content="About, AI Researcher, Machine Learning, Research Background, Academic Profile, Nasim Mahmud Nayan">
     <link rel="icon" href="img/favicon.png" type="image/png">
-    <title>Skills - Nasim Mahmud Nayan</title>
+    <title>About - Nasim Mahmud Nayan</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'research-navy': '#1e3a8a',
+                        'research-gray': '#64748b',
+                        'research-light': '#f8fafc'
+                    }
+                }
+            }
+        }
+    </script>
 </head>
-<body class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+<body class="bg-research-light dark:bg-gray-900 text-gray-900 dark:text-gray-100 font-sans">
     <!-- Header -->
-    <header class="sticky top-0 z-50 bg-white dark:bg-gray-800 shadow-md">
+    <header class="sticky top-0 z-50 bg-white dark:bg-gray-800 shadow-sm border-b border-gray-200 dark:border-gray-700">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="index.html" class="text-2xl font-bold text-indigo-600 dark:text-indigo-400">NM NAYAN</a>
-            <ul class="flex space-x-6">
-                <li><a href="index.html" class="hover:text-indigo-600 dark:hover:text-indigo-400">Home</a></li>
-                <li><a href="Research.html" class="hover:text-indigo-600 dark:hover:text-indigo-400">Research</a></li>
-                <li><a href="workexperince.html" class="hover:text-indigo-600 dark:hover:text-indigo-400">Experience</a></li>
-                <li><a href="project.html" class="hover:text-indigo-600 dark:hover:text-indigo-400">Projects</a></li>
-                <li>
-                    <div class="relative group">
-                        <button class="hover:text-indigo-600 dark:hover:text-indigo-400">More</button>
-                        <ul class="absolute hidden group-hover:block bg-white dark:bg-gray-800 shadow-lg rounded-md mt-2 w-32">
-                            <li><a href="skills.html" class="block px-4 py-2 hover:bg-indigo-100 dark:hover:bg-indigo-700">Skills</a></li>
-                            <li><a href="photo.html" class="block px-4 py-2 hover:bg-indigo-100 dark:hover:bg-indigo-700">Gallery</a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li><a href="contact.html" class="hover:text-indigo-600 dark:hover:text-indigo-400">Contact</a></li>
+            <div class="flex items-center space-x-3">
+                <a href="index.html" class="text-2xl font-bold text-research-navy dark:text-white">Nasim Mahmud Nayan</a>
+                <span class="text-sm text-research-gray dark:text-gray-400 hidden md:block">AI/ML Researcher</span>
+            </div>
+            <ul class="flex space-x-8">
+                <li><a href="index.html" class="text-research-gray hover:text-research-navy dark:hover:text-white transition-colors">Home</a></li>
+                <li><a href="Research.html" class="text-research-gray hover:text-research-navy dark:hover:text-white transition-colors">Publications</a></li>
+                <li><a href="project.html" class="text-research-gray hover:text-research-navy dark:hover:text-white transition-colors">Research</a></li>
+                <li><a href="workexperince.html" class="text-research-gray hover:text-research-navy dark:hover:text-white transition-colors">Experience</a></li>
+                <li><a href="skills.html" class="text-research-navy dark:text-white font-semibold transition-colors">About</a></li>
+                <li><a href="contact.html" class="text-research-gray hover:text-research-navy dark:hover:text-white transition-colors">Contact</a></li>
+                <li><a href="CV_Nayan.pdf" class="bg-research-navy text-white px-4 py-2 rounded-md hover:bg-blue-800 transition-colors" download>CV</a></li>
             </ul>
-            <button id="theme-toggle" class="text-gray-500 dark:text-gray-400">Toggle Theme</button>
+            <button id="theme-toggle" class="text-research-gray dark:text-gray-400 hover:text-research-navy dark:hover:text-white">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M17.293 13.293A8 8 0 716.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                </svg>
+            </button>
         </nav>
     </header>
 
-    <!-- Skills Section -->
-    <section class="py-16">
+    <!-- Hero Section -->
+    <section class="bg-white dark:bg-gray-800 py-16 border-b border-gray-200 dark:border-gray-700">
         <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center mb-8">Skills & Achievements</h2>
-            <p class="text-center mb-8">My technical expertise and academic achievements.</p>
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+                <div class="lg:w-1/3">
+                    <img src="photos/profile.png" alt="Nasim Mahmud Nayan" class="rounded-full w-64 h-64 mx-auto shadow-lg">
+                </div>
+                <div class="lg:w-2/3 text-center lg:text-left">
+                    <h1 class="text-4xl font-bold text-research-navy dark:text-white mb-4">About Me</h1>
+                    <h2 class="text-xl text-research-gray dark:text-gray-300 mb-6">AI/ML Researcher & Engineer</h2>
+                    <p class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-8">
+                        I am a researcher working on developing trustworthy AI methods for healthcare in resource-limited settings. 
+                        My research spans multimodal medical AI systems processing diverse data types, including tabular clinical records, 
+                        medical imaging (chest X-rays, ECG), and IoT sensor streams. Notably, I have developed open-source bias 
+                        mitigation frameworks for medical AI, maternal health prediction systems, multimodal diagnostic platforms, 
+                        and demonstrated cross-modal bias amplification in clinical AI systems.
+                    </p>
+                    
+                    <!-- Quick Stats -->
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-research-navy dark:text-white">9</div>
+                            <div class="text-sm text-research-gray dark:text-gray-400">Publications</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-research-navy dark:text-white">80+</div>
+                            <div class="text-sm text-research-gray dark:text-gray-400">Citations</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-research-navy dark:text-white">4</div>
+                            <div class="text-sm text-research-gray dark:text-gray-400">h-index</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-research-navy dark:text-white">3</div>
+                            <div class="text-sm text-research-gray dark:text-gray-400">Research Labs</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-            <!-- Technical Skills -->
-            <h3 class="text-2xl font-semibold mb-4">Technical Skills</h3>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-                <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md">
-                    <h4 class="text-xl font-semibold mb-4">Programming Languages</h4>
-                    <div class="mb-4">
-                        <label class="block text-sm font-medium">Python</label>
-                        <div class="w-full bg-gray-200 rounded-full h-2.5">
-                            <div class="bg-indigo-600 h-2.5 rounded-full" style="width: 90%"></div>
-                        </div>
+    <!-- Education Section -->
+    <section class="py-16 bg-gray-50 dark:bg-gray-800">
+        <div class="container mx-auto px-6 max-w-6xl">
+            <h2 class="text-3xl font-bold text-research-navy dark:text-white mb-12 text-center">Education</h2>
+            
+            <div class="bg-white dark:bg-gray-700 p-8 rounded-lg shadow-sm border border-gray-200 dark:border-gray-600">
+                <div class="flex justify-between items-start mb-4">
+                    <div>
+                        <h3 class="text-2xl font-semibold text-research-navy dark:text-white">B.Sc. in Computer Science Engineering</h3>
+                        <p class="text-research-gray dark:text-gray-300 text-lg">University of Information Technology and Sciences</p>
+                        <p class="text-research-gray dark:text-gray-400">Dhaka, Bangladesh</p>
                     </div>
-                    <div class="mb-4">
-                        <label class="block text-sm font-medium">C/C++</label>
-                        <div class="w-full bg-gray-200 rounded-full h-2.5">
-                            <div class="bg-indigo-600 h-2.5 rounded-full" style="width: 80%"></div>
-                        </div>
-                    </div>
-                    <div class="mb-4">
-                        <label class="block text-sm font-medium">HTML/CSS</label>
-                        <div class="w-full bg-gray-200 rounded-full h-2.5">
-                            <div class="bg-indigo-600 h-2.5 rounded-full" style="width: 70%"></div>
-                        </div>
+                    <div class="text-right">
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">Feb 2023</span>
+                        <p class="text-research-navy dark:text-white font-semibold mt-2">GPA: 3.62/4.0</p>
                     </div>
                 </div>
-                <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md">
-                    <h4 class="text-xl font-semibold mb-4">Machine Learning Frameworks</h4>
-                    <div class="mb-4">
-                        <label class="block text-sm font-medium">Scikit-learn</label>
-                        <div class="w-full bg-gray-200 rounded-full h-2.5">
-                            <div class="bg-indigo-600 h-2.5 rounded-full" style="width: 85%"></div>
-                        </div>
-                    </div>
-                    <div class="mb-4">
-                        <label class="block text-sm font-medium">TensorFlow</label>
-                        <div class="w-full bg-gray-200 rounded-full h-2.5">
-                            <div class="bg-indigo-600 h-2.5 rounded-full" style="width: 80%"></div>
-                        </div>
-                    </div>
-                    <div class="mb-4">
-                        <label class="block text-sm font-medium">PyTorch</label>
-                        <div class="w-full bg-gray-200 rounded-full h-2.5">
-                            <div class="bg-indigo-600 h-2.5 rounded-full" style="width: 75%"></div>
-                        </div>
+                
+                <div class="mb-6">
+                    <h4 class="font-semibold text-research-navy dark:text-white mb-2">Thesis:</h4>
+                    <p class="text-research-gray dark:text-gray-300">
+                        "A Multi-Disease Prediction Framework: Leveraging Machine Learning and Real-Time Applications for Improved Health Outcomes"
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold text-research-navy dark:text-white mb-3">Relevant Coursework:</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Machine Learning</span>
+                        <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Data Mining</span>
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Information Retrieval</span>
+                        <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">Image Processing</span>
+                        <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm">Data Structures & Algorithms</span>
+                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">Computer Networks</span>
+                        <span class="bg-pink-100 text-pink-800 px-3 py-1 rounded-full text-sm">Operating Systems</span>
                     </div>
                 </div>
-                <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md">
-                    <h4 class="text-xl font-semibold mb-4">Research Skills</h4>
-                    <ul class="list-disc pl-6">
-                        <li>Methodology Design</li>
-                        <li>Data Analysis</li>
-                        <li>Literature Review</li>
-                        <li>Experimental Design</li>
-                    </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Expertise Section -->
+    <section class="py-16">
+        <div class="container mx-auto px-6 max-w-6xl">
+            <h2 class="text-3xl font-bold text-research-navy dark:text-white mb-12 text-center">Technical Expertise</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Programming & Development -->
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700">
+                    <h3 class="text-xl font-semibold text-research-navy dark:text-white mb-4">Programming</h3>
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-center">
+                            <span class="text-research-gray dark:text-gray-300">Python</span>
+                            <span class="text-sm font-medium text-research-navy dark:text-white">Expert</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-research-gray dark:text-gray-300">C/C++</span>
+                            <span class="text-sm font-medium text-research-navy dark:text-white">Advanced</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-research-gray dark:text-gray-300">HTML/CSS/JS</span>
+                            <span class="text-sm font-medium text-research-navy dark:text-white">Intermediate</span>
+                        </div>
+                    </div>
+                    <p class="text-sm text-research-gray dark:text-gray-400 mt-4">300+ competitive problems solved</p>
                 </div>
-                <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md">
-                    <h4 class="text-xl font-semibold mb-4">Other Tools</h4>
-                    <ul class="list-disc pl-6">
-                        <li>Git/GitHub</li>
-                        <li>Docker</li>
-                        <li>Streamlit</li>
-                        <li>FastAPI</li>
+
+                <!-- ML/AI Frameworks -->
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700">
+                    <h3 class="text-xl font-semibold text-research-navy dark:text-white mb-4">ML/AI Frameworks</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm">PyTorch</span>
+                        <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-sm">Scikit-learn</span>
+                        <span class="bg-orange-100 text-orange-800 px-2 py-1 rounded text-sm">TensorFlow</span>
+                        <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded text-sm">OpenCV</span>
+                        <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded text-sm">MediaPipe</span>
+                        <span class="bg-red-100 text-red-800 px-2 py-1 rounded text-sm">LangChain</span>
+                    </div>
+                    <p class="text-sm text-research-gray dark:text-gray-400 mt-4">Specialized in medical AI and bias mitigation</p>
+                </div>
+
+                <!-- Research Methods -->
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700">
+                    <h3 class="text-xl font-semibold text-research-navy dark:text-white mb-4">Research Methods</h3>
+                    <ul class="space-y-2 text-research-gray dark:text-gray-300">
+                        <li>• Experimental Design</li>
+                        <li>• Statistical Analysis</li>
+                        <li>• Systematic Reviews</li>
+                        <li>• Meta-analysis</li>
+                        <li>• Bias Detection & Mitigation</li>
+                        <li>• Fairness Evaluation</li>
                     </ul>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <!-- Achievements -->
-            <h3 class="text-2xl font-semibold mb-4">Achievements</h3>
-            <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md">
-                <p class="mb-2"><strong>Competitive Programming</strong>: Solved 300+ problems.</p>
-                <ul class="list-disc pl-6">
-                    <li>Codeforces: <a href="https://codeforces.com/profile/NM_Nayan" class="text-indigo-600 hover:underline">NM Nayan</a></li>
-                    <li>Beecrowd: <a href="https://www.beecrowd.com.br/judge/en/profile/393027" class="text-indigo-600 hover:underline">NMNAYAN</a></li>
-                </ul>
-                <p class="mt-4"><strong>Standardized Tests</strong>:</p>
-                <ul class="list-disc pl-6">
-                    <li>GRE: 307/340 (Q: 153, V: 154, A&W: 3.0)</li>
-                    <li>TOEFL: 98/120 (R: 28, L: 28, W: 21, S: 21)</li>
-                    <li>IELTS: 6.5/9.0 (L: 7.0, S: 6.5, W: 5.5, R: 6.0)</li>
-                    <li>Duolingo: 135/160 (P: 115, L: 145, C: 140, C: 120)</li>
-                </ul>
-                <p class="mt-4"><strong>Honors & Awards</strong>:</p>
-                <ul class="list-disc pl-6">
-                    <li>Fastest Problem Solver, UITS Victory Day Programming Contest, 2021</li>
-                    <li>2nd/45, Inter-university Programming Contest, UITS, 2022</li>
-                    <li>1st/25, Inter-university PowerPoint Presentation Competition, UITS, 2020</li>
-                    <li>Employee of the Month (August 2023), Primacy Infotech Ltd</li>
-                </ul>
-                <p class="mt-4"><strong>Certificates</strong>:</p>
-                <ul class="list-disc pl-6">
-                    <li>Certificate of Presentation, IEEE ISCC 2023, for "SMOTE Oversampling and Near Miss Undersampling Based Diabetes Diagnosis" <a href="img/smote.jpg" data-lightbox="certificates" data-title="Certificate of Presentation, IEEE ISCC 2023" class="text-indigo-600 hover:underline">[View Certificate]</a></li>
-                    <li>Certificate of Presentation, Springer ICETIC 2023, for "Investigation of Air Effluence Using IoT and Machine Learning" <a href="certificates/springer_icetic_2023.jpg" data-lightbox="certificates" data-title="Certificate of Presentation, Springer ICETIC 2023" class="text-indigo-600 hover:underline">[View Certificate]</a></li>
-                    <li>Certificate of Presentation, AETIC 2024, for "Air Pollution Monitoring Using IoT and Machine Learning in the Perspective of Bangladesh" <a href="photos/seeda.png" data-lightbox="certificates" data-title="Certificate of Presentation, AETIC 2024" class="text-indigo-600 hover:underline">[View Certificate]</a></li>
-                    <li>Best Presentation Certificate, UCEC literature Meet, 2019, for outstanding presentation skills <a href="photos/presentation.pdf" data-lightbox="certificates" data-title="Best Presentation Certificate, UCEC literature Meet, 2019" class="text-indigo-600 hover:underline">[View Certificate]</a></li>
-                    <li>Course Certificate, Course Certificate, Agentic Ai, for completing <a href="certificates/course_certificate_202x.jpg" data-lightbox="certificates" data-title="Course Certificate, Agentic Ai, 2025" class="text-indigo-600 hover:underline">[View Certificate]</a></li>
-                </ul>
+    <!-- Achievements & Recognition -->
+    <section class="py-16 bg-gray-50 dark:bg-gray-800">
+        <div class="container mx-auto px-6 max-w-6xl">
+            <h2 class="text-3xl font-bold text-research-navy dark:text-white mb-12 text-center">Achievements & Recognition</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Academic Achievements -->
+                <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-sm border border-gray-200 dark:border-gray-600">
+                    <h3 class="text-xl font-semibold text-research-navy dark:text-white mb-4">Academic & Research Awards</h3>
+                    <ul class="space-y-3 text-research-gray dark:text-gray-300">
+                        <li class="flex items-start">
+                            <span class="w-2 h-2 bg-gold rounded-full mt-2 mr-3"></span>
+                            <div>
+                                <strong>1st Place</strong><br>
+                                Inter-university PowerPoint Presentation Competition, UITS 2020
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="w-2 h-2 bg-silver rounded-full mt-2 mr-3"></span>
+                            <div>
+                                <strong>2nd Place</strong><br>
+                                Inter-university Programming Contest (45 teams), UITS 2022
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="w-2 h-2 bg-bronze rounded-full mt-2 mr-3"></span>
+                            <div>
+                                <strong>Fastest Problem Solver</strong><br>
+                                UITS Victory Day Programming Contest 2021
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3"></span>
+                            <div>
+                                <strong>Employee of the Month</strong><br>
+                                Primacy Infotech LTD, August 2023
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Standardized Tests -->
+                <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-sm border border-gray-200 dark:border-gray-600">
+                    <h3 class="text-xl font-semibold text-research-navy dark:text-white mb-4">Standardized Test Scores</h3>
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center p-3 bg-gray-50 dark:bg-gray-600 rounded">
+                            <span class="font-medium">GRE</span>
+                            <span class="text-research-navy dark:text-white">307/340</span>
+                        </div>
+                        <div class="text-sm text-research-gray dark:text-gray-400 pl-3">
+                            Quantitative: 153, Verbal: 154, Analytical Writing: 3.0
+                        </div>
+                        
+                        <div class="flex justify-between items-center p-3 bg-gray-50 dark:bg-gray-600 rounded">
+                            <span class="font-medium">TOEFL</span>
+                            <span class="text-research-navy dark:text-white">98/120</span>
+                        </div>
+                        <div class="text-sm text-research-gray dark:text-gray-400 pl-3">
+                            Reading: 28, Listening: 28, Writing: 21, Speaking: 21
+                        </div>
+                        
+                        <div class="flex justify-between items-center p-3 bg-gray-50 dark:bg-gray-600 rounded">
+                            <span class="font-medium">IELTS</span>
+                            <span class="text-research-navy dark:text-white">6.5/9.0</span>
+                        </div>
+                        <div class="text-sm text-research-gray dark:text-gray-400 pl-3">
+                            Listening: 7.0, Speaking: 6.5, Writing: 5.5, Reading: 6.0
+                        </div>
+                        
+                        <div class="flex justify-between items-center p-3 bg-gray-50 dark:bg-gray-600 rounded">
+                            <span class="font-medium">Duolingo</span>
+                            <span class="text-research-navy dark:text-white">135/160</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Programming Achievements -->
+            <div class="mt-8 bg-white dark:bg-gray-700 p-6 rounded-lg shadow-sm border border-gray-200 dark:border-gray-600">
+                <h3 class="text-xl font-semibold text-research-navy dark:text-white mb-4">Competitive Programming</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-research-navy dark:text-white mb-2">300+</div>
+                        <div class="text-research-gray dark:text-gray-400">Problems Solved</div>
+                        <div class="mt-2">
+                            <a href="https://codeforces.com/profile/NM_Nayan" class="text-research-navy hover:underline">Codeforces: NM_Nayan</a>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-research-navy dark:text-white mb-2">2+</div>
+                        <div class="text-research-gray dark:text-gray-400">Years Active</div>
+                        <div class="mt-2">
+                            <a href="https://www.beecrowd.com.br/judge/en/profile/393027" class="text-research-navy hover:underline">Beecrowd: NMNAYAN</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Interests -->
+    <section class="py-16">
+        <div class="container mx-auto px-6 max-w-4xl text-center">
+            <h2 class="text-3xl font-bold text-research-navy dark:text-white mb-8">Research Interests</h2>
+            <p class="text-lg text-research-gray dark:text-gray-300 mb-8">
+                My research is driven by the goal of making AI systems more trustworthy, fair, and beneficial for healthcare applications, 
+                particularly in resource-limited settings.
+            </p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="p-6 bg-blue-50 dark:bg-gray-800 rounded-lg border border-blue-200 dark:border-gray-700">
+                    <h3 class="font-semibold text-research-navy dark:text-white mb-2">Current Focus</h3>
+                    <ul class="text-left text-research-gray dark:text-gray-300 space-y-1">
+                        <li>• Bias mitigation in medical AI</li>
+                        <li>• Multimodal healthcare systems</li>
+                        <li>• Privacy-preserving ML</li>
+                        <li>• Explainable AI for medicine</li>
+                    </ul>
+                </div>
+                <div class="p-6 bg-green-50 dark:bg-gray-800 rounded-lg border border-green-200 dark:border-gray-700">
+                    <h3 class="font-semibold text-research-navy dark:text-white mb-2">Future Directions</h3>
+                    <ul class="text-left text-research-gray dark:text-gray-300 space-y-1">
+                        <li>• PhD in Artificial Intelligence</li>
+                        <li>• Cross-modal bias analysis</li>
+                        <li>• Edge AI for healthcare</li>
+                        <li>• Trustworthy AI frameworks</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-10">
+    <footer class="bg-research-navy text-white py-12">
         <div class="container mx-auto px-6">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                 <div>
-                    <h3 class="text-xl font-bold mb-4">Navigation</h3>
-                    <ul class="space-y-2">
-                        <li><a href="index.html" class="hover:text-indigo-400">Home</a></li>
-                        <li><a href="Research.html" class="hover:text-indigo-400">Research</a></li>
-                        <li><a href="project.html" class="hover:text-indigo-400">Projects</a></li>
-                        <li><a href="workexperince.html" class="hover:text-indigo-400">Experience</a></li>
-                        <li><a href="contact.html" class="hover:text-indigo-400">Contact</a></li>
+                    <h3 class="text-xl font-bold mb-4">Nasim Mahmud Nayan</h3>
+                    <p class="text-gray-300 mb-4">AI/ML Researcher specializing in trustworthy AI for healthcare and bias mitigation frameworks.</p>
+                    <div class="text-sm text-gray-400">
+                        <p>📊 9 Publications</p>
+                        <p>🎯 80+ Citations</p>
+                        <p>📈 h-index: 4</p>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
+                        <li><a href="Research.html" class="hover:text-white transition-colors">Publications</a></li>
+                        <li><a href="project.html" class="hover:text-white transition-colors">Research Projects</a></li>
+                        <li><a href="workexperince.html" class="hover:text-white transition-colors">Experience</a></li>
+                        <li><a href="CV_Nayan.pdf" class="hover:text-white transition-colors" download>Download CV</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h3 class="text-xl font-bold mb-4">Connect</h3>
-                    <ul class="space-y-2">
-                        <li><a href="https://scholar.google.com/citations?user=zAuBXLUAAAAJ&hl=en" class="hover:text-indigo-400">Google Scholar</a></li>
-                        <li><a href="https://www.researchgate.net/profile/Nasim-Nayan" class="hover:text-indigo-400">ResearchGate</a></li>
-                        <li><a href="https://orcid.org/0009-0003-4157-3518" class="hover:text-indigo-400">ORCID</a></li>
-                        <li><a href="https://www.linkedin.com/in/nm-nayan-8475211b9/" class="hover:text-indigo-400">LinkedIn</a></li>
-                        <li><a href="https://github.com/NMNayan57" class="hover:text-indigo-400">GitHub</a></li>
+                    <h3 class="text-lg font-semibold mb-4">Research Profiles</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="https://scholar.google.com/citations?user=kfLMmJMAAAAJ&hl=en&oi=ao" class="hover:text-white transition-colors">Google Scholar</a></li>
+                        <li><a href="https://www.researchgate.net/profile/Nasim-Nayan" class="hover:text-white transition-colors">ResearchGate</a></li>
+                        <li><a href="https://orcid.org/0009-0003-4157-3518" class="hover:text-white transition-colors">ORCID</a></li>
+                        <li><a href="https://github.com/NMNayan57" class="hover:text-white transition-colors">GitHub</a></li>
+                        <li><a href="https://www.linkedin.com/in/nm-nayan-8475211b9/" class="hover:text-white transition-colors">LinkedIn</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h3 class="text-xl font-bold mb-4">Contact</h3>
-                    <p>j-block Baridhara, Dhaka, Bangladesh</p>
-                    <p>Email: <a href="mailto:nm.nayan670@gmail.com" class="hover:text-indigo-400">nm.nayan670@gmail.com</a></p>
-                    <p>Phone: +8801742957256</p>
+                    <h3 class="text-lg font-semibold mb-4">Contact</h3>
+                    <div class="text-gray-300 space-y-2">
+                        <p>📍 J-Block Baridhara, Dhaka, Bangladesh</p>
+                        <p>📧 <a href="mailto:nm.nayan670@gmail.com" class="hover:text-white transition-colors">nm.nayan670@gmail.com</a></p>
+                        <p>📞 +8801742957256</p>
+                    </div>
                 </div>
+            </div>
+            <div class="border-t border-blue-800 pt-6 mt-8 text-center text-gray-400">
+                <p>&copy; 2024 Nasim Mahmud Nayan. All rights reserved. | AI/ML Researcher</p>
             </div>
         </div>
     </footer>
 
     <!-- Scripts -->
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
     <script>
         // Theme Toggle
         const toggle = document.getElementById('theme-toggle');

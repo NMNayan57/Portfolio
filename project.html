@@ -3,131 +3,347 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Projects by Nasim Mahmud Nayan, showcasing AI/ML, Computer Vision, and Generative AI expertise.">
+    <meta name="description" content="Research Projects by Nasim Mahmud Nayan - M-TRUST bias mitigation framework, maternal health AI, multimodal diagnosis systems.">
     <link rel="icon" href="img/favicon.png" type="image/png">
-    <title>Projects - Nasim Mahmud Nayan</title>
+    <title>Research Projects - Nasim Mahmud Nayan</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="css/style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'research-navy': '#1e3a8a',
+                        'research-gray': '#64748b',
+                        'research-light': '#f8fafc'
+                    }
+                }
+            }
+        }
+    </script>
 </head>
-<body class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+<body class="bg-research-light dark:bg-gray-900 text-gray-900 dark:text-gray-100 font-sans">
     <!-- Header -->
-    <header class="sticky top-0 z-50 bg-white dark:bg-gray-800 shadow-md">
+    <header class="sticky top-0 z-50 bg-white dark:bg-gray-800 shadow-sm border-b border-gray-200 dark:border-gray-700">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="index.html" class="text-2xl font-bold text-indigo-600 dark:text-indigo-400">NM NAYAN</a>
-            <ul class="flex space-x-6">
-                <li><a href="index.html" class="hover:text-indigo-600 dark:hover:text-indigo-400">Home</a></li>
-                <li><a href="Research.html" class="hover:text-indigo-600 dark:hover:text-indigo-400">Research</a></li>
-                <li><a href="workexperince.html" class="hover:text-indigo-600 dark:hover:text-indigo-400">Experience</a></li>
-                <li><a href="project.html" class="hover:text-indigo-600 dark:hover:text-indigo-400">Projects</a></li>
-                <li>
-                    <div class="relative group">
-                        <button class="hover:text-indigo-600 dark:hover:text-indigo-400">More</button>
-                        <ul class="absolute hidden group-hover:block bg-white dark:bg-gray-800 shadow-lg rounded-md mt-2 w-32">
-                            <li><a href="skills.html" class="block px-4 py-2 hover:bg-indigo-100 dark:hover:bg-indigo-700">Skills</a></li>
-                            <li><a href="photo.html" class="block px-4 py-2 hover:bg-indigo-100 dark:hover:bg-indigo-700">Gallery</a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li><a href="contact.html" class="hover:text-indigo-600 dark:hover:text-indigo-400">Contact</a></li>
+            <div class="flex items-center space-x-3">
+                <a href="index.html" class="text-2xl font-bold text-research-navy dark:text-white">Nasim Mahmud Nayan</a>
+                <span class="text-sm text-research-gray dark:text-gray-400 hidden md:block">AI/ML Researcher</span>
+            </div>
+            <ul class="flex space-x-8">
+                <li><a href="index.html" class="text-research-gray hover:text-research-navy dark:hover:text-white transition-colors">Home</a></li>
+                <li><a href="Research.html" class="text-research-gray hover:text-research-navy dark:hover:text-white transition-colors">Publications</a></li>
+                <li><a href="project.html" class="text-research-navy dark:text-white font-semibold transition-colors">Research</a></li>
+                <li><a href="workexperince.html" class="text-research-gray hover:text-research-navy dark:hover:text-white transition-colors">Experience</a></li>
+                <li><a href="skills.html" class="text-research-gray hover:text-research-navy dark:hover:text-white transition-colors">About</a></li>
+                <li><a href="contact.html" class="text-research-gray hover:text-research-navy dark:hover:text-white transition-colors">Contact</a></li>
+                <li><a href="CV_Nayan.pdf" class="bg-research-navy text-white px-4 py-2 rounded-md hover:bg-blue-800 transition-colors" download>CV</a></li>
             </ul>
-            <button id="theme-toggle" class="text-gray-500 dark:text-gray-400">Toggle Theme</button>
+            <button id="theme-toggle" class="text-research-gray dark:text-gray-400 hover:text-research-navy dark:hover:text-white">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                </svg>
+            </button>
         </nav>
     </header>
 
-    <!-- Projects Section -->
-    <section class="py-16">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center mb-8">My Projects</h2>
-            <p class="text-center mb-8">Explore my work in Machine Learning, Computer Vision, and Generative AI.</p>
-            <!-- Filter Buttons -->
-            <div class="flex justify-center space-x-4 mb-8">
-                <button class="filter-btn px-4 py-2 bg-indigo-600 text-white rounded-md" data-filter="all">All</button>
-                <button class="filter-btn px-4 py-2 bg-gray-200 text-gray-900 rounded-md" data-filter="ml">Machine Learning</button>
-                <button class="filter-btn px-4 py-2 bg-gray-200 text-gray-900 rounded-md" data-filter="cv">Computer Vision</button>
-                <button class="filter-btn px-4 py-2 bg-gray-200 text-gray-900 rounded-md" data-filter="genai">Generative AI</button>
+    <!-- Hero Section -->
+    <section class="bg-white dark:bg-gray-800 py-16 border-b border-gray-200 dark:border-gray-700">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl font-bold text-research-navy dark:text-white mb-4">Research Projects</h1>
+            <p class="text-xl text-research-gray dark:text-gray-300 mb-8 max-w-3xl mx-auto">
+                Key research projects advancing trustworthy AI, bias mitigation, and medical AI systems for real-world impact.
+            </p>
+            
+            <!-- Project Categories -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-2xl mx-auto">
+                <div class="text-center">
+                    <div class="text-3xl font-bold text-research-navy dark:text-white">4</div>
+                    <div class="text-sm text-research-gray dark:text-gray-400">Key Projects</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl font-bold text-research-navy dark:text-white">2</div>
+                    <div class="text-sm text-research-gray dark:text-gray-400">Open Source</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl font-bold text-research-navy dark:text-white">99%</div>
+                    <div class="text-sm text-research-gray dark:text-gray-400">Best Accuracy</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl font-bold text-research-navy dark:text-white">30%</div>
+                    <div class="text-sm text-research-gray dark:text-gray-400">Bias Reduction</div>
+                </div>
             </div>
-            <!-- Project Gallery -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 project-gallery">
-                <div class="project-item ml bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md">
-                    <img src="img/maternal_app.png" alt="Maternal App" class="w-full h-48 object-cover rounded-md mb-4" loading="lazy">
-                    <h3 class="text-xl font-semibold mb-2">Maternal App for Health Risk Prediction</h3>
-                    <p class="mb-4">Mobile app using IoT and XGBoost (99% accuracy) for real-time maternal health risk prediction.</p>
-                    <a href="#" class="text-indigo-600 hover:underline">Live Demo</a> |
-                    <a href="https://github.com/NMNayan57/Maternal-App" class="text-indigo-600 hover:underline">GitHub</a>
+        </div>
+    </section>
+
+    <!-- Featured Research Projects -->
+    <section class="py-16">
+        <div class="container mx-auto px-6 max-w-6xl">
+            <!-- M-TRUST Framework - Featured Project -->
+            <div class="bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-gray-800 dark:to-gray-700 p-8 rounded-xl mb-12 border border-blue-200 dark:border-gray-600">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <div class="flex items-center mb-4">
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium mr-3">Featured</span>
+                            <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">Open Source</span>
+                        </div>
+                        <h2 class="text-3xl font-bold text-research-navy dark:text-white mb-4">M-TRUST: Medical AI Bias Mitigation Framework</h2>
+                        <p class="text-research-gray dark:text-gray-300 mb-6 text-lg leading-relaxed">
+                            Comprehensive open-source bias detection toolkit for medical AI with 4 fairness metrics: demographic parity, 
+                            equalized odds, calibration, and disparate impact. Achieved 30.8% reduction in demographic bias while maintaining 98% model accuracy.
+                        </p>
+                        
+                        <div class="grid grid-cols-2 gap-4 mb-6">
+                            <div class="bg-white dark:bg-gray-600 p-4 rounded-lg">
+                                <div class="text-2xl font-bold text-research-navy dark:text-white">30.8%</div>
+                                <div class="text-sm text-research-gray dark:text-gray-300">Bias Reduction</div>
+                            </div>
+                            <div class="bg-white dark:bg-gray-600 p-4 rounded-lg">
+                                <div class="text-2xl font-bold text-research-navy dark:text-white">98%</div>
+                                <div class="text-sm text-research-gray dark:text-gray-300">Accuracy Maintained</div>
+                            </div>
+                        </div>
+                        
+                        <div class="flex flex-wrap gap-3 mb-6">
+                            <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">Python</span>
+                            <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">PyTorch</span>
+                            <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">Scikit-learn</span>
+                            <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">PyPI Package</span>
+                        </div>
+                        
+                        <div class="flex space-x-4">
+                            <a href="#" class="bg-research-navy text-white px-6 py-3 rounded-md hover:bg-blue-800 transition-colors">📦 PyPI Package</a>
+                            <a href="#" class="border border-research-navy text-research-navy px-6 py-3 rounded-md hover:bg-research-navy hover:text-white transition-colors">💻 GitHub</a>
+                            <a href="#" class="border border-research-navy text-research-navy px-6 py-3 rounded-md hover:bg-research-navy hover:text-white transition-colors">📖 Documentation</a>
+                        </div>
+                    </div>
+                    <div class="bg-white dark:bg-gray-600 p-6 rounded-lg shadow-lg">
+                        <h3 class="text-lg font-semibold text-research-navy dark:text-white mb-4">Key Features</h3>
+                        <ul class="space-y-3 text-research-gray dark:text-gray-300">
+                            <li class="flex items-start">
+                                <span class="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3"></span>
+                                4 comprehensive fairness metrics
+                            </li>
+                            <li class="flex items-start">
+                                <span class="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3"></span>
+                                Easy-to-use Python API
+                            </li>
+                            <li class="flex items-start">
+                                <span class="w-2 h-2 bg-purple-500 rounded-full mt-2 mr-3"></span>
+                                Tutorial notebooks included
+                            </li>
+                            <li class="flex items-start">
+                                <span class="w-2 h-2 bg-yellow-500 rounded-full mt-2 mr-3"></span>
+                                Medical AI specialized
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="project-item ml bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md">
-                    <img src="img/multiple_disease.png" alt="Multiple Disease Prediction" class="w-full h-48 object-cover rounded-md mb-4" loading="lazy">
-                    <h3 class="text-xl font-semibold mb-2">Multiple Disease Prediction System</h3>
-                    <p class="mb-4">Streamlit-based web app for real-time health monitoring using ML.</p>
-                    <a href="https://trq11137-predictiondiseases-main-1741qs.streamlit.app/" class="text-indigo-600 hover:underline">Live Demo</a> |
-                    <a href="https://github.com/NMNayan57/Multiple-Diseases-Prediction" class="text-indigo-600 hover:underline">GitHub</a>
-                </div>
-                <div class="project-item cv bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md">
-                    <img src="img/fish_disease.png" alt="Fish Disease Detection" class="w-full h-48 object-cover rounded-md mb-4" loading="lazy">
-                    <h3 class="text-xl font-semibold mb-2">Dual-Mode Fish Disease Detection</h3>
-                    <p class="mb-4">CNN-based system with 98.99% accuracy using Edge-Guided Analysis.</p>
-                    <a href="#" class="text-indigo-600 hover:underline">Details</a> |
-                    <a href="https://github.com/NMNayan57/Fish-Disease-Detection" class="text-indigo-600 hover:underline">GitHub</a>
-                </div>
-                <div class="project-item cv bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md">
-                    <img src="img/posture_detection.png" alt="Posture Detection System" class="w-full h-48 object-cover rounded-md mb-4" loading="lazy">
-                    <h3 class="text-xl font-semibold mb-2">Posture Detection System</h3>
-                    <p class="mb-4">Real-time posture correction system using MediaPipe and OpenCV for AI fitness guidance.</p>
-                    <a href="#" class="text-indigo-600 hover:underline">Live Demo</a> |
-                    <a href="https://github.com/NMNayan57/Posture-Detection" class="text-indigo-600 hover:underline">GitHub</a>
-                </div>
-                <div class="project-item genai bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md">
-                    <img src="img/voice_sales_agent.png" alt="Voice-Based AI Sales Agent" class="w-full h-48 object-cover rounded-md mb-4" loading="lazy">
-                    <h3 class="text-xl font-semibold mb-2">Voice-Based AI Sales Agent</h3>
-                    <p class="mb-4">Virtual sales agent for real estate using RAG, LangChain, DSPy, and FastAPI.</p>
-                    <a href="#" class="text-indigo-600 hover:underline">Live Demo</a> |
-                    <a href="https://github.com/NMNayan57/Voice-Sales-Agent" class="text-indigo-600 hover:underline">GitHub</a>
+            </div>
+
+            <!-- Other Key Projects -->
+            <h2 class="text-2xl font-bold text-research-navy dark:text-white mb-8">Other Key Research Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                <!-- Maternal Health AI -->
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-xl font-semibold text-research-navy dark:text-white">Maternal Health Risk Prediction System</h3>
+                        <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm font-medium">Healthcare AI</span>
+                    </div>
+                    <p class="text-research-gray dark:text-gray-300 mb-4">
+                        ML-based risk stratification system achieving 99% accuracy using XGBoost ensemble methods. 
+                        Integrated homomorphic encryption for privacy-preserving computation on sensitive health data.
+                    </p>
+                    
+                    <div class="grid grid-cols-2 gap-4 mb-4">
+                        <div class="text-center">
+                            <div class="text-xl font-bold text-research-navy dark:text-white">99%</div>
+                            <div class="text-xs text-research-gray dark:text-gray-400">Accuracy</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-xl font-bold text-research-navy dark:text-white">38</div>
+                            <div class="text-xs text-research-gray dark:text-gray-400">Citations</div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs">XGBoost</span>
+                        <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs">Homomorphic Encryption</span>
+                        <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs">Streamlit</span>
+                    </div>
+                    
+                    <div class="flex space-x-3">
+                        <a href="#" class="text-research-navy hover:underline text-sm">📄 Paper</a>
+                        <a href="#" class="text-research-navy hover:underline text-sm">💻 Code</a>
+                        <a href="#" class="text-research-navy hover:underline text-sm">🚀 Demo</a>
+                    </div>
                 </div>
 
-                     <div class="project-item genai bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md">
-                    <img src="img/Voice based fitness guide.png" alt="Voice based fitness guide" class="w-full h-48 object-cover rounded-md mb-4" loading="lazy">
-                    <h3 class="text-xl font-semibold mb-2">Voice based fitness guide</h3>
-                    <p class="mb-4">Voice based fitness guide using RAG, LangChain, DSPy, and FastAPI.</p>
-                    <a href="#" class="text-indigo-600 hover:underline">Live Demo</a> |
-                    <a href="https://github.com/NMNayan57/Voice-Sales-Agent" class="text-indigo-600 hover:underline">GitHub</a>
+                <!-- Multimodal Chest X-ray -->
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-xl font-semibold text-research-navy dark:text-white">Multimodal Chest X-ray Diagnosis System</h3>
+                        <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm font-medium">Computer Vision</span>
+                    </div>
+                    <p class="text-research-gray dark:text-gray-300 mb-4">
+                        CheXNet-based diagnosis system for 14 thoracic diseases, integrating image and text modalities. 
+                        Discovered 4.3× bias amplification when combining visual and textual medical data.
+                    </p>
+                    
+                    <div class="grid grid-cols-2 gap-4 mb-4">
+                        <div class="text-center">
+                            <div class="text-xl font-bold text-research-navy dark:text-white">14</div>
+                            <div class="text-xs text-research-gray dark:text-gray-400">Diseases</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-xl font-bold text-research-navy dark:text-white">4.3×</div>
+                            <div class="text-xs text-research-gray dark:text-gray-400">Bias Discovery</div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs">CheXNet</span>
+                        <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs">BioBERT</span>
+                        <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs">Grad-CAM</span>
+                    </div>
+                    
+                    <div class="flex space-x-3">
+                        <a href="#" class="text-research-navy hover:underline text-sm">💻 GitHub</a>
+                        <a href="#" class="text-research-navy hover:underline text-sm">🚀 Demo</a>
+                        <a href="#" class="text-research-navy hover:underline text-sm">📊 Dataset</a>
+                    </div>
+                </div>
+
+                <!-- ECG Analysis Platform -->
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-xl font-semibold text-research-navy dark:text-white">Trustworthy ECG Analysis Platform</h3>
+                        <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium">Edge AI</span>
+                    </div>
+                    <p class="text-research-gray dark:text-gray-300 mb-4">
+                        Multi-modal ECG analysis system supporting real-time monitoring, file upload, and paper ECG digitization. 
+                        Implemented fairness-aware training achieving >0.9 fairness score while maintaining 95% accuracy.
+                    </p>
+                    
+                    <div class="grid grid-cols-2 gap-4 mb-4">
+                        <div class="text-center">
+                            <div class="text-xl font-bold text-research-navy dark:text-white">95%</div>
+                            <div class="text-xs text-research-gray dark:text-gray-400">Accuracy</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-xl font-bold text-research-navy dark:text-white">&lt;30MB</div>
+                            <div class="text-xs text-research-gray dark:text-gray-400">Model Size</div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs">ResNet</span>
+                        <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs">SciPy</span>
+                        <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs">Plotly</span>
+                    </div>
+                    
+                    <div class="flex space-x-3">
+                        <a href="#" class="text-research-navy hover:underline text-sm">💻 GitHub</a>
+                        <a href="#" class="text-research-navy hover:underline text-sm">🚀 Demo</a>
+                    </div>
+                </div>
+
+                <!-- Multi-Disease Prediction -->
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-xl font-semibold text-research-navy dark:text-white">Multi-Disease Prediction Framework</h3>
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">Under Review</span>
+                    </div>
+                    <p class="text-research-gray dark:text-gray-300 mb-4">
+                        Comprehensive framework integrating 4 disease models (Diabetes, Parkinson's, Heart Disease, Breast Cancer) 
+                        with 92% average accuracy and real-time inference capabilities.
+                    </p>
+                    
+                    <div class="grid grid-cols-2 gap-4 mb-4">
+                        <div class="text-center">
+                            <div class="text-xl font-bold text-research-navy dark:text-white">92%</div>
+                            <div class="text-xs text-research-gray dark:text-gray-400">Avg Accuracy</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-xl font-bold text-research-navy dark:text-white">4</div>
+                            <div class="text-xs text-research-gray dark:text-gray-400">Diseases</div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs">Ensemble Methods</span>
+                        <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs">Real-time</span>
+                        <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs">Streamlit</span>
+                    </div>
+                    
+                    <div class="flex space-x-3">
+                        <a href="#" class="text-research-navy hover:underline text-sm">🔄 Under Review</a>
+                        <a href="#" class="text-research-navy hover:underline text-sm">🚀 Demo</a>
+                    </div>
                 </div>
             </div>
-            <div class="text-center mt-8">
-                <a href="https://github.com/NMNayan57" class="bg-indigo-600 text-white px-6 py-3 rounded-md">See More on GitHub</a>
+
+            <!-- GitHub Integration -->
+            <div class="bg-gray-50 dark:bg-gray-800 p-8 rounded-lg text-center">
+                <h3 class="text-2xl font-bold text-research-navy dark:text-white mb-4">Explore More on GitHub</h3>
+                <p class="text-research-gray dark:text-gray-300 mb-6">
+                    Visit my GitHub profile to explore additional projects, code repositories, and open-source contributions.
+                </p>
+                <a href="https://github.com/NMNayan57" class="bg-research-navy text-white px-8 py-3 rounded-md hover:bg-blue-800 transition-colors inline-flex items-center">
+                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z" clip-rule="evenodd"></path>
+                    </svg>
+                    View GitHub Profile
+                </a>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-10">
+    <footer class="bg-research-navy text-white py-12">
         <div class="container mx-auto px-6">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                 <div>
-                    <h3 class="text-xl font-bold mb-4">Navigation</h3>
-                    <ul class="space-y-2">
-                        <li><a href="index.html" class="hover:text-indigo-400">Home</a></li>
-                        <li><a href="Research.html" class="hover:text-indigo-400">Research</a></li>
-                        <li><a href="project.html" class="hover:text-indigo-400">Projects</a></li>
-                        <li><a href="workexperince.html" class="hover:text-indigo-400">Experience</a></li>
-                        <li><a href="contact.html" class="hover:text-indigo-400">Contact</a></li>
+                    <h3 class="text-xl font-bold mb-4">Nasim Mahmud Nayan</h3>
+                    <p class="text-gray-300 mb-4">AI/ML Researcher specializing in trustworthy AI for healthcare and bias mitigation frameworks.</p>
+                    <div class="text-sm text-gray-400">
+                        <p>📊 9 Publications</p>
+                        <p>🎯 80+ Citations</p>
+                        <p>📈 h-index: 4</p>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
+                        <li><a href="Research.html" class="hover:text-white transition-colors">Publications</a></li>
+                        <li><a href="project.html" class="hover:text-white transition-colors">Research Projects</a></li>
+                        <li><a href="workexperince.html" class="hover:text-white transition-colors">Experience</a></li>
+                        <li><a href="CV_Nayan.pdf" class="hover:text-white transition-colors" download>Download CV</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h3 class="text-xl font-bold mb-4">Connect</h3>
-                    <ul class="space-y-2">
-                        <li><a href="https://scholar.google.com/citations?user=zAuBXLUAAAAJ&hl=en" class="hover:text-indigo-400">Google Scholar</a></li>
-                        <li><a href="https://www.researchgate.net/profile/Nasim-Nayan" class="hover:text-indigo-400">ResearchGate</a></li>
-                        <li><a href="https://orcid.org/0009-0003-4157-3518" class="hover:text-indigo-400">ORCID</a></li>
-                        <li><a href="https://www.linkedin.com/in/nm-nayan-8475211b9/" class="hover:text-indigo-400">LinkedIn</a></li>
-                        <li><a href="https://github.com/NMNayan57" class="hover:text-indigo-400">GitHub</a></li>
+                    <h3 class="text-lg font-semibold mb-4">Research Profiles</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="https://scholar.google.com/citations?user=kfLMmJMAAAAJ&hl=en&oi=ao" class="hover:text-white transition-colors">Google Scholar</a></li>
+                        <li><a href="https://www.researchgate.net/profile/Nasim-Nayan" class="hover:text-white transition-colors">ResearchGate</a></li>
+                        <li><a href="https://orcid.org/0009-0003-4157-3518" class="hover:text-white transition-colors">ORCID</a></li>
+                        <li><a href="https://github.com/NMNayan57" class="hover:text-white transition-colors">GitHub</a></li>
+                        <li><a href="https://www.linkedin.com/in/nm-nayan-8475211b9/" class="hover:text-white transition-colors">LinkedIn</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h3 class="text-xl font-bold mb-4">Contact</h3>
-                    <p>j-block Baridhara, Dhaka, Bangladesh</p>
-                    <p>Email: <a href="mailto:nm.nayan670@gmail.com" class="hover:text-indigo-400">nm.nayan670@gmail.com</a></p>
-                    <p>Phone: +8801742957256</p>
+                    <h3 class="text-lg font-semibold mb-4">Contact</h3>
+                    <div class="text-gray-300 space-y-2">
+                        <p>📍 J-Block Baridhara, Dhaka, Bangladesh</p>
+                        <p>📧 <a href="mailto:nm.nayan670@gmail.com" class="hover:text-white transition-colors">nm.nayan670@gmail.com</a></p>
+                        <p>📞 +8801742957256</p>
+                    </div>
                 </div>
+            </div>
+            <div class="border-t border-blue-800 pt-6 mt-8 text-center text-gray-400">
+                <p>&copy; 2024 Nasim Mahmud Nayan. All rights reserved. | AI/ML Researcher</p>
             </div>
         </div>
     </footer>
@@ -139,28 +355,6 @@
         const toggle = document.getElementById('theme-toggle');
         toggle.addEventListener('click', () => {
             document.body.classList.toggle('dark');
-        });
-
-        // Project Filter
-        const filterButtons = document.querySelectorAll('.filter-btn');
-        const projectItems = document.querySelectorAll('.project-item');
-
-        filterButtons.forEach(button => {
-            button.addEventListener('click', () => {
-                const filter = button.getAttribute('data-filter');
-                filterButtons.forEach(btn => btn.classList.remove('bg-indigo-600', 'text-white'));
-                filterButtons.forEach(btn => btn.classList.add('bg-gray-200', 'text-gray-900'));
-                button.classList.add('bg-indigo-600', 'text-white');
-                button.classList.remove('bg-gray-200', 'text-gray-900');
-
-                projectItems.forEach(item => {
-                    if (filter === 'all' || item.classList.contains(filter)) {
-                        item.style.display = 'block';
-                    } else {
-                        item.style.display = 'none';
-                    }
-                });
-            });
         });
     </script>
 </body>

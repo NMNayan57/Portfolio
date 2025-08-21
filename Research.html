@@ -3,141 +3,342 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Research and publications by Nasim Mahmud Nayan, focusing on AI/ML and medical cyber systems.">
+    <meta name="description" content="Publications and research by Nasim Mahmud Nayan - 9 publications, 80+ citations in AI/ML, medical AI, and bias mitigation.">
     <link rel="icon" href="img/favicon.png" type="image/png">
-    <title>Research - Nasim Mahmud Nayan</title>
+    <title>Publications - Nasim Mahmud Nayan</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="css/style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'research-navy': '#1e3a8a',
+                        'research-gray': '#64748b',
+                        'research-light': '#f8fafc'
+                    }
+                }
+            }
+        }
+    </script>
 </head>
-<body class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+<body class="bg-research-light dark:bg-gray-900 text-gray-900 dark:text-gray-100 font-sans">
     <!-- Header -->
-    <header class="sticky top-0 z-50 bg-white dark:bg-gray-800 shadow-md">
+    <header class="sticky top-0 z-50 bg-white dark:bg-gray-800 shadow-sm border-b border-gray-200 dark:border-gray-700">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="index.html" class="text-2xl font-bold text-indigo-600 dark:text-indigo-400">NM NAYAN</a>
-            <ul class="flex space-x-6">
-                <li><a href="index.html" class="hover:text-indigo-600 dark:hover:text-indigo-400">Home</a></li>
-                <li><a href="Research.html" class="hover:text-indigo-600 dark:hover:text-indigo-400">Research</a></li>
-                <li><a href="workexperince.html" class="hover:text-indigo-600 dark:hover:text-indigo-400">Experience</a></li>
-                <li><a href="project.html" class="hover:text-indigo-600 dark:hover:text-indigo-400">Projects</a></li>
-                <li><a href="skills.html" class="hover:text-indigo-600 dark:hover:text-indigo-400">Skills</a></li>
-                <li><a href="photo.html" class="hover:text-indigo-600 dark:hover:text-indigo-400">Gallery</a></li>
-                </li>
-                <li><a href="contact.html" class="hover:text-indigo-600 dark:hover:text-indigo-400">Contact</a></li>
+            <div class="flex items-center space-x-3">
+                <a href="index.html" class="text-2xl font-bold text-research-navy dark:text-white">Nasim Mahmud Nayan</a>
+                <span class="text-sm text-research-gray dark:text-gray-400 hidden md:block">AI/ML Researcher</span>
+            </div>
+            <ul class="flex space-x-8">
+                <li><a href="index.html" class="text-research-gray hover:text-research-navy dark:hover:text-white transition-colors">Home</a></li>
+                <li><a href="Research.html" class="text-research-navy dark:text-white font-semibold transition-colors">Publications</a></li>
+                <li><a href="project.html" class="text-research-gray hover:text-research-navy dark:hover:text-white transition-colors">Research</a></li>
+                <li><a href="workexperince.html" class="text-research-gray hover:text-research-navy dark:hover:text-white transition-colors">Experience</a></li>
+                <li><a href="skills.html" class="text-research-gray hover:text-research-navy dark:hover:text-white transition-colors">About</a></li>
+                <li><a href="contact.html" class="text-research-gray hover:text-research-navy dark:hover:text-white transition-colors">Contact</a></li>
+                <li><a href="CV_Nayan.pdf" class="bg-research-navy text-white px-4 py-2 rounded-md hover:bg-blue-800 transition-colors" download>CV</a></li>
             </ul>
-            <button id="theme-toggle" class="text-gray-500 dark:text-gray-400">Toggle Theme</button>
+            <button id="theme-toggle" class="text-research-gray dark:text-gray-400 hover:text-research-navy dark:hover:text-white">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                </svg>
+            </button>
         </nav>
     </header>
 
-    <!-- Research Section -->
+    <!-- Hero Section -->
+    <section class="bg-white dark:bg-gray-800 py-16 border-b border-gray-200 dark:border-gray-700">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl font-bold text-research-navy dark:text-white mb-4">Publications & Research</h1>
+            <p class="text-xl text-research-gray dark:text-gray-300 mb-8 max-w-3xl mx-auto">
+                My research focuses on developing trustworthy AI methods for healthcare, bias mitigation, and medical cyber-physical systems.
+            </p>
+            
+            <!-- Research Metrics -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-2xl mx-auto">
+                <div class="text-center">
+                    <div class="text-3xl font-bold text-research-navy dark:text-white">9</div>
+                    <div class="text-sm text-research-gray dark:text-gray-400">Publications</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl font-bold text-research-navy dark:text-white">80+</div>
+                    <div class="text-sm text-research-gray dark:text-gray-400">Citations</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl font-bold text-research-navy dark:text-white">4</div>
+                    <div class="text-sm text-research-gray dark:text-gray-400">h-index</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl font-bold text-research-navy dark:text-white">7</div>
+                    <div class="text-sm text-research-gray dark:text-gray-400">Scopus-indexed</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
     <section class="py-16">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center mb-8">Research & Publications</h2>
-            <p class="text-center mb-8">My research focuses on AI/ML applications in healthcare, IoT, and computer vision, with 9 publications (7 Scopus-indexed, 60+ citations).</p>
-
-            <!-- Research Experience -->
-            <h3 class="text-2xl font-semibold mb-4">Research Experience</h3>
-            <div class="space-y-6">
-                <details class="bg-white dark:bg-gray-700 p-4 rounded-lg shadow-md">
-                    <summary class="font-semibold cursor-pointer">Research Assistant under Professor Mohammad Mobarak Hossain (Jul 2022 - Ongoing)</summary>
-                    <p class="mt-2">Shanto-Mariam University of Creative Technology, Department of Computer Science and Engineering</p>
-                    <ul class="list-disc pl-6">
-                        <li>Developed an ML-based system for maternal health risk prediction, achieving 99% accuracy.</li>
-                        <li>Implemented ML algorithms to identify critical patterns and risk factors.</li>
-                        <li>Integrated homomorphic encryption for secure patient data handling.</li>
-                        <li>Reviewed IoT applications in healthcare domains.</li>
-                    </ul>
-                    <a href="https://scholar.google.com/citations?user=kfLMmJMAAAAJ&hl=en&oi=ao" class="text-indigo-600 hover:underline">Profile</a>
-                </details>
-                <details class="bg-white dark:bg-gray-700 p-4 rounded-lg shadow-md">
-                    <summary class="font-semibold cursor-pointer">Research Assistant at Rising Research Lab (Aug 2022 - Ongoing)</summary>
-                    <p class="mt-2">Independent Research</p>
-                    <ul class="list-disc pl-6">
-                        <li>Developed ML methods to forecast diseases (Diabetes, Parkinson's, Heart Disease, Breast Cancer).</li>
-                        <li>Built an IoT device to measure air pollution and applied ML for air quality forecasting.</li>
-                    </ul>
-                </details>
-                <details class="bg-white dark:bg-gray-700 p-4 rounded-lg shadow-md">
-                    <summary class="font-semibold cursor-pointer">Research Assistant at EMPATHY LAB IUB (Jan 2023 - Ongoing)</summary>
-                    <p class="mt-2">Independent University, Bangladesh</p>
-                    <ul class="list-disc pl-6">
-                        <li>Investigated computer vision applications in healthcare, identifying CNNs as dominant.</li>
-                        <li>Conducted data preprocessing and feature engineering to enhance model accuracy.</li>
-                        <li>Implemented ML algorithms and presented findings at conferences.</li>
-                    </ul>
-                    <a href="https://scholar.google.com/citations?user=XXuQG6YAAAAJ&hl=en" class="text-indigo-600 hover:underline">Profile</a>
-                </details>
+        <div class="container mx-auto px-6 max-w-6xl">
+            <!-- Filter Tabs -->
+            <div class="flex justify-center mb-8 border-b border-gray-200 dark:border-gray-700">
+                <button class="pub-filter px-6 py-3 border-b-2 border-research-navy text-research-navy font-semibold" data-filter="all">All Publications</button>
+                <button class="pub-filter px-6 py-3 border-b-2 border-transparent text-research-gray hover:text-research-navy" data-filter="journal">Journal Articles</button>
+                <button class="pub-filter px-6 py-3 border-b-2 border-transparent text-research-gray hover:text-research-navy" data-filter="conference">Conference Papers</button>
+                <button class="pub-filter px-6 py-3 border-b-2 border-transparent text-research-gray hover:text-research-navy" data-filter="review">Under Review</button>
             </div>
 
-            <!-- Publications -->
-            <h3 class="text-2xl font-semibold mt-12 mb-4">Publications</h3>
-            <div class="space-y-6">
-                <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md">
-                    <h4 class="font-semibold">Journal Articles</h4>
-                    <ul class="list-disc pl-6">
-                        <li>Hossain, M. M., Nayan, N. M., et al. "A Medical Cyber-Physical System for Predicting Maternal Health in Developing Countries Using Machine Learning." <em>Healthcare Analytics</em>, 2024, 100285. (Scopus, 28 citations). <a href="#" class="text-indigo-600 hover:underline">Link</a></li>
-                        <li>Hossain, M. M., Kashem, M.M., Nayan, N. M., et al. "Artificial Intelligence-Driven Approach for Predicting Maternal Health Risk Factors." <em>IEEE SEEDA-CECNSM</em>, 2024, pp. 153-158. (Scopus, 2 citations). <a href="#" class="text-indigo-600 hover:underline">Link</a></li>
-                        <li>Alam, M., Islam, M.M., Nayan, N. M., et al. "An IoT-Based Real-Time Environmental Monitoring System for Developing Areas." <em>JARASET</em>, 2025, 52(1):106-121. (Scopus, 1 citation). <a href="#" class="text-indigo-600 hover:underline">Link</a></li>
-                        <li>Sahidullah, Md, Nayan, N. M., et al. "Date Fruit Classification with Machine Learning and Explainable Artificial Intelligence." <em>IJCA</em>, 2023, 975:8887. (DOAJ, 14 citations). <a href="#" class="text-indigo-600 hover:underline">Link</a></li>
-                        <li>Shakil, S.U.P., Kashem, M.A., Islam, M.M., Nayan, N. M., et al. "Investigation of Air Effluence Using IoT and Machine Learning." <em>Springer ICETIC</em>, 2023, pp. 183-202. (Scopus, 4 citations). <a href="#" class="text-indigo-600 hover:underline">Link</a></li>
-                        <li>Islam, M., Nayan, N. M., et al. "Recent Advancements of Computer Vision in Healthcare: A Brief Review." <em>IEIE Transactions on Smart Processing and Computing</em>. (Scopus, 1 citation). <a href="#" class="text-indigo-600 hover:underline">Link</a></li>
-                    </ul>
-                </div>
-                <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md">
-                    <h4 class="font-semibold">Conference Papers</h4>
-                    <ul class="list-disc pl-6">
-                        <li>Nayan, N. M., et al. "SMOTE Oversampling and Near Miss Undersampling Based Diabetes Diagnosis from Imbalanced Dataset with XAI Visualization." <em>IEEE ISCC</em>, 2023, pp. 1-6. (Scopus, 13 citations). <a href="#" class="text-indigo-600 hover:underline">Link</a></li>
-                        <li>Islam, M. M., Shakil, S.U.P., Nayan, N. M., et al. "Air Pollution Monitoring Using IoT and Machine Learning in the Perspective of Bangladesh." <em>AETIC</em>, 2024, 8(3). (Scopus). <a href="#" class="text-indigo-600 hover:underline">Link</a></li>
-                        <li>Hossain, M. M., Nayan, N. M., et al. "Enhancing the Security of Pregnancy Health Data Transmission through Homomorphic Encryption: An Advanced Model." <em>Auerbach IoT Applications</em>, 2023, pp. 146-169. (Scopus). <a href="#" class="text-indigo-600 hover:underline">Link</a></li>
-                    </ul>
-                </div>
-                <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md">
-                    <h4 class="font-semibold">Under Review</h4>
-                    <ul class="list-disc pl-6">
-                        <li>Nayan, N. M., et al. "A Multi-Disease Prediction Framework: Leveraging Machine Learning and Real-Time Applications for Improved Health Outcomes." <em>PLOS ONE</em>. (Scopus)</li>
-                        <li>Nayan, N. M., et al. "Machine Learning-Based Parkinson's Disease Prediction Utilizing SMOTE and Explainable AI Techniques." <em>PLOS ONE</em>. (Scopus)</li>
-                        <li>Jibon, F. A., Nayan, N. M., et al. "An Intelligent Dual-Mode Fish Disease Detection Based on Hybrid Deep Learning Framework." <em>Journal TBD</em>. (Scopus)</li>
-                    </ul>
+            <!-- Journal Articles -->
+            <div class="publication-category journal mb-12">
+                <h2 class="text-2xl font-bold text-research-navy dark:text-white mb-6">Journal Articles</h2>
+                <div class="space-y-6">
+                    <!-- Publication 1 -->
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700">
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="text-lg font-semibold text-research-navy dark:text-white pr-4">
+                                A Medical Cyber-Physical System for Predicting Maternal Health in Developing Countries Using Machine Learning
+                            </h3>
+                            <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">Published</span>
+                        </div>
+                        <p class="text-research-gray dark:text-gray-300 mb-2">
+                            <strong>Healthcare Analytics</strong> 2024, 100285 • Scopus-indexed
+                        </p>
+                        <div class="flex items-center space-x-4 text-sm text-research-gray dark:text-gray-400 mb-3">
+                            <span class="flex items-center"><span class="w-2 h-2 bg-green-500 rounded-full mr-2"></span>38 citations</span>
+                            <span>🏥 Medical AI</span>
+                            <span>📅 2024</span>
+                        </div>
+                        <p class="text-sm text-gray-700 dark:text-gray-300 mb-4">
+                            Developed ensemble learning framework achieving 99% accuracy for maternal health risk prediction with bias reduction.
+                        </p>
+                        <div class="flex space-x-3">
+                            <a href="#" class="text-research-navy hover:underline text-sm">📄 Paper</a>
+                            <a href="#" class="text-research-navy hover:underline text-sm">💻 Code</a>
+                            <a href="#" class="text-research-navy hover:underline text-sm">📊 Dataset</a>
+                        </div>
+                    </div>
+
+                    <!-- Publication 2 -->
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700">
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="text-lg font-semibold text-research-navy dark:text-white pr-4">
+                                An IoT-Based Real-Time Environmental Monitoring System for Developing Areas
+                            </h3>
+                            <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">Published</span>
+                        </div>
+                        <p class="text-research-gray dark:text-gray-300 mb-2">
+                            <strong>JARASET</strong> 2025, 52(1):106–121 • Scopus-indexed
+                        </p>
+                        <div class="flex items-center space-x-4 text-sm text-research-gray dark:text-gray-400 mb-3">
+                            <span class="flex items-center"><span class="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>8 citations</span>
+                            <span>🌐 IoT Systems</span>
+                            <span>📅 2025</span>
+                        </div>
+                        <p class="text-sm text-gray-700 dark:text-gray-300 mb-4">
+                            Real-time environmental monitoring system with IoT sensors and machine learning for air quality prediction.
+                        </p>
+                        <div class="flex space-x-3">
+                            <a href="#" class="text-research-navy hover:underline text-sm">📄 Paper</a>
+                            <a href="#" class="text-research-navy hover:underline text-sm">💻 Code</a>
+                        </div>
+                    </div>
+
+                    <!-- Publication 3 -->
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700">
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="text-lg font-semibold text-research-navy dark:text-white pr-4">
+                                Date Fruit Classification with Machine Learning and Explainable Artificial Intelligence
+                            </h3>
+                            <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">Published</span>
+                        </div>
+                        <p class="text-research-gray dark:text-gray-300 mb-2">
+                            <strong>IJCA</strong> 2023, 975:8887 • DOAJ-indexed
+                        </p>
+                        <div class="flex items-center space-x-4 text-sm text-research-gray dark:text-gray-400 mb-3">
+                            <span class="flex items-center"><span class="w-2 h-2 bg-yellow-500 rounded-full mr-2"></span>13 citations</span>
+                            <span>🤖 ML Methods</span>
+                            <span>📅 2023</span>
+                        </div>
+                        <p class="text-sm text-gray-700 dark:text-gray-300 mb-4">
+                            Computer vision approach for date fruit classification with explainable AI techniques for model interpretability.
+                        </p>
+                        <div class="flex space-x-3">
+                            <a href="#" class="text-research-navy hover:underline text-sm">📄 Paper</a>
+                            <a href="#" class="text-research-navy hover:underline text-sm">💻 Code</a>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="text-center mt-8">
-                <a href="contact.html" class="bg-indigo-600 text-white px-6 py-3 rounded-md">Collaborate with Me</a>
+            <!-- Conference Papers -->
+            <div class="publication-category conference mb-12">
+                <h2 class="text-2xl font-bold text-research-navy dark:text-white mb-6">Conference Papers</h2>
+                <div class="space-y-6">
+                    <!-- Conference Paper 1 -->
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700">
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="text-lg font-semibold text-research-navy dark:text-white pr-4">
+                                SMOTE Oversampling and Near Miss Undersampling Based Diabetes Diagnosis from Imbalanced Dataset with XAI Visualization
+                            </h3>
+                            <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">Published</span>
+                        </div>
+                        <p class="text-research-gray dark:text-gray-300 mb-2">
+                            <strong>IEEE ISCC</strong> 2023, pp. 1–6 • Scopus-indexed
+                        </p>
+                        <div class="flex items-center space-x-4 text-sm text-research-gray dark:text-gray-400 mb-3">
+                            <span class="flex items-center"><span class="w-2 h-2 bg-red-500 rounded-full mr-2"></span>13 citations</span>
+                            <span>⚖️ Bias Mitigation</span>
+                            <span>📅 2023</span>
+                        </div>
+                        <p class="text-sm text-gray-700 dark:text-gray-300 mb-4">
+                            Novel approach combining SMOTE oversampling and Near Miss undersampling for diabetes diagnosis with XAI.
+                        </p>
+                        <div class="flex space-x-3">
+                            <a href="#" class="text-research-navy hover:underline text-sm">📄 Paper</a>
+                            <a href="#" class="text-research-navy hover:underline text-sm">💻 Code</a>
+                        </div>
+                    </div>
+
+                    <!-- Conference Paper 2 -->
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700">
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="text-lg font-semibold text-research-navy dark:text-white pr-4">
+                                Artificial Intelligence-Driven Approach for Predicting Maternal Health Risk Factors
+                            </h3>
+                            <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">Published</span>
+                        </div>
+                        <p class="text-research-gray dark:text-gray-300 mb-2">
+                            <strong>IEEE SEEDA-CECNSM</strong> 2024, pp. 153–158 • Scopus-indexed
+                        </p>
+                        <div class="flex items-center space-x-4 text-sm text-research-gray dark:text-gray-400 mb-3">
+                            <span class="flex items-center"><span class="w-2 h-2 bg-purple-500 rounded-full mr-2"></span>3 citations</span>
+                            <span>🏥 Medical AI</span>
+                            <span>📅 2024</span>
+                        </div>
+                        <p class="text-sm text-gray-700 dark:text-gray-300 mb-4">
+                            AI-driven framework for identifying and predicting maternal health risk factors in developing countries.
+                        </p>
+                        <div class="flex space-x-3">
+                            <a href="#" class="text-research-navy hover:underline text-sm">📄 Paper</a>
+                            <a href="#" class="text-research-navy hover:underline text-sm">💻 Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Under Review Papers -->
+            <div class="publication-category review">
+                <h2 class="text-2xl font-bold text-research-navy dark:text-white mb-6">Under Review</h2>
+                <div class="space-y-6">
+                    <!-- Under Review Paper 1 -->
+                    <div class="bg-yellow-50 dark:bg-gray-800 p-6 rounded-lg shadow-sm border border-yellow-200 dark:border-gray-700">
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="text-lg font-semibold text-research-navy dark:text-white pr-4">
+                                A Multi-Disease Prediction Framework: Leveraging Machine Learning and Real-Time Applications for Improved Health Outcomes
+                            </h3>
+                            <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm font-medium">Under Review</span>
+                        </div>
+                        <p class="text-research-gray dark:text-gray-300 mb-2">
+                            <strong>PLOS ONE</strong> • Scopus-indexed
+                        </p>
+                        <div class="flex items-center space-x-4 text-sm text-research-gray dark:text-gray-400 mb-3">
+                            <span>🔄 Under Review</span>
+                            <span>🏥 Healthcare AI</span>
+                            <span>📅 2024</span>
+                        </div>
+                        <p class="text-sm text-gray-700 dark:text-gray-300 mb-4">
+                            Comprehensive framework integrating multiple disease prediction models with real-time application capabilities.
+                        </p>
+                    </div>
+
+                    <!-- Under Review Paper 2 -->
+                    <div class="bg-yellow-50 dark:bg-gray-800 p-6 rounded-lg shadow-sm border border-yellow-200 dark:border-gray-700">
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="text-lg font-semibold text-research-navy dark:text-white pr-4">
+                                Machine Learning-Based Parkinson's Disease Prediction Utilizing SMOTE and Explainable AI Techniques
+                            </h3>
+                            <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm font-medium">Under Review</span>
+                        </div>
+                        <p class="text-research-gray dark:text-gray-300 mb-2">
+                            <strong>PLOS ONE</strong> • Scopus-indexed
+                        </p>
+                        <div class="flex items-center space-x-4 text-sm text-research-gray dark:text-gray-400 mb-3">
+                            <span>🔄 Under Review</span>
+                            <span>🧠 Neurological AI</span>
+                            <span>📅 2024</span>
+                        </div>
+                        <p class="text-sm text-gray-700 dark:text-gray-300 mb-4">
+                            Advanced ML approach for Parkinson's disease prediction with bias mitigation and explainable AI.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Research Profile Links -->
+            <div class="bg-gray-50 dark:bg-gray-800 p-8 rounded-lg text-center mt-12">
+                <h3 class="text-xl font-bold text-research-navy dark:text-white mb-4">Research Profiles</h3>
+                <div class="flex justify-center space-x-6">
+                    <a href="https://scholar.google.com/citations?user=kfLMmJMAAAAJ&hl=en&oi=ao" class="bg-white dark:bg-gray-700 px-6 py-3 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                        <div class="text-research-navy dark:text-white font-semibold">Google Scholar</div>
+                        <div class="text-sm text-research-gray dark:text-gray-400">Full Publication List</div>
+                    </a>
+                    <a href="https://www.researchgate.net/profile/Nasim-Nayan" class="bg-white dark:bg-gray-700 px-6 py-3 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                        <div class="text-research-navy dark:text-white font-semibold">ResearchGate</div>
+                        <div class="text-sm text-research-gray dark:text-gray-400">Research Network</div>
+                    </a>
+                    <a href="https://orcid.org/0009-0003-4157-3518" class="bg-white dark:bg-gray-700 px-6 py-3 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                        <div class="text-research-navy dark:text-white font-semibold">ORCID</div>
+                        <div class="text-sm text-research-gray dark:text-gray-400">Research Identity</div>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-10">
+    <footer class="bg-research-navy text-white py-12">
         <div class="container mx-auto px-6">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                 <div>
-                    <h3 class="text-xl font-bold mb-4">Navigation</h3>
-                    <ul class="space-y-2">
-                        <li><a href="index.html" class="hover:text-indigo-400">Home</a></li>
-                        <li><a href="Research.html" class="hover:text-indigo-400">Research</a></li>
-                        <li><a href="project.html" class="hover:text-indigo-400">Projects</a></li>
-                        <li><a href="workexperince.html" class="hover:text-indigo-400">Experience</a></li>
-                        <li><a href="contact.html" class="hover:text-indigo-400">Contact</a></li>
+                    <h3 class="text-xl font-bold mb-4">Nasim Mahmud Nayan</h3>
+                    <p class="text-gray-300 mb-4">AI/ML Researcher specializing in trustworthy AI for healthcare and bias mitigation frameworks.</p>
+                    <div class="text-sm text-gray-400">
+                        <p>📊 9 Publications</p>
+                        <p>🎯 80+ Citations</p>
+                        <p>📈 h-index: 4</p>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
+                        <li><a href="Research.html" class="hover:text-white transition-colors">Publications</a></li>
+                        <li><a href="project.html" class="hover:text-white transition-colors">Research Projects</a></li>
+                        <li><a href="workexperince.html" class="hover:text-white transition-colors">Experience</a></li>
+                        <li><a href="CV_Nayan.pdf" class="hover:text-white transition-colors" download>Download CV</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h3 class="text-xl font-bold mb-4">Connect</h3>
-                    <ul class="space-y-2">
-                        <li><a href="index.html" class="hover:text-indigo-400">Home</a></li>
-                        <li><a href="Research.html" class="hover:text-indigo-400">Research</a></li>
-                        <li><a href="project.html" class="hover:text-indigo-400">Projects</a></li>
-                        <li><a href="workexperince.html" class="hover:text-indigo-400">Experience</a></li>
-                        <li><a href="contact.html" class="hover:text-indigo-400">Contact</a></li>
-                        <li><a href="skills.html" class="hover:text-indigo-400">Skills</a></li>
-                        <li><a href="photo.html" class="hover:text-indigo-400">Photo</a></li>
+                    <h3 class="text-lg font-semibold mb-4">Research Profiles</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="https://scholar.google.com/citations?user=kfLMmJMAAAAJ&hl=en&oi=ao" class="hover:text-white transition-colors">Google Scholar</a></li>
+                        <li><a href="https://www.researchgate.net/profile/Nasim-Nayan" class="hover:text-white transition-colors">ResearchGate</a></li>
+                        <li><a href="https://orcid.org/0009-0003-4157-3518" class="hover:text-white transition-colors">ORCID</a></li>
+                        <li><a href="https://github.com/NMNayan57" class="hover:text-white transition-colors">GitHub</a></li>
+                        <li><a href="https://www.linkedin.com/in/nm-nayan-8475211b9/" class="hover:text-white transition-colors">LinkedIn</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h3 class="text-xl font-bold mb-4">Contact</h3>
-                    <p>j-block Baridhara, Dhaka, Bangladesh</p>
-                    <p>Email: <a href="mailto:nm.nayan670@gmail.com" class="hover:text-indigo-400">nm.nayan670@gmail.com</a></p>
-                    <p>Phone: +8801742957256</p>
+                    <h3 class="text-lg font-semibold mb-4">Contact</h3>
+                    <div class="text-gray-300 space-y-2">
+                        <p>📍 J-Block Baridhara, Dhaka, Bangladesh</p>
+                        <p>📧 <a href="mailto:nm.nayan670@gmail.com" class="hover:text-white transition-colors">nm.nayan670@gmail.com</a></p>
+                        <p>📞 +8801742957256</p>
+                    </div>
                 </div>
+            </div>
+            <div class="border-t border-blue-800 pt-6 mt-8 text-center text-gray-400">
+                <p>&copy; 2024 Nasim Mahmud Nayan. All rights reserved. | AI/ML Researcher</p>
             </div>
         </div>
     </footer>
@@ -149,6 +350,35 @@
         const toggle = document.getElementById('theme-toggle');
         toggle.addEventListener('click', () => {
             document.body.classList.toggle('dark');
+        });
+
+        // Publication Filter
+        const filterButtons = document.querySelectorAll('.pub-filter');
+        const publicationCategories = document.querySelectorAll('.publication-category');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const filter = button.getAttribute('data-filter');
+                
+                // Update button styles
+                filterButtons.forEach(btn => {
+                    btn.classList.remove('border-research-navy', 'text-research-navy', 'font-semibold');
+                    btn.classList.add('border-transparent', 'text-research-gray');
+                });
+                button.classList.remove('border-transparent', 'text-research-gray');
+                button.classList.add('border-research-navy', 'text-research-navy', 'font-semibold');
+
+                // Show/hide categories
+                publicationCategories.forEach(category => {
+                    if (filter === 'all') {
+                        category.style.display = 'block';
+                    } else if (category.classList.contains(filter)) {
+                        category.style.display = 'block';
+                    } else {
+                        category.style.display = 'none';
+                    }
+                });
+            });
         });
     </script>
 </body>
