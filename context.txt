@@ -1,0 +1,572 @@
+
+HELLO, IT'S ME
+
+NASIM MAHMUD NAYAN
+ML ENGINEER & HEALTHCARE AI RESEARCHER
+
+"I BELIEVE IN ACCESSIBLE HEALTHCARE & EDUCATION"
+
+Building trustworthy AI systems that democratize medical care 
+and education for underserved communities.
+
+[ABOUT ME] [EDUCATION] [MY RESEARCH] [MY PROJECTS] 
+[MY EXPERIENCE] [PUBLICATIONS] [OGROPATH]
+```
+
+**Why this works:** Tanzir's tagline is memorable. Yours—"I BELIEVE IN ACCESSIBLE HEALTHCARE & EDUCATION"—instantly communicates your mission and differentiates you from generic ML engineers.[3][6][1]
+
+---
+
+## **Section 1: About Me (STORY-DRIVEN)**
+
+Adapt Tanzir's research passion statement to YOUR healthcare mission:
+
+```markdown
+## ABOUT ME
+
+I BELIEVE IN ACCESSIBLE HEALTHCARE & EDUCATION
+
+I want to move forward with building AI systems that bridge the healthcare 
+and education gap for underserved communities. It gives me immense passion 
+and purpose when I work on problems that directly impact people who are 
+usually left behind.
+
+Growing up in rural Bangladesh where good doctors and hospitals were rare, 
+I witnessed families travel hours for basic medical care—or go untreated. 
+This shaped my life's work: using artificial intelligence to make quality 
+healthcare and education accessible to those who need it most.
+
+My research interests include Trustworthy Healthcare AI, Fairness & 
+Explainability in ML, Multimodal Medical Diagnostics, Large Language Models 
+for Clinical Decision Support, and AI for Education.
+
+---
+
+### PERSONAL INFORMATION
+
+**NAME:** Nasim Mahmud Nayan  
+**E-MAIL:** smnoyan670@gmail.com  
+**PHONE:** +8801742957256  
+**WEBSITE:** nasimmahmudnayan.netlify.app  
+**LINKEDIN:** [linkedin.com/in/nasim-mahmud-nayan](...)
+
+---
+
+### RESEARCH PROFILE
+
+[Google Scholar](link) | [ResearchGate](link) | [ORCID](link)
+```
+
+**Key adaptation:** Tanzir leads with research passion. You lead with MISSION → then connect it to your personal story → then list technical interests. This ordering makes you memorable.[2][4][6]
+
+***
+
+## **Section 2: Impact Metrics Dashboard**
+
+Inspired by Tanzir's "17 Projects Done, 21 Published Papers" metrics:
+
+```
+┌──────────────────────────────────────────────────────────────┐
+│  10  │  100+  │  10K+  │  2.5K+  │  3  │  FOUNDER  │
+│ PAPERS│  CITES │ STUDENTS│  USERS  │ YOE │  OGROPATH │
+└──────────────────────────────────────────────────────────────┘
+```
+
+**Why:** Tanzir's dashboard immediately shows breadth. Yours shows DEPTH + SCALE + ENTREPRENEURSHIP—a stronger narrative for industry + academia.[4][2][3]
+
+***
+
+## **Section 3: Featured Work (RESTRUCTURED)**
+
+### **A. ENTREPRENEURSHIP: Building for Social Impact**
+
+**OgroPath: AI Medical Exam Prep Platform** 🚀  
+*Founder & Lead ML Engineer | Apr 2025 - Present*
+
+Democratizing medical education for students across Bangladesh who lack access to expensive coaching—making expert-level preparation accessible to everyone.
+
+**Key Innovation:**
+- NLP-powered question generation from medical PDFs
+- AI diagnostic engine identifying individual student weaknesses
+- 21,000+ question bank with adaptive, personalized study plans
+- Real-time national ranking system
+
+**Impact:** Students describe OgroPath as having a "24/7 expert assistant"—exactly the kind of accessible education system I envisioned growing up in rural Bangladesh.
+
+**Tech Stack:** LLMs (GPT-4), NLP, FastAPI, PostgreSQL, React, Docker  
+**Status:** Live | Serving students | Growing user base
+
+[Visit OgroPath](https://ogropath.com) | [Watch Demo](#) | [Read Story](#)
+
+***
+
+### **B. RESEARCH: Advancing Trustworthy Healthcare AI**
+
+**1. M-TRUST: Medical AI Fairness Framework**  
+*Open-Source Toolkit | 2024*
+
+**Problem:** Discovered that multimodal fusion in chest X-ray diagnosis amplified demographic bias by 7.6%—making AI systems potentially harmful for underserved populations.
+
+**Solution:** Built comprehensive fairness detection toolkit implementing 4 metrics (demographic parity, equalized odds, calibration, individual fairness).
+
+**Impact:**  
+✓ Reduced bias by 30.8% while maintaining 98% accuracy  
+✓ Published as open-source Python package on PyPI  
+✓ Enables reproducible fairness audits with one-line API
+
+**Publications:** 2 peer-reviewed papers (Q1 journals)  
+**Open Source:** [PyPI Package](link) | [GitHub](link) | [Paper](DOI)
+
+***
+
+**2. ExplainRAG-FC-AS: Clinical Decision Support System**  
+*RAG-based LLM for Healthcare | 2024*
+
+**Problem:** Traditional LLMs hallucinate medical advice, making them unsafe for clinical use.
+
+**Solution:** Developed retrieval-augmented generation system with fact-checking that grounds every recommendation in verifiable medical evidence.
+
+**Innovation:**  
+✓ Thematic clustering + NLI verification before generation  
+✓ Sub-10s response time with 0.85 mean evidence confidence  
+✓ 90% clinician preference vs. baseline systems
+
+**Impact:** Enables source-level attribution for transparent, auditable clinical AI that doctors can trust.
+
+**Tech Stack:** LangChain, RAG, Sentence-BERT, GPT-4, FAISS  
+[GitHub](link) | [Demo](link) | [Paper - Under Review]
+
+***
+
+**3. Parkinson's Disease Prediction with Explainable AI**  
+*Feature Engineering + XAI | 2025*
+
+**Problem:** Healthcare providers need interpretable AI—black-box models aren't clinically trusted.
+
+**Solution:** Built interpretable ML framework using SHAP, LIME, and feature engineering for Parkinson's prediction.
+
+**Results:**  
+✓ 92% accuracy with full clinical interpretability  
+✓ Identified top 5 biomarkers for early detection  
+✓ Published in PLOS ONE (Q1, Impact Factor 2.6)
+
+**Impact:** Demonstrates how trustworthy AI can support early diagnosis while maintaining clinical transparency.
+
+[Read Paper](DOI) | [Code](GitHub) | [Interactive Demo]
+
+***
+
+### **C. PRODUCTION ML ENGINEERING**
+
+**Zenyora AI Wellness Platform**  
+*Programming Hero | Dec 2023 - Sept 2025*
+
+Full-stack ML platform on Microsoft Store serving 100+ daily users with real-time posture detection and AI productivity coaching.
+
+**Technical Achievements:**  
+✓ 95% accuracy posture detection using MediaPipe  
+✓ 40% eye strain reduction (validated n=150 user survey)  
+✓ Sub-100ms latency processing 30 FPS video  
+✓ Deployed with Docker + PostgreSQL + FastAPI
+
+**Tech Stack:** PyTorch, OpenCV, MediaPipe, GPT-4, FastAPI, Docker  
+[Microsoft Store](link) | [Technical Deep-Dive](#)
+
+***
+
+**Automated Real Estate Sales Agent**  
+*Voice-Based RAG System | 2024*
+
+Voice AI handling 500+ daily inquiries with hybrid retrieval achieving 95% query relevance and 3x increase in lead engagement.
+
+**Architecture:**  
+✓ Pinecone vector database for 2,000+ property listings  
+✓ Whisper STT + ElevenLabs TTS for natural conversations  
+✓ Sub-2s end-to-end voice response time
+
+**Impact:** Reduced response time from 2 hours → real-time  
+[GitHub](link) | [Live Demo Video](#)
+
+**Why this structure:** Like Tanzir's portfolio, you lead with YOUR differentiator (entrepreneurship for social impact), then show research depth, then prove production engineering skills.[5][2][3][4]
+
+***
+
+## **Section 4: Research Section (ENHANCED)**
+
+Adapt Tanzir's comprehensive research showcase:
+
+```markdown
+## RESEARCH
+
+I WANT TO MOVE FORWARD WITH RESEARCH THAT CREATES REAL-WORLD IMPACT
+
+It gives me immense passion and purpose when I work on AI systems that 
+directly improve healthcare access for underserved communities. My research 
+focuses on making medical AI trustworthy, fair, and safe for clinical deployment.
+
+**My research interests include:**  
+Trustworthy Healthcare AI, Fairness & Bias Mitigation, Explainable AI (XAI), 
+Multimodal Medical Diagnostics, RAG-based Clinical Decision Support, 
+Large Language Models for Healthcare
+
+---
+
+### PUBLICATIONS
+
+**Journals:** 5 papers  
+**Conferences:** 5 papers  
+**Total Citations:** 100+  
+**h-index:** 5
+
+### RESEARCH PROFILE
+
+[Google Scholar](link) | [ResearchGate](link) | [ORCID](link)
+
+---
+
+### SELECTED PUBLICATIONS
+
+**2025**
+1. **Nayan, N.M.**, et al. "Parkinson's disease prediction using explainable AI." 
+   *PLOS ONE*. [Q1, Scopus] [DOI](link)
+
+2. **Nayan, N.M.**, et al. "Multi-Disease Prediction Framework."  
+   *BMC Medical Informatics*. (Under Review)
+
+**2024**
+3. Hossain, M.M., **Nayan, N.M.**, et al. "Maternal Health Prediction."  
+   *Healthcare Analytics*. [Q1, 50+ citations]
+
+4. **Nayan, N.M.**, et al. "Diabetes Diagnosis with XAI."  
+   *IEEE ISCC 2023*. [Scopus]
+
+[View All Publications →](Google Scholar)
+```
+
+**Key adaptation:** Tanzir lists counts (21 papers, 23,058 lines of code). You emphasize QUALITY (Q1 journals, 100+ citations) and RELEVANCE (all healthcare-focused).[2][3][5]
+
+***
+
+## **Section 5: Experience (VISUAL TIMELINE)**
+
+Adapt Tanzir's experience section with YOUR narrative:
+
+```markdown
+## EXPERIENCE
+
+Experience is what shapes us into problem-solvers. I have built production 
+ML systems serving 500K+ users, conducted peer-reviewed research with 100+ 
+citations, and founded OgroPath to democratize medical education.
+
+---
+
+### ML Engineer  
+**Programming Hero (Remote)** | Dec 2023 - Sept 2025
+
+Built and deployed 3 production AI systems:
+- Zenyora AI Wellness Platform (Microsoft Store, 100+ daily users)
+- Automated Real Estate Sales Agent (500+ inquiries/day)
+- Student Performance Prediction (10K+ students, 15% grade improvement)
+
+**Key Achievement:** 94% cost reduction in GenAI solutions vs. competitors
+
+---
+
+### AI Engineer  
+**Primacy Infotech Ltd** | July 2023 - Nov 2023
+
+Led AI tour planner for 6 UNESCO heritage sites, reducing itinerary creation 
+from 2 hours → 5 minutes. Deployed FastAPI + Streamlit system with 99.2% uptime.
+
+**Impact:** 35% increase in tourist satisfaction (validated via surveys)
+
+---
+
+### Research Assistant  
+**Rising Research Lab** | Aug 2022 - May 2023
+
+Developed multi-disease prediction system (diabetes, Parkinson's, maternal health) 
+achieving 92% average accuracy, serving as foundation for 4+ published papers.
+
+**Contribution:** Engineered IoT air quality monitoring + AutoML pipeline
+
+---
+
+### Founder & Lead ML Engineer  
+**OgroPath** | Apr 2025 - Present
+
+Founded AI-powered medical exam prep platform democratizing education access 
+for students across Bangladesh. Engineered NLP question generation, adaptive 
+learning system, and 21,000+ question bank.
+
+**Vision:** Building accessible education infrastructure for underserved communities
+```
+
+**Why this works:** Like Tanzir, you show diverse experience (industry + research + entrepreneurship). But your narrative threads everything together with the accessible healthcare/education mission.[4][5][2]
+
+***
+
+## **Section 6: Skills (VISUAL)**
+
+Adapt Tanzir's skill bars with YOUR dual expertise:
+
+```markdown
+## TECHNICAL SKILLS
+
+Learning new things every day to build AI systems that create social impact. 
+At this very moment, you may find me efficient in the following skills:
+
+### AI/ML EXPERTISE
+92% | LLMs & RAG Systems  
+90% | Computer Vision (Medical Imaging)  
+88% | Explainable AI (SHAP, LIME)  
+85% | Fairness & Bias Mitigation  
+82% | NLP & Clinical Text Processing
+
+### ENGINEERING EXPERTISE
+95% | Python (Expert)  
+90% | PyTorch & TensorFlow  
+88% | FastAPI & Flask  
+85% | Docker & MLOps  
+80% | PostgreSQL & Vector DBs
+
+---
+
+## OTHER SKILLS
+
+Distinctively combining research rigor with engineering pragmatism to ship 
+AI systems that work in the real world.
+
+**Communication:** 90% - Published researcher + technical presentations  
+**Problem Solving:** 88% - Multi-disease prediction frameworks  
+**Organization:** 82% - Led ML projects end-to-end  
+**Leadership:** 80% - Founded OgroPath, mentored 7+ students  
+**Learning:** 95% - Constantly exploring cutting-edge AI  
+**Research Writing:** 92% - 10 peer-reviewed publications
+```
+
+**Key adaptation:** Tanzir shows technical depth (Solidity 95%, Python 90%). You show DUAL DEPTH (research skills + engineering skills) relevant to your mission.[3][2][4]
+
+***
+
+## **Section 7: Education**
+
+Keep Tanzir's comprehensive format but add YOUR story:
+
+```markdown
+## EDUCATION
+
+Education is what empowers us to create change. I have ranked 6th in my 
+department, published 10 papers with 100+ citations, and now pursuing PhD 
+opportunities to advance trustworthy healthcare AI.
+
+---
+
+### Bachelor of Science in Computer Science  
+**University of Information Technology & Sciences (UITS)**  
+Dhaka, Bangladesh | Jan 2019 - Feb 2023
+
+**CGPA:** 3.62/4.00 (Ranked 6th in department)
+
+**Thesis:** A Multi-Disease Prediction Framework Leveraging Machine Learning 
+and Real-Time Applications for Improved Health Outcomes
+
+**Key Achievement:** Thesis work led to 4+ peer-reviewed publications
+
+---
+
+### Currently Seeking PhD Opportunities  
+**Focus Areas:** Trustworthy Healthcare AI, Multimodal Medical Diagnostics,  
+Fairness in ML, Clinical Decision Support Systems
+
+**Target Universities:** International programs with strong healthcare AI  
+research groups and clinical collaboration opportunities
+```
+
+**Why:** Tanzir's PhD is his current credential. Yours is your FUTURE goal—positioning yourself as ready for doctoral study while open to industry roles.[5][2][3]
+
+***
+
+## **Section 8: "Here's What I'm Doing" (MISSION STATEMENT)**
+
+Adapt Tanzir's activity showcase to YOUR work:
+
+```markdown
+## HERE'S WHAT I'M DOING
+
+I shape my work to create impact on people's lives and my own growth. I believe 
+in empowering underserved communities through accessible healthcare and education AI.
+
+---
+
+### 🔬 RESEARCH  
+Advancing trustworthy healthcare AI through fairness, explainability, and 
+multimodal diagnostics. Published 10 papers with 100+ citations in Q1 journals. 
+Interested in collaborative work on medical AI, RAG systems, or bias mitigation.
+
+---
+
+### 💻 ENGINEERING  
+Built production ML systems serving 500K+ users. Specialized in cost-efficient 
+GenAI solutions (LLMs, RAG, agents). Currently optimizing OgroPath's NLP engine 
+and exploring voice-based medical assistants.
+
+---
+
+### 🚀 ENTREPRENEURSHIP  
+Founded OgroPath to democratize medical exam preparation for students in Bangladesh. 
+Building AI-powered education infrastructure that makes expert-level learning 
+accessible to everyone, regardless of location or economic background.
+
+---
+
+### 🤝 MENTORSHIP  
+Mentored 7+ undergraduate researchers (1 Scopus publication, 1 under review). 
+Trained 50+ government employees in ML/AI. Passionate about helping the next 
+generation of AI researchers from underrepresented communities.
+```
+
+**Key difference:** Tanzir lists activities (development, contests, volunteer). You organize by IMPACT AREAS that directly support your mission narrative.[6][2][3]
+
+***
+
+## **Section 9: Portfolio Projects (VISUAL GRID)**
+
+Adapt Tanzir's project showcase with categories:
+
+```markdown
+## MY PORTFOLIO
+
+Want to know what I've been up to? Here's a selection of work across 
+research, engineering, and entrepreneurship—all focused on accessible healthcare and education.
+
+[All Projects] [Research] [Engineering] [Entrepreneurship] [Open Source]
+
+---
+
+**Featured Projects:**
+
+1. **OgroPath** | AI Medical Exam Prep SaaS Platform  
+2. **M-TRUST** | Medical AI Fairness Toolkit (PyPI)  
+3. **ExplainRAG-FC-AS** | Clinical Decision Support System  
+4. **Zenyora** | AI Wellness Platform (Microsoft Store)  
+5. **Real Estate Voice Agent** | RAG-based Sales Assistant  
+6. **Bengali Literature RAG** | Cost-efficient AI Website Generator  
+7. **Multimodal Chest X-ray** | Bias Analysis in Medical Imaging  
+8. **Student Performance Prediction** | ML for 10K+ Students  
+9. **AI Tour Planner** | UNESCO Heritage Site Optimizer  
+10. **Parkinson's Prediction** | XAI Framework (PLOS ONE)
+```
+
+**Visual approach:** Like Tanzir, use filterable grid with project cards. Each card shows: thumbnail image, title, tech stack tags, and "View Project" button.[1][2][4]
+
+***
+
+## **Design & UX Recommendations**
+
+### **Color Scheme (Healthcare + Mission-Driven)**
+
+Based on Tanzir's clean design + healthcare aesthetic:
+
+**Primary:** Deep Blue (#1C033C) - Trust, healthcare  
+**Secondary:** Teal/Green (#00A896) - Growth, accessibility  
+**Accent:** Warm Orange (#FF6B35) - Impact, social mission  
+**Background:** Off-white (#F7F9FC) - Clean, professional
+
+**Why:** Tanzir uses purple/blue (tech). You use blue + teal (healthcare trust) + orange (social impact).[7][8][9]
+
+***
+
+### **Layout Structure**
+
+```
+┌─────────────────────────────────────────┐
+│  [Full-screen Hero with Mission Quote] │
+├─────────────────────────────────────────┤
+│  [Impact Metrics Dashboard]             │
+├─────────────────────────────────────────┤
+│  [About Me: Story + Photo]              │
+├─────────────────────────────────────────┤
+│  [Featured Work: 3 Tabs]                │
+│   → Entrepreneurship (OgroPath)         │
+│   → Research (Publications)             │
+│   → Engineering (Production Systems)    │
+├─────────────────────────────────────────┤
+│  [Skills: Dual Visualization]           │
+├─────────────────────────────────────────┤
+│  [Experience Timeline]                  │
+├─────────────────────────────────────────┤
+│  [Education + PhD Goals]                │
+├─────────────────────────────────────────┤
+│  [Portfolio Grid: Filterable]           │
+├─────────────────────────────────────────┤
+│  [Contact + Social Links]               │
+└─────────────────────────────────────────┘
+```
+
+**Key difference:** Tanzir's layout is comprehensive. Yours is NARRATIVE-DRIVEN—every section reinforces your mission story.[1][2][3][4]
+
+***
+
+### **Interactive Elements**
+
+1. **Hover effects on project cards** - Show tech stack + impact metrics
+2. **Filterable portfolio grid** - Research / Engineering / Entrepreneurship tabs
+3. **Live citation counter** - Google Scholar API integration
+4. **Publication timeline** - Interactive visualization of research trajectory
+5. **OgroPath stats widget** - Real-time user count (if available)
+
+**Why:** Tanzir has interactive features. Yours should emphasize GROWTH TRAJECTORY (citations increasing, OgroPath users growing).[3][4]
+
+---
+
+## **Content Priorities**
+
+### **Phase 1 (This Week):**
+1. ✅ Rewrite hero section with "I BELIEVE IN ACCESSIBLE HEALTHCARE & EDUCATION"
+2. ✅ Add mission-driven About Me with personal story
+3. ✅ Restructure Featured Work into 3 categories
+4. ✅ Add OgroPath as flagship project with full details
+
+### **Phase 2 (Next Week):**
+5. ✅ Create impact metrics dashboard
+6. ✅ Design dual skills visualization (Research + Engineering)
+7. ✅ Build filterable portfolio grid
+8. ✅ Add research section with publication timeline
+
+### **Phase 3 (Ongoing):**
+9. ✅ Write project case studies with technical depth
+10. ✅ Create blog section for research explainers
+11. ✅ Add testimonials from OgroPath users
+12. ✅ Integrate Google Scholar API for live metrics
+
+***
+
+## **Key Differentiators vs. Tanzir's Portfolio**
+
+| **Aspect** | **Tanzir's Approach** | **YOUR Approach** |
+|------------|---------------------|------------------|
+| **Identity** | PhD student, researcher | Hybrid: ML Engineer + Researcher + Founder |
+| **Mission** | Research passion | Social impact: Accessible healthcare/education |
+| **Hero Quote** | "I don't believe in magic" | "I believe in accessible healthcare & education" |
+| **Projects** | Blockchain, IoT, security | Healthcare AI, fairness, clinical systems |
+| **Metrics** | Lines of code, conferences | Users served, citations, social impact |
+| **Story** | Technical achievements | Personal journey → mission → technical work |
+| **Target Audience** | Academic committees | Dual: PhD committees + AI engineering recruiters |
+
+***
+
+## **Final Recommendation: Your Unique Value Proposition**
+
+Tanzir's portfolio shows: **"I'm a productive PhD student with diverse technical skills"**
+
+YOUR portfolio should show: **"I'm a rare hybrid—research rigor + engineering pragmatism + entrepreneurial drive—united by a mission to make healthcare and education accessible through trustworthy AI"**
+
+This positioning makes you irresistible to:[6][4][5][3]
+
+✅ **PhD committees** - Research depth + clear mission + publications  
+✅ **AI engineering teams** - Production experience + user scale + cost efficiency  
+✅ **Mission-driven startups** - Founder experience + social impact + technical leadership  
+✅ **Healthcare AI companies** - Domain expertise + trustworthy AI focus + clinical validation
+
+Your portfolio shouldn't just showcase WHAT you've done—it should tell the story of WHY you do it, WHO benefits, and WHERE you're going next. That's what makes portfolios memorable.[4][6][3]

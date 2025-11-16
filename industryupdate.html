@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Nasim Mahmud Nayan - Industry Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+        darkMode: "class",
+        theme: {
+            extend: {
+                colors: {
+                    "primary": "#135bec",
+                    "background-light": "#f8f9fc",
+                    "background-dark": "#101622",
+                },
+                fontFamily: {
+                    "display": ["Space Grotesk", "sans-serif"]
+                },
+                borderRadius: {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+                },
+            },
+        },
+    }
+</script>
+<style>
+    .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        font-size: 20px;
+    }
+</style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-[#1A202C] dark:text-gray-300">
+<div class="relative w-full flex flex-col">
+    <!-- TopNavBar -->
+    <header class="sticky top-0 z-50 w-full bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm border-b border-[#E2E8F0] dark:border-gray-700">
+        <div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center gap-4 text-primary">
+                    <span class="material-symbols-outlined text-3xl">hub</span>
+                    <h2 class="text-[#0d121b] dark:text-white text-lg font-bold">NMN</h2>
+                </div>
+                <nav class="hidden md:flex items-center gap-8">
+                    <a class="text-[#1A202C] dark:text-gray-300 hover:text-primary dark:hover:text-primary text-sm font-medium" href="home.html">Home</a>
+                    <a class="text-[#1A202C] dark:text-gray-300 hover:text-primary dark:hover:text-primary text-sm font-medium" href="academicupdate.html">Academic</a>
+                    <a class="text-primary text-sm font-bold" href="#skills">Skills</a>
+                    <a class="text-[#1A202C] dark:text-gray-300 hover:text-primary dark:hover:text-primary text-sm font-medium" href="#experience">Experience</a>
+                    <a class="text-[#1A202C] dark:text-gray-300 hover:text-primary dark:hover:text-primary text-sm font-medium" href="#projects">Projects</a>
+                </nav>
+                <div class="flex items-center gap-3">
+                    <button onclick="toggleDarkMode()" class="flex items-center justify-center w-10 h-10 rounded-lg bg-[#e7ebf3] dark:bg-gray-800 hover:bg-gray-300 dark:hover:bg-gray-700 transition-colors" title="Toggle Dark Mode">
+                        <span class="material-symbols-outlined text-[#0d121b] dark:text-white">dark_mode</span>
+                    </button>
+                    <a href="Resume_NasimMahmudNayan.pdf" download class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold transition-opacity hover:opacity-90">
+                        <span class="truncate">Download Resume</span>
+                    </a>
+                    <a class="hidden sm:flex items-center justify-center rounded-lg h-10 w-10 bg-[#e7ebf3] dark:bg-gray-800 text-[#0d121b] dark:text-white transition-colors hover:bg-gray-300 dark:hover:bg-gray-700" href="https://github.com/NMNayan57">
+                        <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path clip-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.168 6.839 9.49.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.031-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.03 1.595 1.03 2.688 0 3.848-2.338 4.695-4.566 4.942.359.308.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.001 10.001 0 0022 12c0-5.523-4.477-10-10-10z" fill-rule="evenodd"></path></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="w-full max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
+        <!-- Hero Section -->
+        <section class="grid md:grid-cols-5 gap-8 md:gap-12 items-center" id="about">
+            <div class="md:col-span-2">
+                <img class="rounded-xl w-full h-auto object-cover aspect-square" alt="Nasim Mahmud Nayan" src="photos/industrypic.jpeg"/>
+            </div>
+            <div class="md:col-span-3 flex flex-col gap-8">
+                <div class="flex flex-col gap-4 text-left">
+                    <h1 class="text-[#0d121b] dark:text-white text-4xl lg:text-5xl font-bold leading-tight tracking-tighter">
+                        Building Production AI Systems That Scale
+                    </h1>
+                    <p class="text-[#1A202C] dark:text-gray-300 text-base lg:text-lg font-normal leading-normal">
+                        ML Engineer with 3+ years building production AI systems that drive measurable impact. Specialized in cost-efficient GenAI solutions (LLMs, RAG, AI agents), from wellness platforms serving 100+ daily users to RAG-powered sales agents handling 500+ inquiries/day.
+                    </p>
+                </div>
+                <div class="grid sm:grid-cols-4 gap-4">
+                    <div class="flex flex-col gap-2 rounded-lg p-4 border border-[#E2E8F0] dark:border-gray-700 bg-white dark:bg-gray-800/50">
+                        <p class="text-[#1A202C] dark:text-gray-300 text-sm font-medium">Daily Active Users</p>
+                        <p class="text-[#0d121b] dark:text-white text-3xl font-bold">1.5k+</p>
+                    </div>
+                    <div class="flex flex-col gap-2 rounded-lg p-4 border border-[#E2E8F0] dark:border-gray-700 bg-white dark:bg-gray-800/50">
+                        <p class="text-[#1A202C] dark:text-gray-300 text-sm font-medium">Cost Reduction</p>
+                        <p class="text-[#0d121b] dark:text-white text-3xl font-bold">94%</p>
+                    </div>
+                    <div class="flex flex-col gap-2 rounded-lg p-4 border border-[#E2E8F0] dark:border-gray-700 bg-white dark:bg-gray-800/50">
+                        <p class="text-[#1A202C] dark:text-gray-300 text-sm font-medium">Students Served</p>
+                        <p class="text-[#0d121b] dark:text-white text-3xl font-bold">10K+</p>
+                    </div>
+                    <div class="flex flex-col gap-2 rounded-lg p-4 border border-[#E2E8F0] dark:border-gray-700 bg-white dark:bg-gray-800/50">
+                        <p class="text-[#1A202C] dark:text-gray-300 text-sm font-medium">Experience</p>
+                        <p class="text-[#0d121b] dark:text-white text-3xl font-bold">3+ yrs</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Skills Section -->
+        <section class="py-20 md:py-28" id="skills">
+            <h2 class="text-[#0d121b] dark:text-white text-3xl font-bold tracking-tight text-center">Technical Skills</h2>
+            <p class="text-[#1A202C] dark:text-gray-300 mt-4 text-center max-w-2xl mx-auto">My proficiency across modern programming languages, machine learning frameworks, and cloud technologies.</p>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+                <div class="flex flex-col gap-4">
+                    <h3 class="font-bold text-lg text-[#0d121b] dark:text-white">Programming Languages</h3>
+                    <div class="flex flex-col gap-5 p-4 rounded-lg border border-[#E2E8F0] dark:border-gray-700 bg-white dark:bg-gray-800/50">
+                        <div class="flex flex-col gap-2">
+                            <div class="flex justify-between items-center">
+                                <p class="text-sm font-medium">Python</p>
+                                <p class="text-xs text-gray-500 dark:text-gray-400">Expert</p>
+                            </div>
+                            <div class="w-full bg-[#e7ebf3] dark:bg-gray-700 rounded-full h-2"><div class="bg-primary h-2 rounded-full" style="width: 95%;"></div></div>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <div class="flex justify-between items-center">
+                                <p class="text-sm font-medium">JavaScript</p>
+                                <p class="text-xs text-gray-500 dark:text-gray-400">Advanced</p>
+                            </div>
+                            <div class="w-full bg-[#e7ebf3] dark:bg-gray-700 rounded-full h-2"><div class="bg-primary h-2 rounded-full" style="width: 85%;"></div></div>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <div class="flex justify-between items-center">
+                                <p class="text-sm font-medium">SQL</p>
+                                <p class="text-xs text-gray-500 dark:text-gray-400">Advanced</p>
+                            </div>
+                            <div class="w-full bg-[#e7ebf3] dark:bg-gray-700 rounded-full h-2"><div class="bg-primary h-2 rounded-full" style="width: 88%;"></div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <h3 class="font-bold text-lg text-[#0d121b] dark:text-white">ML Frameworks & Libraries</h3>
+                    <div class="flex flex-col gap-5 p-4 rounded-lg border border-[#E2E8F0] dark:border-gray-700 bg-white dark:bg-gray-800/50">
+                        <div class="flex flex-col gap-2">
+                            <div class="flex justify-between items-center">
+                                <p class="text-sm font-medium">PyTorch / TensorFlow</p>
+                                <p class="text-xs text-gray-500 dark:text-gray-400">Expert</p>
+                            </div>
+                            <div class="w-full bg-[#e7ebf3] dark:bg-gray-700 rounded-full h-2"><div class="bg-primary h-2 rounded-full" style="width: 92%;"></div></div>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <div class="flex justify-between items-center">
+                                <p class="text-sm font-medium">LangChain / LLMs</p>
+                                <p class="text-xs text-gray-500 dark:text-gray-400">Advanced</p>
+                            </div>
+                            <div class="w-full bg-[#e7ebf3] dark:bg-gray-700 rounded-full h-2"><div class="bg-primary h-2 rounded-full" style="width: 90%;"></div></div>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <div class="flex justify-between items-center">
+                                <p class="text-sm font-medium">Scikit-learn / XGBoost</p>
+                                <p class="text-xs text-gray-500 dark:text-gray-400">Expert</p>
+                            </div>
+                            <div class="w-full bg-[#e7ebf3] dark:bg-gray-700 rounded-full h-2"><div class="bg-primary h-2 rounded-full" style="width: 95%;"></div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <h3 class="font-bold text-lg text-[#0d121b] dark:text-white">Cloud & DevOps</h3>
+                    <div class="flex flex-col gap-5 p-4 rounded-lg border border-[#E2E8F0] dark:border-gray-700 bg-white dark:bg-gray-800/50">
+                        <div class="flex flex-col gap-2">
+                            <div class="flex justify-between items-center">
+                                <p class="text-sm font-medium">AWS / Azure</p>
+                                <p class="text-xs text-gray-500 dark:text-gray-400">Intermediate</p>
+                            </div>
+                            <div class="w-full bg-[#e7ebf3] dark:bg-gray-700 rounded-full h-2"><div class="bg-primary h-2 rounded-full" style="width: 75%;"></div></div>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <div class="flex justify-between items-center">
+                                <p class="text-sm font-medium">Docker / Git</p>
+                                <p class="text-xs text-gray-500 dark:text-gray-400">Advanced</p>
+                            </div>
+                            <div class="w-full bg-[#e7ebf3] dark:bg-gray-700 rounded-full h-2"><div class="bg-primary h-2 rounded-full" style="width: 85%;"></div></div>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <div class="flex justify-between items-center">
+                                <p class="text-sm font-medium">Django / FastAPI</p>
+                                <p class="text-xs text-gray-500 dark:text-gray-400">Expert</p>
+                            </div>
+                            <div class="w-full bg-[#e7ebf3] dark:bg-gray-700 rounded-full h-2"><div class="bg-primary h-2 rounded-full" style="width: 93%;"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Work Experience Section -->
+        <section class="py-20 md:py-28" id="experience">
+            <h2 class="text-[#0d121b] dark:text-white text-3xl font-bold tracking-tight text-center">Work Experience</h2>
+            <p class="text-[#1A202C] dark:text-gray-300 mt-4 text-center max-w-2xl mx-auto">A timeline of my professional journey, highlighting key roles and accomplishments in the AI/ML field.</p>
+            <div class="relative mt-12 max-w-3xl mx-auto">
+                <div class="absolute left-1/2 -translate-x-1/2 h-full w-0.5 bg-[#E2E8F0] dark:bg-gray-700"></div>
+                <div class="relative flex flex-col gap-12">
+                    <!-- Timeline Item 1 -->
+                    <div class="flex items-center w-full">
+                        <div class="w-1/2 pr-8 text-right">
+                            <p class="font-bold text-lg text-[#0d121b] dark:text-white">ML Engineer</p>
+                            <p class="text-sm text-gray-600 dark:text-gray-400">Programming Hero</p>
+                            <p class="text-xs text-gray-500 mt-1">Dec 2023 - Sept 2025</p>
+                        </div>
+                        <div class="relative w-1/2 pl-8">
+                            <div class="absolute -left-2.5 top-1/2 -translate-y-1/2 size-5 bg-primary rounded-full border-4 border-background-light dark:border-background-dark"></div>
+                            <div class="p-4 rounded-lg border border-[#E2E8F0] dark:border-gray-700 bg-white dark:bg-gray-800/50">
+                                <ul class="text-sm text-[#1A202C] dark:text-gray-300 space-y-2 list-disc list-inside">
+                                    <li><strong>Zenyora AI Wellness:</strong> Owned full ML lifecycle for production platform serving 100+ daily users with 95% posture detection accuracy, reducing eye strain by 40%</li>
+                                    <li><strong>Real Estate Sales Agent:</strong> Built voice-based RAG agent handling 500+ daily inquiries with 95% query relevance, increasing lead engagement 3x</li>
+                                    <li><strong>Student Performance Prediction:</strong> Forecasting system serving 10K+ students with 85% accuracy, contributing to 15% grade improvement</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Timeline Item 2 -->
+                    <div class="flex items-center w-full flex-row-reverse">
+                        <div class="w-1/2 pl-8 text-left">
+                            <p class="font-bold text-lg text-[#0d121b] dark:text-white">AI Engineer</p>
+                            <p class="text-sm text-gray-600 dark:text-gray-400">Primacy Infotech Ltd</p>
+                            <p class="text-xs text-gray-500 mt-1">July 2023 - Nov 2023</p>
+                        </div>
+                        <div class="relative w-1/2 pr-8">
+                            <div class="absolute -right-2.5 top-1/2 -translate-y-1/2 size-5 bg-primary rounded-full border-4 border-background-light dark:border-background-dark"></div>
+                            <div class="p-4 rounded-lg border border-[#E2E8F0] dark:border-gray-700 bg-white dark:bg-gray-800/50">
+                                <p class="text-sm text-[#1A202C] dark:text-gray-300">Led AI tour planner for 6 UNESCO heritage sites, reducing itinerary creation from 2 hours to 5 minutes. Deployed FastAPI + Streamlit system achieving 99.2% uptime, increasing tourist satisfaction by 35%.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Timeline Item 3 -->
+                    <div class="flex items-center w-full">
+                        <div class="w-1/2 pr-8 text-right">
+                            <p class="font-bold text-lg text-[#0d121b] dark:text-white">Research Assistant</p>
+                            <p class="text-sm text-gray-600 dark:text-gray-400">Rising Research Lab</p>
+                            <p class="text-xs text-gray-500 mt-1">Aug 2022 - May 2023</p>
+                        </div>
+                        <div class="relative w-1/2 pl-8">
+                            <div class="absolute -left-2.5 top-1/2 -translate-y-1/2 size-5 bg-primary rounded-full border-4 border-background-light dark:border-background-dark"></div>
+                            <div class="p-4 rounded-lg border border-[#E2E8F0] dark:border-gray-700 bg-white dark:bg-gray-800/50">
+                                <p class="text-sm text-[#1A202C] dark:text-gray-300">Developed multi-disease prediction system (diabetes, Parkinson's, maternal health) with 92% average accuracy. Engineered IoT air quality monitoring network across 5 locations with real-time inference.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Production Projects Section -->
+        <section class="py-20 md:py-28" id="projects">
+            <h2 class="text-[#0d121b] dark:text-white text-3xl font-bold tracking-tight text-center">Production Projects</h2>
+            <p class="text-[#1A202C] dark:text-gray-300 mt-4 text-center max-w-2xl mx-auto">A selection of projects that demonstrate my ability to build and deploy robust, end-to-end machine learning solutions.</p>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+                <!-- Project Card 1: OgroPath (Entrepreneurship) -->
+                <div class="flex flex-col rounded-xl overflow-hidden border-2 border-primary dark:border-primary bg-white dark:bg-gray-800/50 group">
+                    <img class="w-full h-48 object-cover" alt="OgroPath Medical Entrance Exam Platform" src="photos/ogropath.png"/>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="flex items-center gap-2 mb-2">
+                            <h3 class="font-bold text-lg text-[#0d121b] dark:text-white">OgroPath - Medical Exam Prep SaaS</h3>
+                            <span class="text-xs font-bold bg-green-500 text-white px-2 py-1 rounded-full">FOUNDER</span>
+                        </div>
+                        <p class="text-sm text-[#1A202C] dark:text-gray-300 mt-2 flex-grow">AI-powered medical entrance exam preparation platform serving students across Bangladesh. Features NLP-based question generation, 21K+ question bank, adaptive study plans, and AI diagnostic engine analyzing performance to generate personalized assessments.</p>
+                        <div class="flex flex-wrap gap-2 mt-4">
+                            <span class="text-xs font-medium bg-primary/10 text-primary px-2 py-1 rounded-full">LLMs</span>
+                            <span class="text-xs font-medium bg-primary/10 text-primary px-2 py-1 rounded-full">NLP</span>
+                            <span class="text-xs font-medium bg-primary/10 text-primary px-2 py-1 rounded-full">FastAPI</span>
+                            <span class="text-xs font-medium bg-primary/10 text-primary px-2 py-1 rounded-full">React</span>
+                        </div>
+                        <div class="flex gap-4 mt-6">
+                            <a href="https://ogropath.com" target="_blank" class="flex-1 flex min-w-[84px] cursor-pointer items-center justify-center gap-2 overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold transition-opacity hover:opacity-90">
+                                <span>Visit Site</span> <span class="material-symbols-outlined text-base">arrow_outward</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Card 2: M-TRUST -->
+                <div class="flex flex-col rounded-xl overflow-hidden border border-[#E2E8F0] dark:border-gray-700 bg-white dark:bg-gray-800/50 group">
+                    <img class="w-full h-48 object-cover" alt="M-TRUST Medical Fairness Toolkit" src="photos/biasdetecion.png"/>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="font-bold text-lg text-[#0d121b] dark:text-white">M-TRUST: Medical AI Fairness Toolkit</h3>
+                        <p class="text-sm text-[#1A202C] dark:text-gray-300 mt-2 flex-grow">Open-source Python package for detecting and mitigating bias in medical AI. Published on PyPI with 1K+ downloads and 30.8% bias reduction.</p>
+                        <div class="flex flex-wrap gap-2 mt-4">
+                            <span class="text-xs font-medium bg-primary/10 text-primary px-2 py-1 rounded-full">Python</span>
+                            <span class="text-xs font-medium bg-primary/10 text-primary px-2 py-1 rounded-full">scikit-learn</span>
+                            <span class="text-xs font-medium bg-primary/10 text-primary px-2 py-1 rounded-full">PyPI</span>
+                        </div>
+                        <div class="flex gap-4 mt-6">
+                            <a href="https://pypi.org/project/mtrust-medical/" class="flex-1 flex min-w-[84px] cursor-pointer items-center justify-center gap-2 overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold transition-opacity hover:opacity-90">
+                                <span>PyPI</span> <span class="material-symbols-outlined text-base">arrow_outward</span>
+                            </a>
+                            <a href="https://github.com/NMNayan57/mtrush_medical" class="flex-1 flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#e7ebf3] dark:bg-gray-700 text-[#0d121b] dark:text-white text-sm font-bold transition-colors hover:bg-gray-300 dark:hover:bg-gray-600">
+                                <span>GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Card 3: ExplainRAG -->
+                <div class="flex flex-col rounded-xl overflow-hidden border border-[#E2E8F0] dark:border-gray-700 bg-white dark:bg-gray-800/50 group">
+                    <img class="w-full h-48 object-cover" alt="ExplainRAG Clinical Decision Support" src="photos/explainfc.png"/>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="font-bold text-lg text-[#0d121b] dark:text-white">ExplainRAG-FC-AS: Clinical Decision Support</h3>
+                        <p class="text-sm text-[#1A202C] dark:text-gray-300 mt-2 flex-grow">RAG-based system with thematic clustering and NLI fact-checking. Achieves <10s response time with 90% clinician preference.</p>
+                        <div class="flex flex-wrap gap-2 mt-4">
+                            <span class="text-xs font-medium bg-primary/10 text-primary px-2 py-1 rounded-full">LangChain</span>
+                            <span class="text-xs font-medium bg-primary/10 text-primary px-2 py-1 rounded-full">FAISS</span>
+                            <span class="text-xs font-medium bg-primary/10 text-primary px-2 py-1 rounded-full">GPT-4</span>
+                        </div>
+                        <div class="flex gap-4 mt-6">
+                            <button class="flex-1 flex min-w-[84px] cursor-pointer items-center justify-center gap-2 overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold transition-opacity hover:opacity-90">
+                                <span>Live Demo</span> <span class="material-symbols-outlined text-base">arrow_outward</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project Card 4: Zenyora AI Wellness -->
+                <div class="flex flex-col rounded-xl overflow-hidden border border-[#E2E8F0] dark:border-gray-700 bg-white dark:bg-gray-800/50 group">
+                    <img class="w-full h-48 object-cover" alt="Zenyora AI Wellness Platform" src="photos/Zenyora.png"/>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="flex items-center gap-2 mb-2">
+                            <h3 class="font-bold text-lg text-[#0d121b] dark:text-white">Zenyora AI Wellness Platform</h3>
+                            <span class="text-xs font-bold bg-blue-500 text-white px-2 py-1 rounded-full">LIVE</span>
+                        </div>
+                        <p class="text-sm text-[#1A202C] dark:text-gray-300 mt-2 flex-grow">Production wellness platform serving 100+ daily users. Real-time posture detection using MediaPipe (95% accuracy, 40% eye strain reduction), context-aware productivity coaching with sub-100ms latency processing 30 FPS video.</p>
+                        <div class="flex flex-wrap gap-2 mt-4">
+                            <span class="text-xs font-medium bg-primary/10 text-primary px-2 py-1 rounded-full">PyTorch</span>
+                            <span class="text-xs font-medium bg-primary/10 text-primary px-2 py-1 rounded-full">MediaPipe</span>
+                            <span class="text-xs font-medium bg-primary/10 text-primary px-2 py-1 rounded-full">GPT-4</span>
+                            <span class="text-xs font-medium bg-primary/10 text-primary px-2 py-1 rounded-full">FastAPI</span>
+                        </div>
+                        <div class="flex gap-4 mt-6">
+                            <a href="https://www.zenyora.com/" target="_blank" class="flex-1 flex min-w-[84px] cursor-pointer items-center justify-center gap-2 overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold transition-opacity hover:opacity-90">
+                                <span>Website</span> <span class="material-symbols-outlined text-base">arrow_outward</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 5: RAG Website Generator -->
+                <div class="flex flex-col rounded-xl overflow-hidden border border-[#E2E8F0] dark:border-gray-700 bg-white dark:bg-gray-800/50 group">
+                    <div class="w-full h-48 bg-gradient-to-br from-blue-500/20 to-cyan-500/20 flex items-center justify-center">
+                        <span class="material-symbols-outlined text-6xl text-blue-600">web</span>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="font-bold text-lg text-[#0d121b] dark:text-white">RAG-Based Website Generator</h3>
+                        <p class="text-sm text-[#1A202C] dark:text-gray-300 mt-2 flex-grow">Cost-efficient AI website generator achieving 94% cost savings ($0.03 vs $0.50-$2.00) and 92% token reduction vs v0/Lovable. Uses RAG with PostgreSQL + pgvector for semantic search across 21 indexed React components, tree-sitter for AST parsing.</p>
+                        <div class="flex flex-wrap gap-2 mt-4">
+                            <span class="text-xs font-medium bg-primary/10 text-primary px-2 py-1 rounded-full">RAG</span>
+                            <span class="text-xs font-medium bg-primary/10 text-primary px-2 py-1 rounded-full">PostgreSQL</span>
+                            <span class="text-xs font-medium bg-primary/10 text-primary px-2 py-1 rounded-full">GPT-4o</span>
+                            <span class="text-xs font-medium bg-primary/10 text-primary px-2 py-1 rounded-full">Next.js</span>
+                        </div>
+                        <div class="flex gap-4 mt-6">
+                            <a href="https://github.com/NMNayan57" target="_blank" class="flex-1 flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#e7ebf3] dark:bg-gray-700 text-[#0d121b] dark:text-white text-sm font-bold transition-colors hover:bg-gray-300 dark:hover:bg-gray-600">
+                                <span>GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 6: Bengali Literature RAG -->
+                <div class="flex flex-col rounded-xl overflow-hidden border border-[#E2E8F0] dark:border-gray-700 bg-white dark:bg-gray-800/50 group">
+                    <div class="w-full h-48 bg-gradient-to-br from-green-500/20 to-emerald-500/20 flex items-center justify-center">
+                        <span class="material-symbols-outlined text-6xl text-green-600">translate</span>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="font-bold text-lg text-[#0d121b] dark:text-white">Bengali Literature RAG System</h3>
+                        <p class="text-sm text-[#1A202C] dark:text-gray-300 mt-2 flex-grow">RAG pipeline combining LaBSE embeddings with BM25 keyword search achieving 82% MRR, 95% Hit@5 accuracy with 32ms response time. Intelligent GPT-4o Mini enhancement reducing LLM API costs by 60% while maintaining quality.</p>
+                        <div class="flex flex-wrap gap-2 mt-4">
+                            <span class="text-xs font-medium bg-primary/10 text-primary px-2 py-1 rounded-full">LaBSE</span>
+                            <span class="text-xs font-medium bg-primary/10 text-primary px-2 py-1 rounded-full">BM25</span>
+                            <span class="text-xs font-medium bg-primary/10 text-primary px-2 py-1 rounded-full">GPT-4o Mini</span>
+                            <span class="text-xs font-medium bg-primary/10 text-primary px-2 py-1 rounded-full">FastAPI</span>
+                        </div>
+                        <div class="flex gap-4 mt-6">
+                            <a href="https://github.com/NMNayan57" target="_blank" class="flex-1 flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#e7ebf3] dark:bg-gray-700 text-[#0d121b] dark:text-white text-sm font-bold transition-colors hover:bg-gray-300 dark:hover:bg-gray-600">
+                                <span>GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Professional Milestones Section -->
+        <section class="py-20 md:py-28">
+            <h2 class="text-[#0d121b] dark:text-white text-3xl font-bold tracking-tight text-center mb-4">Professional Milestones</h2>
+            <p class="text-[#1A202C] dark:text-gray-300 text-center max-w-2xl mx-auto mb-12">Key achievements and recognitions throughout my career</p>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Industry Networking -->
+                <div class="flex flex-col gap-4 rounded-xl border border-[#E2E8F0] dark:border-gray-700 bg-white dark:bg-gray-800/50 overflow-hidden">
+                    <img class="w-full h-48 object-cover" src="photos/basis.jpg" alt="Industry Networking"/>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-[#0d121b] dark:text-white mb-2">Industry Networking</h3>
+                        <p class="text-sm text-[#1A202C] dark:text-gray-300">Professional visit to Bangladesh Association of Software and Information Services</p>
+                    </div>
+                </div>
+
+                <!-- Corporate Recognition -->
+                <div class="flex flex-col gap-4 rounded-xl border border-[#E2E8F0] dark:border-gray-700 bg-white dark:bg-gray-800/50 overflow-hidden">
+                    <img class="w-full h-48 object-cover" src="photos/robi.jpg" alt="Corporate Recognition"/>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-[#0d121b] dark:text-white mb-2">Corporate Recognition</h3>
+                        <p class="text-sm text-[#1A202C] dark:text-gray-300">Recognition from Robi Axiata for exceptional performance and problem-solving skills</p>
+                    </div>
+                </div>
+
+                <!-- AI Competition -->
+                <div class="flex flex-col gap-4 rounded-xl border border-[#E2E8F0] dark:border-gray-700 bg-white dark:bg-gray-800/50 overflow-hidden">
+                    <img class="w-full h-48 object-cover" src="photos/ai_olympiad.png" alt="AI Competition"/>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-[#0d121b] dark:text-white mb-2">AI Competition</h3>
+                        <p class="text-sm text-[#1A202C] dark:text-gray-300">Participating in AI Olympiad, demonstrating cutting-edge ML expertise</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full border-t border-[#E2E8F0] dark:border-gray-700 py-8 bg-white dark:bg-gray-900">
+        <div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-sm text-[#1A202C] dark:text-gray-400">© 2025 Nasim Mahmud Nayan. Industry Solutions Portfolio.</p>
+                <div class="flex gap-6">
+                    <a href="https://github.com/NMNayan57" class="text-sm text-primary hover:underline">GitHub</a>
+                    <a href="https://www.linkedin.com/in/nasim-mahmud-nayan-8475211b9/" class="text-sm text-primary hover:underline">LinkedIn</a>nkedIn</a>
+                    <a href="https://pypi.org/user/NasimNayan/" class="text-sm text-primary hover:underline">PyPI</a>
+                    <a href="mailto:smnoyan670@gmail.com" class="text-sm text-primary hover:underline">Email</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<script>
+    // Dark mode toggle
+    function toggleDarkMode() {
+        document.documentElement.classList.toggle('dark');
+        localStorage.setItem('darkMode', document.documentElement.classList.contains('dark'));
+    }
+
+    // Initialize dark mode from localStorage
+    if (localStorage.getItem('darkMode') === 'true') {
+        document.documentElement.classList.add('dark');
+    }
+</script>
+</body>
+</html>

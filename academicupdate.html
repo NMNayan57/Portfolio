@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Nasim Mahmud Nayan - Healthcare AI Researcher</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#135bec",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101622",
+                        "content-light": "#ffffff",
+                        "content-dark": "#182131",
+                        "text-light": "#0d121b",
+                        "text-dark": "#f8f9fc",
+                        "subtext-light": "#4c669a",
+                        "subtext-dark": "#a2b3d6",
+                        "border-light": "#e7ebf3",
+                        "border-dark": "#303a4c",
+                    },
+                    fontFamily: {
+                        display: ["Space Grotesk", "sans-serif"],
+                    },
+                    borderRadius: { DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px" },
+                },
+            },
+        };
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+        }
+    </style>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark">
+    <div class="relative flex min-h-screen w-full flex-col">
+        <header class="sticky top-0 z-50 w-full border-b border-border-light dark:border-border-dark bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+            <div class="mx-auto flex max-w-[1280px] items-center justify-between whitespace-nowrap px-4 sm:px-10 py-3">
+                <div class="flex items-center gap-4 text-text-light dark:text-text-dark">
+                    <div class="size-6 text-primary">
+                        <svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_6_319)">
+                                <path d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z" fill="currentColor"></path>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_6_319">
+                                    <rect fill="white" height="48" width="48"></rect>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h2 class="text-lg font-bold leading-tight tracking-[-0.015em]">NMN</h2>
+                </div>
+                <div class="hidden items-center justify-end gap-8 md:flex">
+                    <div class="flex items-center gap-9">
+                        <a class="text-sm font-medium leading-normal text-text-light dark:text-text-dark hover:text-primary dark:hover:text-primary" href="home.html">Home</a>
+                        <a class="text-sm font-bold leading-normal text-primary" href="#research">Research</a>
+                        <a class="text-sm font-medium leading-normal text-text-light dark:text-text-dark hover:text-primary dark:hover:text-primary" href="#publications">Publications</a>
+                        <a class="text-sm font-medium leading-normal text-text-light dark:text-text-dark hover:text-primary dark:hover:text-primary" href="#projects">Projects</a>
+                        <a class="text-sm font-medium leading-normal text-text-light dark:text-text-dark hover:text-primary dark:hover:text-primary" href="industryupdate.html">Industry</a>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <button onclick="toggleDarkMode()" class="flex items-center justify-center w-10 h-10 rounded-lg bg-background-light dark:bg-content-dark hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors border border-border-light dark:border-border-dark" title="Toggle Dark Mode">
+                            <span class="material-symbols-outlined text-text-light dark:text-text-dark">dark_mode</span>
+                        </button>
+                        <a href="CV_Nayan.pdf" download class="flex h-10 min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-primary px-4 text-sm font-bold leading-normal tracking-[0.015em] text-white transition-colors hover:bg-primary/90">
+                            <span class="truncate">Download CV</span>
+                        </a>
+                    </div>
+                </div>
+                <button class="flex h-10 w-10 cursor-pointer items-center justify-center rounded-lg bg-transparent text-text-light dark:text-text-dark md:hidden">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+            </div>
+        </header>
+
+        <main class="flex h-full grow flex-col">
+            <div class="mx-auto flex w-full max-w-[1280px] flex-1 flex-col px-4 sm:px-10 py-10 sm:py-20">
+                <!-- Hero Section -->
+                <section class="flex flex-col gap-10 lg:flex-row lg:items-center lg:gap-16" id="hero">
+                    <div class="flex-1">
+                        <div class="flex flex-col items-start gap-4 @container">
+                            <div class="flex w-full flex-col gap-6 @[520px]:flex-row @[520px]:items-center">
+                                <div class="flex gap-4">
+                                    <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-32 w-32" 
+                                         style='background-image: url("photos/profile.png");'></div>
+                                    <div class="flex flex-col justify-center">
+                                        <p class="text-text-light dark:text-text-dark text-[28px] font-bold leading-tight tracking-[-0.015em]">Nasim Mahmud Nayan</p>
+                                        <p class="text-subtext-light dark:text-subtext-dark text-lg font-normal leading-normal">Graduate Student, UITS</p>
+                                        <p class="text-primary text-sm font-medium flex items-center gap-1">
+                                            <span class="material-symbols-outlined text-base">verified</span>
+                                            Verified email at uits.edu.bd
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid flex-1 grid-cols-2 gap-4 sm:grid-cols-4">
+                        <div class="flex flex-col gap-2 rounded-xl border border-border-light dark:border-border-dark bg-content-light dark:bg-content-dark p-4 items-start">
+                            <span class="material-symbols-outlined text-primary text-3xl">format_quote</span>
+                            <p class="text-text-light dark:text-text-dark tracking-light text-3xl font-bold leading-tight">100+</p>
+                            <p class="text-subtext-light dark:text-subtext-dark text-sm font-normal leading-normal">Citations</p>
+                        </div>
+                        <div class="flex flex-col gap-2 rounded-xl border border-border-light dark:border-border-dark bg-content-light dark:bg-content-dark p-4 items-start">
+                            <span class="material-symbols-outlined text-primary text-3xl">article</span>
+                            <p class="text-text-light dark:text-text-dark tracking-light text-3xl font-bold leading-tight">10+</p>
+                            <p class="text-subtext-light dark:text-subtext-dark text-sm font-normal leading-normal">Publications</p>
+                        </div>
+                        <div class="flex flex-col gap-2 rounded-xl border border-border-light dark:border-border-dark bg-content-light dark:bg-content-dark p-4 items-start">
+                            <span class="material-symbols-outlined text-primary text-3xl">trending_up</span>
+                            <p class="text-text-light dark:text-text-dark tracking-light text-3xl font-bold leading-tight">5</p>
+                            <p class="text-subtext-light dark:text-subtext-dark text-sm font-normal leading-normal">h-index</p>
+                        </div>
+                        <div class="flex flex-col gap-2 rounded-xl border border-border-light dark:border-border-dark bg-content-light dark:bg-content-dark p-4 items-start">
+                            <span class="material-symbols-outlined text-primary text-3xl">school</span>
+                            <p class="text-text-light dark:text-text-dark tracking-light text-3xl font-bold leading-tight">100+</p>
+                            <p class="text-subtext-light dark:text-subtext-dark text-sm font-normal leading-normal">Students</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Research Interests -->
+                <section class="py-20" id="research">
+                    <h2 class="text-text-light dark:text-text-dark text-3xl font-bold leading-tight tracking-[-0.015em] pb-8">Research Interests</h2>
+                    <div class="grid grid-cols-1 gap-6 md:grid-cols-3">
+                        <div class="flex flex-col gap-4 rounded-xl border border-border-light dark:border-border-dark bg-content-light dark:bg-content-dark p-6 transition-shadow hover:shadow-lg">
+                            <span class="material-symbols-outlined text-primary text-4xl">medical_services</span>
+                            <div>
+                                <p class="text-text-light dark:text-text-dark text-lg font-bold leading-normal">Trustworthy AI in Healthcare</p>
+                                <p class="text-subtext-light dark:text-subtext-dark text-base font-normal leading-normal">Developing reliable, fair, and transparent AI systems for medical applications in resource-limited settings.</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-4 rounded-xl border border-border-light dark:border-border-dark bg-content-light dark:bg-content-dark p-6 transition-shadow hover:shadow-lg">
+                            <span class="material-symbols-outlined text-primary text-4xl">balance</span>
+                            <div>
+                                <p class="text-text-light dark:text-text-dark text-lg font-bold leading-normal">Bias Mitigation & Fairness</p>
+                                <p class="text-subtext-light dark:text-subtext-dark text-base font-normal leading-normal">Creating fairness-aware machine learning frameworks to reduce demographic bias in healthcare AI systems.</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-4 rounded-xl border border-border-light dark:border-border-dark bg-content-light dark:bg-content-dark p-6 transition-shadow hover:shadow-lg">
+                            <span class="material-symbols-outlined text-primary text-4xl">biotech</span>
+                            <div>
+                                <p class="text-text-light dark:text-text-dark text-lg font-bold leading-normal">Multimodal Medical AI</p>
+                                <p class="text-subtext-light dark:text-subtext-dark text-base font-normal leading-normal">Integrating clinical text, medical imaging, and sensor data for comprehensive diagnostic systems.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Publications -->
+                <section class="py-10" id="publications">
+                    <h2 class="text-text-light dark:text-text-dark text-3xl font-bold leading-tight tracking-[-0.015em] pb-8">Key Publications</h2>
+                    <p class="text-subtext-light dark:text-subtext-dark text-base pb-6">
+                        <strong>Google Scholar Verified</strong> • Graduate Student, UITS • Email: uits.edu.bd<br>
+                        Research Areas: Artificial Intelligence, Trustworthy AI for Healthcare, Fairness ML, MCPS<br>
+                        Publication Metrics: 11 publications | 104 citations | h-index: 4 | 
+                        <a href="https://scholar.google.com/citations?user=zAuBXLUAAAAJ&hl=en" target="_blank" class="text-primary hover:underline">Google Scholar Profile</a>
+                    </p>
+                    
+                    <div class="flex flex-wrap items-center gap-2 pb-6">
+                        <button onclick="filterPublications('all')" id="filter-all" class="filter-btn flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-9 px-4 bg-primary text-white text-sm font-medium leading-normal">All (11)</button>
+                        <button onclick="filterPublications('journal')" id="filter-journal" class="filter-btn flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-9 px-4 bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary text-sm font-medium leading-normal hover:bg-primary/20 dark:hover:bg-primary/30">Journal (5)</button>
+                        <button onclick="filterPublications('conference')" id="filter-conference" class="filter-btn flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-9 px-4 bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary text-sm font-medium leading-normal hover:bg-primary/20 dark:hover:bg-primary/30">Conference (5)</button>
+                        <button onclick="filterPublications('preprint')" id="filter-preprint" class="filter-btn flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-9 px-4 bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary text-sm font-medium leading-normal hover:bg-primary/20 dark:hover:bg-primary/30">Preprint (1)</button>
+                    </div>
+
+                    <div class="flex flex-col divide-y divide-border-light dark:divide-border-dark" id="publications-list">
+                        <!-- Publication 1 - Journal -->
+                        <div class="py-6 publication-item" data-type="journal">
+                            <p class="text-lg font-bold text-text-light dark:text-text-dark">A Medical Cyber-physical System for Predicting Maternal Health in Developing Countries Using Machine Learning</p>
+                            <p class="text-subtext-light dark:text-subtext-dark text-base">MM Hossain, MA Kashem, <strong>NM Nayan</strong>, MA Chowdhury. In *Healthcare Analytics*, Volume 5, 100285, 2024.</p>
+                            <p class="text-sm text-subtext-light dark:text-subtext-dark mt-2"><strong>49 citations</strong> | 99% prediction accuracy, 34% bias reduction across 5,000+ patient records using MCPS framework.</p>
+                            <div class="mt-3 flex flex-wrap gap-x-4 gap-y-2">
+                                <a class="flex items-center gap-1 text-sm font-medium text-primary hover:underline" href="https://doi.org/10.1016/j.health.2023.100285" target="_blank">
+                                    <span class="material-symbols-outlined text-base">picture_as_pdf</span> DOI
+                                </a>
+                                <span class="text-xs bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 px-2 py-1 rounded-full">Journal</span>
+                            </div>
+                        </div>
+
+                        <!-- Publication 2 - Conference -->
+                        <div class="py-6 publication-item" data-type="conference">
+                            <p class="text-lg font-bold text-text-light dark:text-text-dark">SMOTE Oversampling and Near Miss Undersampling Based Diabetes Diagnosis from Imbalanced Dataset with XAI Visualization</p>
+                            <p class="text-subtext-light dark:text-subtext-dark text-base"><strong>NM Nayan</strong>, A Islam, MU Islam, E Ahmed, MM Hossain, MZ Alam. In *IEEE Symposium on Computers and Communications (ISCC)*, 1-6, 2023.</p>
+                            <p class="text-sm text-subtext-light dark:text-subtext-dark mt-2"><strong>16 citations</strong> | Advanced resampling techniques for imbalanced medical data with XAI interpretability.</p>
+                            <div class="mt-3 flex flex-wrap gap-x-4 gap-y-2">
+                                <a class="flex items-center gap-1 text-sm font-medium text-primary hover:underline" href="https://doi.org/10.1109/ISCC58397.2023.10218281" target="_blank">
+                                    <span class="material-symbols-outlined text-base">picture_as_pdf</span> DOI
+                                </a>
+                                <span class="text-xs bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-2 py-1 rounded-full">Conference</span>
+                            </div>
+                        </div>
+
+                        <!-- Publication 3 - Journal -->
+                        <div class="py-6 publication-item" data-type="journal">
+                            <p class="text-lg font-bold text-text-light dark:text-text-dark">Date Fruit Classification with Machine Learning and Explainable Artificial Intelligence</p>
+                            <p class="text-subtext-light dark:text-subtext-dark text-base">M Sahidullah, <strong>NM Nayan</strong>, MS Morshed, MM Hossain, MU Islam. In *International Journal of Computer Applications*, 975, 8887, 2023.</p>
+                            <p class="text-sm text-subtext-light dark:text-subtext-dark mt-2"><strong>15 citations</strong> | ML and XAI for agricultural product classification.</p>
+                            <div class="mt-3 flex flex-wrap gap-x-4 gap-y-2">
+                                <span class="text-xs bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 px-2 py-1 rounded-full">Journal</span>
+                            </div>
+                        </div>
+
+                        <!-- Publication 4 - Journal -->
+                        <div class="py-6 publication-item" data-type="journal">
+                            <p class="text-lg font-bold text-text-light dark:text-text-dark">An IoT Based Real-Time Environmental Monitoring System for Developing Areas</p>
+                            <p class="text-subtext-light dark:text-subtext-dark text-base">M Alam, MM Islam, <strong>NM Nayan</strong>, J Uddin. In *Journal of Advanced Research in Applied Sciences and Engineering Technology*, 2024.</p>
+                            <p class="text-sm text-subtext-light dark:text-subtext-dark mt-2"><strong>9 citations</strong> | IoT-enabled air quality monitoring with real-time data capture.</p>
+                            <div class="mt-3 flex flex-wrap gap-x-4 gap-y-2">
+                                <a class="flex items-center gap-1 text-sm font-medium text-primary hover:underline" href="https://doi.org/10.37934/araset.52.1.106121" target="_blank">
+                                    <span class="material-symbols-outlined text-base">picture_as_pdf</span> DOI
+                                </a>
+                                <span class="text-xs bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 px-2 py-1 rounded-full">Journal</span>
+                            </div>
+                        </div>
+
+                        <!-- Publication 5 - Conference -->
+                        <div class="py-6 publication-item" data-type="conference">
+                            <p class="text-lg font-bold text-text-light dark:text-text-dark">Artificial Intelligence-Driven Approach for Predicting Maternal Health Risk Factors</p>
+                            <p class="text-subtext-light dark:text-subtext-dark text-base">MM Hossain, MA Kashem, <strong>NM Nayan</strong>. In *SEEDA-CECNSM*, 2024.</p>
+                            <p class="text-sm text-subtext-light dark:text-subtext-dark mt-2"><strong>6 citations</strong> | AI-powered risk stratification for maternal health monitoring.</p>
+                            <div class="mt-3 flex flex-wrap gap-x-4 gap-y-2">
+                                <a class="flex items-center gap-1 text-sm font-medium text-primary hover:underline" href="https://doi.org/10.1109/SEEDA-CECNSM63478.2024.00035" target="_blank">
+                                    <span class="material-symbols-outlined text-base">picture_as_pdf</span> DOI
+                                </a>
+                                <span class="text-xs bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-2 py-1 rounded-full">Conference</span>
+                            </div>
+                        </div>
+
+                        <!-- Publication 6 - Conference -->
+                        <div class="py-6 publication-item" data-type="conference">
+                            <p class="text-lg font-bold text-text-light dark:text-text-dark">Investigation of Air Effluence Using IoT and Machine Learning</p>
+                            <p class="text-subtext-light dark:text-subtext-dark text-base">SUP Shakil, MA Kashem, MM Islam, <strong>NM Nayan</strong>, J Uddin. In *International Conference for Emerging Technologies in Computing*, 183-202, 2023.</p>
+                            <p class="text-sm text-subtext-light dark:text-subtext-dark mt-2"><strong>6 citations</strong> | IoT and ML for environmental pollution monitoring.</p>
+                            <div class="mt-3 flex flex-wrap gap-x-4 gap-y-2">
+                                <span class="text-xs bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-2 py-1 rounded-full">Conference</span>
+                            </div>
+                        </div>
+
+                        <!-- Publication 7 - Journal -->
+                        <div class="py-6 publication-item" data-type="journal">
+                            <p class="text-lg font-bold text-text-light dark:text-text-dark">Air Pollution Monitoring Using IoT and Machine Learning in the Perspective of Bangladesh</p>
+                            <p class="text-subtext-light dark:text-subtext-dark text-base">MM Islam, SUP Shakil, <strong>NM Nayan</strong>, MA Kashem, J Uddin. In *Annals of Emerging Technologies in Computing (AETiC)*, 8 (3), 17-33, 2024.</p>
+                            <p class="text-sm text-subtext-light dark:text-subtext-dark mt-2"><strong>2 citations</strong> | Bangladesh-specific air pollution monitoring using IoT and ML.</p>
+                            <div class="mt-3 flex flex-wrap gap-x-4 gap-y-2">
+                                <span class="text-xs bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 px-2 py-1 rounded-full">Journal</span>
+                            </div>
+                        </div>
+
+                        <!-- Publication 8 - Journal -->
+                        <div class="py-6 publication-item" data-type="journal">
+                            <p class="text-lg font-bold text-text-light dark:text-text-dark">Recent Advancements of Computer Vision in Healthcare: A Systematic Review</p>
+                            <p class="text-subtext-light dark:text-subtext-dark text-base">M Islam, <strong>NM Nayan</strong>, A Islam, S Sikder, MR Rashel, MZ Alam. In *IEIE Transactions on Smart Processing & Computing*, 13 (6), 562-571, 2024.</p>
+                            <p class="text-sm text-subtext-light dark:text-subtext-dark mt-2"><strong>1 citation</strong> | Comprehensive review of 125+ papers on healthcare computer vision.</p>
+                            <div class="mt-3 flex flex-wrap gap-x-4 gap-y-2">
+                                <span class="text-xs bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 px-2 py-1 rounded-full">Journal</span>
+                            </div>
+                        </div>
+
+                        <!-- Publication 9 - Preprint -->
+                        <div class="py-6 publication-item" data-type="preprint">
+                            <p class="text-lg font-bold text-text-light dark:text-text-dark">An Interpretable and Balanced Machine Learning Framework for Parkinson's Disease Prediction Using Feature Engineering and Explainable AI</p>
+                            <p class="text-subtext-light dark:text-subtext-dark text-base"><strong>NM Nayan</strong>, AM Rana, MM Islam, J Uddin, T Yasmin, J Uddin. In *PLOS ONE*, 20 (10), e0333418, 2025.</p>
+                            <p class="text-sm text-subtext-light dark:text-subtext-dark mt-2">92% accuracy with XAI visualizations. Published in PLOS ONE 2025.</p>
+                            <div class="mt-3 flex flex-wrap gap-x-4 gap-y-2">
+                                <span class="text-xs bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 px-2 py-1 rounded-full">Preprint</span>
+                            </div>
+                        </div>
+
+                        <!-- Publication 10 - Conference -->
+                        <div class="py-6 publication-item" data-type="conference">
+                            <p class="text-lg font-bold text-text-light dark:text-text-dark">A Comprehensive Maternal Health Risk Prediction Dataset from IoT-Enabled Medical Cyber-Physical Systems in Developing Countries</p>
+                            <p class="text-subtext-light dark:text-subtext-dark text-base">MM Hossain, <strong>NM Nayan</strong>, MA Kashem. 2025.</p>
+                            <p class="text-sm text-subtext-light dark:text-subtext-dark mt-2">Supporting deep learning applications for healthcare with comprehensive MCPS dataset.</p>
+                            <div class="mt-3 flex flex-wrap gap-x-4 gap-y-2">
+                                <span class="text-xs bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-2 py-1 rounded-full">Conference</span>
+                            </div>
+                        </div>
+
+                        <!-- Publication 11 - Conference -->
+                        <div class="py-6 publication-item" data-type="conference">
+                            <p class="text-lg font-bold text-text-light dark:text-text-dark">Enhancing the Security of Pregnancy Health Data Transmission through Homomorphic Encryption: An Advanced Model</p>
+                            <p class="text-subtext-light dark:text-subtext-dark text-base">MM Hossain, <strong>NM Nayan</strong>, MA Kashem. In *Internet of Things Applications and Technology*, 146-169, 2024.</p>
+                            <p class="text-sm text-subtext-light dark:text-subtext-dark mt-2">Advanced encryption model for secure pregnancy health data transmission.</p>
+                            <div class="mt-3 flex flex-wrap gap-x-4 gap-y-2">
+                                <span class="text-xs bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-2 py-1 rounded-full">Conference</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Current Research Projects -->
+                <section class="py-10" id="current-research">
+                    <h2 class="text-text-light dark:text-text-dark text-3xl font-bold leading-tight tracking-[-0.015em] pb-4">Current Research</h2>
+                    <p class="text-subtext-light dark:text-subtext-dark text-base pb-8">
+                        <span class="inline-flex items-center gap-1 bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200 px-3 py-1 rounded-full text-sm font-medium\">
+                            <span class="material-symbols-outlined text-base">science</span> In Progress
+                        </span>
+                        <span class="ml-2">Open for research collaboration • PhD opportunities welcome</span>
+                    </p>
+                    
+                    <div class="grid grid-cols-1 gap-6 md:grid-cols-3">
+                        <!-- Current Project 1: M-TRUST -->
+                        <div class="flex flex-col gap-4 rounded-xl border-2 border-primary/30 bg-content-light dark:bg-content-dark p-6 transition-shadow hover:shadow-xl">
+                            <div class="flex items-start justify-between">
+                                <span class="material-symbols-outlined text-primary text-4xl">health_and_safety</span>
+                                <span class="bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200 px-2 py-1 rounded text-xs font-bold">WORKING</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-text-light dark:text-text-dark">M-TRUST Enhancement</h3>
+                            <p class="text-sm text-subtext-light dark:text-subtext-dark">Advancing medical AI fairness toolkit with new bias detection algorithms and extended healthcare dataset support. Targeting paper submission to JMIR or IEEE TBME.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="rounded-full bg-primary/10 px-2 py-1 text-xs font-medium text-primary dark:bg-primary/20">Fairness ML</span>
+                                <span class="rounded-full bg-primary/10 px-2 py-1 text-xs font-medium text-primary dark:bg-primary/20">PyTorch</span>
+                            </div>
+                        </div>
+
+                        <!-- Current Project 2: ECG Analysis -->
+                        <div class="flex flex-col gap-4 rounded-xl border-2 border-primary/30 bg-content-light dark:bg-content-dark p-6 transition-shadow hover:shadow-xl">
+                            <div class="flex items-start justify-between">
+                                <span class="material-symbols-outlined text-primary text-4xl">cardiology</span>
+                                <span class="bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200 px-2 py-1 rounded text-xs font-bold">WORKING</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-text-light dark:text-text-dark">ECG Arrhythmia Detection</h3>
+                            <p class="text-sm text-subtext-light dark:text-subtext-dark">Deep learning model for automated ECG interpretation detecting 5 cardiac conditions with 96% accuracy. Preparing manuscript for Biomedical Signal Processing journal.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="rounded-full bg-primary/10 px-2 py-1 text-xs font-medium text-primary dark:bg-primary/20">PyTorch</span>
+                                <span class="rounded-full bg-primary/10 px-2 py-1 text-xs font-medium text-primary dark:bg-primary/20">CNN</span>
+                            </div>
+                        </div>
+
+                        <!-- Current Project 3: Chest X-Ray -->
+                        <div class="flex flex-col gap-4 rounded-xl border-2 border-primary/30 bg-content-light dark:bg-content-dark p-6 transition-shadow hover:shadow-xl">
+                            <div class="flex items-start justify-between">
+                                <span class="material-symbols-outlined text-primary text-4xl">medical_information</span>
+                                <span class="bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200 px-2 py-1 rounded text-xs font-bold">WORKING</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-text-light dark:text-text-dark">Chest X-Ray Diagnosis System</h3>
+                            <p class="text-sm text-subtext-light dark:text-subtext-dark">Vision transformer-based multi-disease classification from chest radiographs with explainable AI. Collaborating with radiologists for clinical validation. Target: Nature Scientific Reports.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="rounded-full bg-primary/10 px-2 py-1 text-xs font-medium text-primary dark:bg-primary/20">Vision Transformer</span>
+                                <span class="rounded-full bg-primary/10 px-2 py-1 text-xs font-medium text-primary dark:bg-primary/20">XAI</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Research Projects -->
+                <section class="py-20" id="projects">
+                    <h2 class="text-text-light dark:text-text-dark text-3xl font-bold leading-tight tracking-[-0.015em] pb-8">Research Projects</h2>
+                    <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+                        <!-- Project 1 -->
+                        <div class="flex flex-col gap-4 rounded-xl border border-border-light dark:border-border-dark bg-content-light dark:bg-content-dark p-6 transition-shadow hover:shadow-lg">
+                            <h3 class="text-xl font-bold text-text-light dark:text-text-dark">M-TRUST: Fairness Toolkit for Medical AI</h3>
+                            <p class="text-subtext-light dark:text-subtext-dark text-base">Open-source Python toolkit for detecting and mitigating bias in medical AI. Reduced demographic bias by 30.8% while maintaining 98% accuracy on benchmark datasets.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="rounded-full bg-primary/10 px-3 py-1 text-xs font-medium text-primary dark:bg-primary/20">Python</span>
+                                <span class="rounded-full bg-primary/10 px-3 py-1 text-xs font-medium text-primary dark:bg-primary/20">PyTorch</span>
+                                <span class="rounded-full bg-primary/10 px-3 py-1 text-xs font-medium text-primary dark:bg-primary/20">Fairness</span>
+                            </div>
+                            <div class="flex items-center gap-6 pt-2">
+                                <a class="flex items-center gap-2 text-sm font-medium text-primary hover:underline" href="https://pypi.org/project/m-trust/" target="_blank">
+                                    <span class="material-symbols-outlined text-xl">download</span> 1K+ Downloads
+                                </a>
+                                <a class="flex items-center gap-2 text-sm font-medium text-primary hover:underline" href="https://github.com/yourusername/m-trust" target="_blank">
+                                    <span class="material-symbols-outlined text-xl">open_in_new</span> GitHub
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Project 2 -->
+                        <div class="flex flex-col gap-4 rounded-xl border border-border-light dark:border-border-dark bg-content-light dark:bg-content-dark p-6 transition-shadow hover:shadow-lg">
+                            <h3 class="text-xl font-bold text-text-light dark:text-text-dark">ExplainRAG-FC-AS: Clinical Decision Support</h3>
+                            <p class="text-subtext-light dark:text-subtext-dark text-base">RAG-based system with thematic clustering and NLI fact-checking. Achieves <10s response time with 90% clinician preference vs. ranked retrieval.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="rounded-full bg-primary/10 px-3 py-1 text-xs font-medium text-primary dark:bg-primary/20">LangChain</span>
+                                <span class="rounded-full bg-primary/10 px-3 py-1 text-xs font-medium text-primary dark:bg-primary/20">FAISS</span>
+                                <span class="rounded-full bg-primary/10 px-3 py-1 text-xs font-medium text-primary dark:bg-primary/20">GPT-4</span>
+                            </div>
+                            <div class="flex items-center gap-6 pt-2">
+                                <a class="flex items-center gap-2 text-sm font-medium text-primary hover:underline" href="#" target="_blank">
+                                    <span class="material-symbols-outlined text-xl">open_in_new</span> Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Experience -->
+                <section class="py-10" id="experience">
+                    <h2 class="text-text-light dark:text-text-dark text-3xl font-bold leading-tight tracking-[-0.015em] pb-12">Research Experience</h2>
+                    <div class="relative flex flex-col gap-12">
+                        <div class="absolute left-4 top-0 h-full w-0.5 bg-border-light dark:bg-border-dark"></div>
+                        
+                        <div class="relative pl-12">
+                            <div class="absolute -left-[9px] top-1.5 h-5 w-5 rounded-full bg-primary border-4 border-background-light dark:border-background-dark"></div>
+                            <p class="text-sm font-medium text-subtext-light dark:text-subtext-dark">Jul 2022 - Present</p>
+                            <h3 class="text-lg font-bold text-text-light dark:text-text-dark">Research Assistant, Medical Cyber-Physical Systems</h3>
+                            <p class="text-base text-subtext-light dark:text-subtext-dark">Shanto-Mariam University of Creative Technology</p>
+                            <p class="text-sm text-subtext-light dark:text-subtext-dark mt-1"><strong>Advisors:</strong> Prof. Mohammad Mobarak Hossain, Dr. Jasim Uddin</p>
+                            <ul class="text-sm text-subtext-light dark:text-subtext-dark mt-2 list-disc list-inside space-y-1">
+                                <li>Architected ensemble learning framework for maternal health risk stratification, achieving 99% prediction accuracy and reducing algorithmic bias by 34% across 5,000+ patient records</li>
+                                <li>Implemented homomorphic encryption on IoT devices to ensure secure, private, and compliant transmission of pregnancy data</li>
+                                <li>Contributed to 3 co-authored papers in high-impact venues (combined 50+ citations), establishing new benchmarks in maternal health AI</li>
+                            </ul>
+                        </div>
+
+                        <div class="relative pl-12">
+                            <div class="absolute -left-[9px] top-1.5 h-5 w-5 rounded-full bg-primary border-4 border-background-light dark:border-background-dark"></div>
+                            <p class="text-sm font-medium text-subtext-light dark:text-subtext-dark">Aug 2022 - Mar 2023</p>
+                            <h3 class="text-lg font-bold text-text-light dark:text-text-dark">Research Assistant, Healthcare AI & IoT Systems</h3>
+                            <p class="text-base text-subtext-light dark:text-subtext-dark">Rising Research Lab</p>
+                            <p class="text-sm text-subtext-light dark:text-subtext-dark mt-1"><strong>Advisors:</strong> Md Monirul Islam, Dr. Jia Uddin</p>
+                            <ul class="text-sm text-subtext-light dark:text-subtext-dark mt-2 list-disc list-inside space-y-1">
+                                <li>Developed and deployed multi-disease prediction system (Diabetes, Parkinson's, etc.) with 92% average accuracy and IoT air quality monitoring network across 5 locations</li>
+                                <li>Engineered full data pipeline from IoT device data capture to real-time inference</li>
+                                <li>Implemented AutoML pipeline reducing model development time by 60% while maintaining performance</li>
+                            </ul>
+                        </div>
+
+                        <div class="relative pl-12">
+                            <div class="absolute -left-[9px] top-1.5 h-5 w-5 rounded-full bg-primary border-4 border-background-light dark:border-background-dark"></div>
+                            <p class="text-sm font-medium text-subtext-light dark:text-subtext-dark">Jan 2023 - Dec 2024</p>
+                            <h3 class="text-lg font-bold text-text-light dark:text-text-dark">Research Assistant, Computer Vision in Medicine</h3>
+                            <p class="text-base text-subtext-light dark:text-subtext-dark">EMPATHY LAB, Independent University Bangladesh</p>
+                            <p class="text-sm text-subtext-light dark:text-subtext-dark mt-1"><strong>Advisors:</strong> Dr. Ashraful Islam, Dr. Muhammd Usama Islam</p>
+                            <ul class="text-sm text-subtext-light dark:text-subtext-dark mt-2 list-disc list-inside space-y-1">
+                                <li>Conducted systematic review of 125+ papers on healthcare computer vision applications, identifying key research gaps and opportunities</li>
+                                <li>Analyzed leading deep learning architectures, such as CNNs and Vision Transformers, for medical imaging and predictive analytics</li>
+                                <li>Synthesized findings to inform lab's research direction in surgical assistance and remote disease monitoring</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Teaching & Mentoring -->
+                <section class="py-20" id="teaching">
+                    <h2 class="text-text-light dark:text-text-dark text-3xl font-bold leading-tight tracking-[-0.015em] pb-8">Teaching & Mentoring</h2>
+                    <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3">
+                        <div class="flex flex-col gap-2 rounded-xl border border-border-light dark:border-border-dark bg-content-light dark:bg-content-dark p-6 items-center text-center">
+                            <p class="text-primary text-5xl font-bold">50+</p>
+                            <p class="text-subtext-light dark:text-subtext-dark text-base">Students Trained</p>
+                            <p class="text-xs text-subtext-light dark:text-subtext-dark">AI Trainer, EDGE Project</p>
+                        </div>
+                        <div class="flex flex-col gap-2 rounded-xl border border-border-light dark:border-border-dark bg-content-light dark:bg-content-dark p-6 items-center text-center">
+                            <p class="text-primary text-5xl font-bold">7</p>
+                            <p class="text-subtext-light dark:text-subtext-dark text-base">Research Students</p>
+                            <p class="text-xs text-subtext-light dark:text-subtext-dark">UITS Summer Program</p>
+                        </div>
+                        <div class="flex flex-col gap-2 rounded-xl border border-border-light dark:border-border-dark bg-content-light dark:bg-content-dark p-6 items-center text-center">
+                            <p class="text-primary text-5xl font-bold">85%</p>
+                            <p class="text-subtext-light dark:text-subtext-dark text-base">Job Placement</p>
+                            <p class="text-xs text-subtext-light dark:text-subtext-dark">EDGE Project Alumni</p>
+                        </div>
+                    </div>
+
+                    <div class="mt-12 space-y-6">
+                        <div class="rounded-xl border border-border-light dark:border-border-dark bg-content-light dark:bg-content-dark p-6">
+                            <h3 class="text-lg font-bold text-text-light dark:text-text-dark mb-2">AI Trainer, EDGE Project (May 2023 - Nov 2023)</h3>
+                            <p class="text-subtext-light dark:text-subtext-dark text-base">Trained 50+ students in ML/AI through hands-on projects. Developed curriculum covering supervised learning, clustering, regression, and model evaluation. 85% job placement rate.</p>
+                        </div>
+                        <div class="rounded-xl border border-border-light dark:border-border-dark bg-content-light dark:bg-content-dark p-6">
+                            <h3 class="text-lg font-bold text-text-light dark:text-text-dark mb-2">Research Mentor, UITS Summer Program (2023 & 2024)</h3>
+                            <p class="text-subtext-light dark:text-subtext-dark text-base">Mentored 7 students on ML and IoT projects. Guided complete research pipeline from literature review to publication. Outcomes: 1 Scopus-indexed paper accepted, 1 under review.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Teaching & Mentoring -->
+                <section class="py-10" id="teaching-mentoring">
+                    <h2 class="text-text-light dark:text-text-dark text-3xl font-bold leading-tight tracking-[-0.015em] pb-8">Teaching & Mentoring Experience</h2>
+                    <div class="grid grid-cols-1 gap-6 md:grid-cols-3">
+                        <div class="flex flex-col gap-4 rounded-xl border border-border-light dark:border-border-dark bg-content-light dark:bg-content-dark overflow-hidden">
+                            <img class="w-full h-48 object-cover" src="photos/manangment.jpg" alt="AI Training Leadership"/>
+                            <div class="p-6">
+                                <h3 class="text-lg font-bold text-text-light dark:text-text-dark mb-2">AI Training Leadership</h3>
+                                <p class="text-sm text-subtext-light dark:text-subtext-dark">Leading AI training batch as part of EDGE Project, mentoring 50+ students in ML/AI</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-4 rounded-xl border border-border-light dark:border-border-dark bg-content-light dark:bg-content-dark overflow-hidden">
+                            <img class="w-full h-48 object-cover" src="photos/presentation.jpg" alt="Research Presentations"/>
+                            <div class="p-6">
+                                <h3 class="text-lg font-bold text-text-light dark:text-text-dark mb-2">Research Presentations</h3>
+                                <p class="text-sm text-subtext-light dark:text-subtext-dark">Presenting at inter-university competitions and academic conferences</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-4 rounded-xl border border-border-light dark:border-border-dark bg-content-light dark:bg-content-dark overflow-hidden">
+                            <img class="w-full h-48 object-cover" src="photos/interview.jpg" alt="Interview Panel"/>
+                            <div class="p-6">
+                                <h3 class="text-lg font-bold text-text-light dark:text-text-dark mb-2">Interview Panel</h3>
+                                <p class="text-sm text-subtext-light dark:text-subtext-dark">Evaluating technical skills and mentoring future researchers</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Academic Service & Leadership -->
+                <section class="py-20" id="service">
+                    <h2 class="text-text-light dark:text-text-dark text-3xl font-bold leading-tight tracking-[-0.015em] pb-8">Academic Service & Leadership</h2>
+                    
+                    <div class="mb-12">
+                        <h3 class="text-xl font-bold text-text-light dark:text-text-dark mb-6">Peer Review Experience</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="rounded-xl border border-border-light dark:border-border-dark bg-content-light dark:bg-content-dark p-6">
+                                <div class="flex items-start gap-4">
+                                    <span class="material-symbols-outlined text-primary text-3xl">rate_review</span>
+                                    <div>
+                                        <h4 class="font-bold text-text-light dark:text-text-dark">Peer Reviewer</h4>
+                                        <p class="text-subtext-light dark:text-subtext-dark text-sm mt-1">Informatics and Health (Elsevier)</p>
+                                        <p class="text-xs text-subtext-light dark:text-subtext-dark mt-1">Aug 2025 – Present</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rounded-xl border border-border-light dark:border-border-dark bg-content-light dark:bg-content-dark p-6">
+                                <div class="flex items-start gap-4">
+                                    <span class="material-symbols-outlined text-primary text-3xl">rate_review</span>
+                                    <div>
+                                        <h4 class="font-bold text-text-light dark:text-text-dark">Peer Reviewer</h4>
+                                        <p class="text-subtext-light dark:text-subtext-dark text-sm mt-1">International Journal of Human-Computer Interaction (Taylor & Francis, Q1)</p>
+                                        <p class="text-xs text-subtext-light dark:text-subtext-dark mt-1">Sept 2025 – Present</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl font-bold text-text-light dark:text-text-dark mb-6">University & Community Leadership</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="rounded-xl border border-border-light dark:border-border-dark bg-content-light dark:bg-content-dark p-6">
+                                <div class="flex items-start gap-4">
+                                    <span class="material-symbols-outlined text-primary text-3xl">event</span>
+                                    <div>
+                                        <h4 class="font-bold text-text-light dark:text-text-dark">Poster Presentation Coordinator</h4>
+                                        <p class="text-subtext-light dark:text-subtext-dark text-sm mt-1">UITS Zero One Fest, 2022</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rounded-xl border border-border-light dark:border-border-dark bg-content-light dark:bg-content-dark p-6">
+                                <div class="flex items-start gap-4">
+                                    <span class="material-symbols-outlined text-primary text-3xl">groups</span>
+                                    <div>
+                                        <h4 class="font-bold text-text-light dark:text-text-dark">Senior Executive</h4>
+                                        <p class="text-subtext-light dark:text-subtext-dark text-sm mt-1">Research Hub Wings, UITS Computer Club</p>
+                                        <p class="text-xs text-subtext-light dark:text-subtext-dark mt-1">2022-2023</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Standardized Tests -->
+                <section class="py-10" id="tests">
+                    <h2 class="text-text-light dark:text-text-dark text-3xl font-bold leading-tight tracking-[-0.015em] pb-8">Standardized Test Scores</h2>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                        <div class="flex flex-col gap-2 rounded-xl border border-border-light dark:border-border-dark bg-content-light dark:bg-content-dark p-6 items-center text-center">
+                            <span class="material-symbols-outlined text-primary text-4xl">quiz</span>
+                            <p class="text-primary text-4xl font-bold">98/120</p>
+                            <p class="text-text-light dark:text-text-dark font-bold">TOEFL</p>
+                        </div>
+                        <div class="flex flex-col gap-2 rounded-xl border border-border-light dark:border-border-dark bg-content-light dark:bg-content-dark p-6 items-center text-center">
+                            <span class="material-symbols-outlined text-primary text-4xl">quiz</span>
+                            <p class="text-primary text-4xl font-bold">6.5/9.0</p>
+                            <p class="text-text-light dark:text-text-dark font-bold">IELTS</p>
+                        </div>
+                        <div class="flex flex-col gap-2 rounded-xl border border-border-light dark:border-border-dark bg-content-light dark:bg-content-dark p-6 items-center text-center">
+                            <span class="material-symbols-outlined text-primary text-4xl">quiz</span>
+                            <p class="text-primary text-4xl font-bold">307/340</p>
+                            <p class="text-text-light dark:text-text-dark font-bold">GRE</p>
+                            <p class="text-xs text-subtext-light dark:text-subtext-dark mt-1">Q:153, V:154, AWA:3.0</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Awards -->
+                <section class="py-10" id="awards">
+                    <h2 class="text-text-light dark:text-text-dark text-3xl font-bold leading-tight tracking-[-0.015em] pb-8">Awards & Honors</h2>
+                    <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                        <div class="flex items-start gap-4 rounded-xl border border-border-light dark:border-border-dark bg-content-light dark:bg-content-dark p-6">
+                            <span class="material-symbols-outlined text-primary text-3xl mt-1">emoji_events</span>
+                            <div>
+                                <h3 class="font-bold text-text-light dark:text-text-dark">1st Place</h3>
+                                <p class="text-subtext-light dark:text-subtext-dark">PowerPoint Presentation Competition, UITS 2020</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4 rounded-xl border border-border-light dark:border-border-dark bg-content-light dark:bg-content-dark p-6">
+                            <span class="material-symbols-outlined text-primary text-3xl mt-1">star</span>
+                            <div>
+                                <h3 class="font-bold text-text-light dark:text-text-dark">Employee of the Month</h3>
+                                <p class="text-subtext-light dark:text-subtext-dark">Primacy Infotech Ltd, August 2023</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4 rounded-xl border border-border-light dark:border-border-dark bg-content-light dark:bg-content-dark p-6">
+                            <span class="material-symbols-outlined text-primary text-3xl mt-1">emoji_events</span>
+                            <div>
+                                <h3 class="font-bold text-text-light dark:text-text-dark">2nd Place</h3>
+                                <p class="text-subtext-light dark:text-subtext-dark">Inter-university Programming Contest (45 teams), UITS 2022</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4 rounded-xl border border-border-light dark:border-border-dark bg-content-light dark:bg-content-dark p-6">
+                            <span class="material-symbols-outlined text-primary text-3xl mt-1">speed</span>
+                            <div>
+                                <h3 class="font-bold text-text-light dark:text-text-dark">Fastest Problem Solver</h3>
+                                <p class="text-subtext-light dark:text-subtext-dark">UITS Victory Day Programming Contest, 2021</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4 rounded-xl border border-border-light dark:border-border-dark bg-content-light dark:bg-content-dark p-6">
+                            <span class="material-symbols-outlined text-primary text-3xl mt-1">workspace_premium</span>
+                            <div>
+                                <h3 class="font-bold text-text-light dark:text-text-dark">1st Place</h3>
+                                <p class="text-subtext-light dark:text-subtext-dark">Inter-university PowerPoint Presentation Competition, UITS 2020</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="w-full bg-content-light dark:bg-content-dark border-t border-border-light dark:border-border-dark">
+            <div class="mx-auto max-w-[1280px] px-6 py-8">
+                <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+                    <p class="text-sm text-subtext-light dark:text-subtext-dark">© 2025 Nasim Mahmud Nayan. All Rights Reserved.</p>
+                    <div class="flex items-center gap-6">
+                        <a class="text-subtext-light dark:text-subtext-dark hover:text-primary transition-colors" href="https://scholar.google.com/citations?user=zAuBXLUAAAAJ&hl=en" target="_blank">
+                            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 24a7 7 0 110-14 7 7 0 010 14zm0-24L0 9.5l4.838 3.94A8 8 0 0112 9a8 8 0 017.162 4.44L24 9.5z"/></svg>
+                        </a>
+                        <a class="text-subtext-light dark:text-subtext-dark hover:text-primary transition-colors" href="mailto:smnoyan670@gmail.com" target="_blank">
+                            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19.586 0c-.818 0-1.508.19-2.073.565-.563.377-.97.936-1.213 1.68a3.193 3.193 0 0 0-.112.437 8.365 8.365 0 0 0-.078.53 9 9 0 0 0-.05.727c-.01.282-.013.621-.013 1.016a31.121 31.121 0 0 0 .014 1.017 9 9 0 0 0 .05.727 7.946 7.946 0 0 0 .077.53h-.005a3.334 3.334 0 0 0 .113.438c.245.743.65 1.303 1.214 1.68.565.376 1.256.564 2.075.564.8 0 1.536-.213 2.105-.603.57-.39.94-.916 1.175-1.65.076-.235.135-.558.177-.93a10.9 10.9 0 0 0 .043-1.207v-.82c0-.095-.047-.142-.14-.142h-3.064c-.094 0-.14.047-.14.141v.956c0 .094.046.14.14.14h1.666c.056 0 .084.03.084.086 0 .36 0 .62-.036.865-.038.244-.1.447-.147.606-.108.385-.348.664-.638.876-.29.212-.738.35-1.227.35-.545 0-.901-.15-1.21-.353-.306-.203-.517-.454-.67-.915a3.136 3.136 0 0 1-.147-.762 17.366 17.366 0 0 1-.034-.656c-.01-.26-.014-.572-.014-.939a26.401 26.401 0 0 1 .014-.938 15.821 15.821 0 0 1 .035-.656 3.19 3.19 0 0 1 .148-.76 1.89 1.89 0 0 1 .742-.913c.334-.228.747-.35 1.261-.35.517 0 .914.142 1.213.424.3.283.458.665.532 1.115.015.094.063.14.142.14h1.068c.094 0 .14-.046.14-.14-.035-.364-.098-.664-.147-.902-.173-.76-.505-1.34-1.003-1.757-.497-.417-1.24-.625-2.21-.625z"/></svg>
+                        </a>
+                        <a class="text-subtext-light dark:text-subtext-dark hover:text-primary transition-colors" href="https://orcid.org/0009-0003-4157-3518" target="_blank">
+                            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zM7.369 4.378c.525 0 .947.431.947.947a.95.95 0 0 1-.947.947.95.95 0 0 1-.947-.947c0-.525.422-.947.947-.947zm-.722 3.038h1.444v10.041H6.647V7.416zm3.562 0h3.9c3.712 0 5.344 2.653 5.344 5.025 0 2.578-2.016 5.016-5.325 5.016h-3.919V7.416zm1.444 1.303v7.444h2.297c2.359 0 3.988-1.428 3.988-3.722 0-2.381-1.556-3.722-3.919-3.722h-2.366z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Publication filter functionality
+        function filterPublications(type) {
+            const publications = document.querySelectorAll('[data-type]');
+            const buttons = document.querySelectorAll('[onclick^="filterPublications"]');
+            
+            // Update button styles
+            buttons.forEach(btn => {
+                if (btn.textContent.toLowerCase().includes(type) || (type === 'all' && btn.textContent.includes('All'))) {
+                    btn.className = 'px-4 py-2 rounded-lg bg-primary text-white font-medium transition-all';
+                } else {
+                    btn.className = 'px-4 py-2 rounded-lg bg-primary/10 text-primary font-medium hover:bg-primary/20 transition-all';
+                }
+            });
+            
+            // Show/hide publications
+            publications.forEach(pub => {
+                if (type === 'all' || pub.getAttribute('data-type') === type) {
+                    pub.style.display = 'block';
+                } else {
+                    pub.style.display = 'none';
+                }
+            });
+        }
+
+        // Dark mode toggle
+        function toggleDarkMode() {
+            document.documentElement.classList.toggle('dark');
+            localStorage.setItem('darkMode', document.documentElement.classList.contains('dark'));
+        }
+
+        // Initialize dark mode from localStorage
+        if (localStorage.getItem('darkMode') === 'true') {
+            document.documentElement.classList.add('dark');
+        }
+    </script>
+</body>
+</html>
