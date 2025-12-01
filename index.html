@@ -59,13 +59,26 @@
                     <button onclick="toggleDarkMode()" class="flex items-center justify-center w-10 h-10 rounded-lg bg-gray-200 dark:bg-gray-800 hover:bg-gray-300 dark:hover:bg-gray-700 transition-colors" title="Toggle Dark Mode">
                         <span class="material-symbols-outlined text-[#0d121b] dark:text-white">dark_mode</span>
                     </button>
-                    <a href="CV_Nayan.pdf" download class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-wide hover:opacity-90 transition-opacity">
+                    <a href="CV_Nayan.pdf" download class="hidden sm:flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-wide hover:opacity-90 transition-opacity">
                         <span class="truncate">Download CV</span>
                     </a>
-                    <button class="md:hidden text-[#0d121b] dark:text-white">
+                    <button onclick="toggleMobileMenu()" class="md:hidden text-[#0d121b] dark:text-white" id="mobile-menu-button">
                         <span class="material-symbols-outlined text-3xl">menu</span>
                     </button>
                 </div>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden bg-background-light dark:bg-background-dark border-b border-gray-200 dark:border-gray-800">
+                <nav class="flex flex-col py-4 px-6 space-y-3">
+                    <a class="text-[#0d121b] dark:text-white text-base font-medium hover:text-primary dark:hover:text-primary transition-colors py-2" href="#about" onclick="toggleMobileMenu()">About</a>
+                    <a class="text-[#0d121b] dark:text-white text-base font-medium hover:text-primary dark:hover:text-primary transition-colors py-2" href="#work" onclick="toggleMobileMenu()">Work</a>
+                    <a class="text-[#0d121b] dark:text-white text-base font-medium hover:text-primary dark:hover:text-primary transition-colors py-2" href="#skills" onclick="toggleMobileMenu()">Skills</a>
+                    <a class="text-[#0d121b] dark:text-white text-base font-medium hover:text-primary dark:hover:text-primary transition-colors py-2" href="#contact" onclick="toggleMobileMenu()">Contact</a>
+                    <a href="CV_Nayan.pdf" download class="flex items-center justify-center rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-wide hover:opacity-90 transition-opacity">
+                        <span class="truncate">Download CV</span>
+                    </a>
+                </nav>
             </div>
         </header>
 
@@ -715,6 +728,22 @@
         function toggleDarkMode() {
             document.documentElement.classList.toggle('dark');
             localStorage.setItem('darkMode', document.documentElement.classList.contains('dark'));
+        }
+
+        // Mobile menu toggle
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            const menuButton = document.getElementById('mobile-menu-button');
+            const menuIcon = menuButton.querySelector('.material-symbols-outlined');
+            
+            mobileMenu.classList.toggle('hidden');
+            
+            // Change icon between menu and close
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.textContent = 'menu';
+            } else {
+                menuIcon.textContent = 'close';
+            }
         }
 
         // Initialize dark mode from localStorage
