@@ -60,13 +60,30 @@
                     <button onclick="toggleDarkMode()" class="flex items-center justify-center w-10 h-10 rounded-lg bg-[#e7ebf3] dark:bg-gray-800 hover:bg-gray-300 dark:hover:bg-gray-700 transition-colors" title="Toggle Dark Mode">
                         <span class="material-symbols-outlined text-[#0d121b] dark:text-white">dark_mode</span>
                     </button>
-                    <a href="Resume_NasimMahmudNayan.pdf" download class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold transition-opacity hover:opacity-90">
+                    <a href="Resume_NasimMahmudNayan.pdf" download class="hidden sm:flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold transition-opacity hover:opacity-90">
                         <span class="truncate">Download Resume</span>
                     </a>
                     <a class="hidden sm:flex items-center justify-center rounded-lg h-10 w-10 bg-[#e7ebf3] dark:bg-gray-800 text-[#0d121b] dark:text-white transition-colors hover:bg-gray-300 dark:hover:bg-gray-700" href="https://github.com/NMNayan57">
                         <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path clip-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.168 6.839 9.49.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.031-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.03 1.595 1.03 2.688 0 3.848-2.338 4.695-4.566 4.942.359.308.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.001 10.001 0 0022 12c0-5.523-4.477-10-10-10z" fill-rule="evenodd"></path></svg>
                     </a>
+                    <button onclick="toggleMobileMenu()" class="md:hidden flex items-center justify-center w-10 h-10 rounded-lg bg-transparent text-[#0d121b] dark:text-white" id="mobile-menu-button">
+                        <span class="material-symbols-outlined text-3xl">menu</span>
+                    </button>
                 </div>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden bg-background-light dark:bg-background-dark border-b border-[#E2E8F0] dark:border-gray-700">
+                <nav class="flex flex-col py-4 px-6 space-y-3">
+                    <a class="text-[#1A202C] dark:text-gray-300 text-base font-medium hover:text-primary dark:hover:text-primary transition-colors py-2" href="index.html" onclick="toggleMobileMenu()">Home</a>
+                    <a class="text-[#1A202C] dark:text-gray-300 text-base font-medium hover:text-primary dark:hover:text-primary transition-colors py-2" href="academicupdate.html" onclick="toggleMobileMenu()">Academic</a>
+                    <a class="text-primary text-base font-bold py-2" href="#skills" onclick="toggleMobileMenu()">Skills</a>
+                    <a class="text-[#1A202C] dark:text-gray-300 text-base font-medium hover:text-primary dark:hover:text-primary transition-colors py-2" href="#experience" onclick="toggleMobileMenu()">Experience</a>
+                    <a class="text-[#1A202C] dark:text-gray-300 text-base font-medium hover:text-primary dark:hover:text-primary transition-colors py-2" href="#projects" onclick="toggleMobileMenu()">Projects</a>
+                    <a href="Resume_NasimMahmudNayan.pdf" download class="flex items-center justify-center rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-wide hover:opacity-90 transition-opacity">
+                        <span class="truncate">Download Resume</span>
+                    </a>
+                </nav>
             </div>
         </div>
     </header>
@@ -443,6 +460,21 @@
     function toggleDarkMode() {
         document.documentElement.classList.toggle('dark');
         localStorage.setItem('darkMode', document.documentElement.classList.contains('dark'));
+    }
+
+    // Mobile menu toggle
+    function toggleMobileMenu() {
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuButton = document.getElementById('mobile-menu-button');
+        const menuIcon = menuButton.querySelector('.material-symbols-outlined');
+        
+        mobileMenu.classList.toggle('hidden');
+        
+        if (mobileMenu.classList.contains('hidden')) {
+            menuIcon.textContent = 'menu';
+        } else {
+            menuIcon.textContent = 'close';
+        }
     }
 
     // Initialize dark mode from localStorage
