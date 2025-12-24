@@ -2,7 +2,7 @@
 HELLO, IT'S ME
 
 NASIM MAHMUD NAYAN
-ML ENGINEER & HEALTHCARE AI RESEARCHER
+AI ENGINEER & HEALTHCARE AI RESEARCHER
 
 "I BELIEVE IN ACCESSIBLE HEALTHCARE & EDUCATION"
 
@@ -13,7 +13,7 @@ and education for underserved communities.
 [MY EXPERIENCE] [PUBLICATIONS] [OGROPATH]
 ```
 
-**Why this works:** Tanzir's tagline is memorable. Yours—"I BELIEVE IN ACCESSIBLE HEALTHCARE & EDUCATION"—instantly communicates your mission and differentiates you from generic ML engineers.[3][6][1]
+**Why this works:** Tanzir's tagline is memorable. Yours—"I BELIEVE IN ACCESSIBLE HEALTHCARE & EDUCATION"—instantly communicates your mission and differentiates you from generic AI engineers.[3][6][1]
 
 ---
 
@@ -81,7 +81,7 @@ Inspired by Tanzir's "17 Projects Done, 21 Published Papers" metrics:
 ### **A. ENTREPRENEURSHIP: Building for Social Impact**
 
 **OgroPath: AI Medical Exam Prep Platform** 🚀  
-*Founder & Lead ML Engineer | Apr 2025 - Present*
+*Founder & Lead AI Engineer | Apr 2025 - Present*
 
 Democratizing medical education for students across Bangladesh who lack access to expensive coaching—making expert-level preparation accessible to everyone.
 
@@ -260,7 +260,7 @@ citations, and founded OgroPath to democratize medical education.
 
 ---
 
-### ML Engineer  
+### AI Engineer  
 **Programming Hero (Remote)** | Dec 2023 - Sept 2025
 
 Built and deployed 3 production AI systems:
@@ -292,7 +292,7 @@ achieving 92% average accuracy, serving as foundation for 4+ published papers.
 
 ---
 
-### Founder & Lead ML Engineer  
+### Founder & Lead AI Engineer  
 **OgroPath** | Apr 2025 - Present
 
 Founded AI-powered medical exam prep platform democratizing education access 
@@ -546,7 +546,7 @@ Based on Tanzir's clean design + healthcare aesthetic:
 
 | **Aspect** | **Tanzir's Approach** | **YOUR Approach** |
 |------------|---------------------|------------------|
-| **Identity** | PhD student, researcher | Hybrid: ML Engineer + Researcher + Founder |
+| **Identity** | PhD student, researcher | Hybrid: AI Engineer + Researcher + Founder |
 | **Mission** | Research passion | Social impact: Accessible healthcare/education |
 | **Hero Quote** | "I don't believe in magic" | "I believe in accessible healthcare & education" |
 | **Projects** | Blockchain, IoT, security | Healthcare AI, fairness, clinical systems |
