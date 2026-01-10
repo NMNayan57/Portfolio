@@ -83,122 +83,188 @@
         </header>
 
         <main class="flex flex-1 flex-col items-center">
-            <div class="w-full max-w-[1280px] px-6 py-10 sm:py-16 md:py-20">
-                <!-- HeroSection -->
-                <section class="flex flex-col items-center text-center gap-10 md:flex-row md:text-left md:gap-16">
-                    <div class="flex-shrink-0">
-                        <div class="w-48 h-48 bg-cover bg-center rounded-full border-4 border-gray-200 dark:border-gray-700 shadow-lg" 
-                             style='background-image: url("photos/profile.png");'></div>
-                    </div>
-                    <div class="flex flex-col gap-6">
-                        <div class="flex flex-col gap-2">
-                            <h1 class="text-[#0d121b] dark:text-white text-4xl font-black leading-tight tracking-tighter sm:text-5xl lg:text-6xl">Nasim Mahmud Nayan</h1>
-                            <h2 class="text-primary text-lg font-medium sm:text-xl">AI Engineer & Healthcare AI Researcher</h2>
-                            <p class="mt-2 max-w-xl text-base text-gray-600 dark:text-gray-400 sm:text-lg">"I BELIEVE IN ACCESSIBLE SOLUTIONS"</p>
-                            <p class="max-w-xl text-base text-gray-600 dark:text-gray-400">Building trustworthy AI systems that democratize medical care ,education and business for big communities.</p>
+            <!-- Hero Section - White Background -->
+            <div class="w-full bg-white dark:bg-background-dark">
+                <div class="w-full max-w-[1280px] mx-auto px-6 py-12 sm:py-16 md:py-20">
+                    <section class="flex flex-col items-center text-center gap-10 md:flex-row md:text-left md:gap-16">
+                        <div class="flex-shrink-0 relative">
+                            <!-- Decorative gradient ring -->
+                            <div class="absolute inset-0 w-52 h-52 -m-2 bg-gradient-to-br from-primary/30 via-blue-300/20 to-primary/10 rounded-full blur-sm"></div>
+                            <div class="relative w-48 h-48 bg-cover bg-center rounded-full border-4 border-white dark:border-gray-700 shadow-xl" 
+                                 style='background-image: url("photos/profile.png");'></div>
                         </div>
-                        <div class="flex flex-wrap justify-center gap-4 md:justify-start">
-                            <a href="academicupdate.html" class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-gray-200 text-[#0d121b] dark:bg-gray-800 dark:text-white text-base font-bold leading-normal tracking-wide hover:bg-primary hover:text-white dark:hover:bg-primary transition-colors">
-                                <span class="truncate">Research</span>
-                            </a>
-                            <a href="industryupdate.html" class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-gray-200 text-[#0d121b] dark:bg-gray-800 dark:text-white text-base font-bold leading-normal tracking-wide hover:bg-primary hover:text-white dark:hover:bg-primary transition-colors">
-                                <span class="truncate">Industry</span>
-                            </a>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Stats Section -->
-                <section class="mt-20 sm:mt-28">
-                    <div class="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-6">
-                        <div class="flex flex-col gap-2 rounded-xl p-6 border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900/50 shadow-sm">
-                            <p class="text-gray-600 dark:text-gray-400 text-sm font-medium leading-normal">Publications</p>
-                            <p class="text-[#0d121b] dark:text-white text-3xl font-bold leading-tight">10+</p>
-                        </div>
-                        <div class="flex flex-col gap-2 rounded-xl p-6 border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900/50 shadow-sm">
-                            <p class="text-gray-600 dark:text-gray-400 text-sm font-medium leading-normal">Citations</p>
-                            <p class="text-[#0d121b] dark:text-white text-3xl font-bold leading-tight">100+</p>
-                        </div>
-                        <div class="flex flex-col gap-2 rounded-xl p-6 border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900/50 shadow-sm">
-                            <p class="text-gray-600 dark:text-gray-400 text-sm font-medium leading-normal">h-index</p>
-                            <p class="text-[#0d121b] dark:text-white text-3xl font-bold leading-tight">6</p>
-                        </div>
-                        <div class="flex flex-col gap-2 rounded-xl p-6 border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900/50 shadow-sm">
-                            <p class="text-gray-600 dark:text-gray-400 text-sm font-medium leading-normal">Projects</p>
-                            <p class="text-[#0d121b] dark:text-white text-3xl font-bold leading-tight">10+</p>
-                        </div>
-                        <div class="flex flex-col gap-2 rounded-xl p-6 border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900/50 shadow-sm">
-                            <p class="text-gray-600 dark:text-gray-400 text-sm font-medium leading-normal">Users Impacted</p>
-                            <p class="text-[#0d121b] dark:text-white text-3xl font-bold leading-tight">1.5K+</p>
-                        </div>
-                        <div class="flex flex-col gap-2 rounded-xl p-6 border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900/50 shadow-sm">
-                            <p class="text-gray-600 dark:text-gray-400 text-sm font-medium leading-normal">Experience</p>
-                            <p class="text-[#0d121b] dark:text-white text-3xl font-bold leading-tight">3+ yrs</p>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- About Section -->
-                <section class="mt-20 sm:mt-28 scroll-mt-20" id="about">
-                    <div class="flex flex-col items-center gap-12 md:flex-row md:gap-16">
-                        <div class="w-full max-w-md md:w-1/2">
-                            <div class="aspect-square w-full bg-cover bg-center rounded-xl shadow-lg" 
-                                 style='background-image: url("photos/academic\ pic.jpeg");'></div>
-                        </div>
-                        <div class="flex w-full flex-col gap-4 md:w-1/2">
-                            <h2 class="text-[#0d121b] dark:text-white text-3xl font-bold leading-tight tracking-tight">About Me</h2>
-                            <p class="text-gray-600 dark:text-gray-400">
-                                I work across both research and industry, combining academic depth with hands-on engineering. Over the years, I've contributed to published research in trustworthy healthcare AI and built production systems used by thousands of people. Some of my work includes developing the Zenyora AI wellness platform, creating a real-time RAG-based sales agent, and building M-TRUST, an open-source toolkit for fairness and explainability in medical AI.
-                            </p>
-                            <p class="text-gray-600 dark:text-gray-400">
-                                I enjoy working on problems where accuracy alone is not enough—systems that need transparency, fairness, and real-world reliability. My current focus spans multimodal medical AI, bias mitigation, LLM-based decision support, and scalable ML systems for everyday use.
-                            </p>
-                            <p class="text-gray-600 dark:text-gray-400">
-                                Growing up in rural Bangladesh where healthcare access was limited, I saw firsthand the need for democratizing medical care and education. This experience led me to found OgroPath, an AI-powered platform that makes medical entrance exam preparation accessible to students across Bangladesh, especially in underserved communities.
-                            </p>
-                            <p class="text-gray-600 dark:text-gray-400">
-                                Whether in research labs or production environments, I aim to build AI that people can trust—and that genuinely improves lives.
-                            </p>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Entrepreneurship & Impact Section -->
-                <section class="mt-20 sm:mt-28 scroll-mt-20" id="ogropath-venture">
-                    <div class="relative overflow-hidden rounded-2xl border-2 border-primary dark:border-primary bg-gradient-to-br from-primary/5 via-white to-primary/5 dark:from-primary/10 dark:via-gray-900/50 dark:to-primary/10 p-8 md:p-12 shadow-2xl">
-                        <!-- Badge -->
-                        <div class="absolute top-4 right-4">
-                            <span class="bg-gradient-to-r from-green-500 to-emerald-600 text-white text-xs font-bold px-4 py-2 rounded-full shadow-lg flex items-center gap-2">
-                                <span class="material-symbols-outlined text-base">rocket_launch</span>
-                                FOUNDER & LEAD ENGINEER
-                            </span>
-                        </div>
-
-                        <div class="grid md:grid-cols-2 gap-8 items-center">
-                            <!-- Left: Content -->
-                            <div class="order-2 md:order-1">
-                                <div class="flex items-center gap-3 mb-4">
-                                    <span class="material-symbols-outlined text-primary text-5xl">health_and_safety</span>
-                                    <div>
-                                        <h2 class="text-3xl md:text-4xl font-black text-[#0d121b] dark:text-white">OgroPath</h2>
-                                        <p class="text-primary font-semibold">AI-Powered Medical Exam Prep Platform</p>
-                                    </div>
-                                </div>
-                                
-                                <p class="text-gray-700 dark:text-gray-300 text-lg mb-6 leading-relaxed">
-                                    Founded to democratize medical education for students across Bangladesh, especially in underserved rural communities. OgroPath combines NLP-based question generation with adaptive learning to make medical entrance exam preparation accessible to all.
+                        <div class="flex flex-col gap-4">
+                            <div class="flex flex-col gap-3">
+                                <h1 class="text-[#0d121b] dark:text-white text-4xl font-black leading-tight tracking-tighter sm:text-5xl lg:text-6xl">
+                                    Nasim Mahmud <span class="text-primary">Nayan</span>
+                                </h1>
+                                <h2 class="text-gray-700 dark:text-gray-300 text-lg font-medium sm:text-xl">AI Engineer & Healthcare AI Researcher</h2>
+                                <p class="flex items-center gap-2 mt-2 max-w-xl text-base text-gray-500 dark:text-gray-400 italic">
+                                    <span class="text-primary text-2xl">"</span>
+                                    I BELIEVE IN ACCESSIBLE SOLUTIONS
+                                    <span class="text-primary text-2xl">"</span>
                                 </p>
+                                <p class="max-w-xl text-base text-gray-600 dark:text-gray-400 leading-relaxed">
+                                    Building trustworthy AI systems that democratize medical care, education and business for big communities through cutting-edge research and engineering.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
 
-                                <!-- Key Features -->
-                                <div class="grid grid-cols-2 gap-4 mb-6">
-                                    <div class="flex items-start gap-3">
-                                        <span class="material-symbols-outlined text-primary text-2xl">psychology</span>
+            <!-- Explore My Work Section - Light Gray Background -->
+            <div class="w-full bg-gray-50 dark:bg-gray-900/50 border-y border-gray-200 dark:border-gray-800">
+                <div class="w-full max-w-[1280px] mx-auto px-6 py-16 sm:py-20">
+                    <section>
+                        <div class="flex items-center gap-3 mb-8">
+                            <span class="material-symbols-outlined text-primary text-3xl">explore</span>
+                            <h2 class="text-2xl font-bold text-[#0d121b] dark:text-white">Explore My Work</h2>
+                        </div>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <!-- Academic Research Card -->
+                            <a href="academicupdate.html" class="group flex flex-col p-8 bg-white dark:bg-gray-800/50 rounded-2xl border border-gray-200 dark:border-gray-700 hover:border-primary dark:hover:border-primary shadow-sm hover:shadow-xl transition-all duration-300 cursor-pointer">
+                                <div class="w-14 h-14 bg-primary rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                                    <span class="material-symbols-outlined text-white text-3xl">science</span>
+                                </div>
+                                <h3 class="text-xl font-bold text-[#0d121b] dark:text-white mb-3">Academic Research</h3>
+                                <p class="text-gray-600 dark:text-gray-400 mb-6 flex-grow">
+                                    High-impact publications, research projects & academic contributions focusing on medical diagnosis through AI.
+                                </p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="px-3 py-1 text-xs font-medium text-primary bg-primary/10 rounded-full">Deep Learning</span>
+                                    <span class="px-3 py-1 text-xs font-medium text-primary bg-primary/10 rounded-full">NLP</span>
+                                    <span class="px-3 py-1 text-xs font-medium text-primary bg-primary/10 rounded-full">XAI</span>
+                                </div>
+                            </a>
+                            
+                            <!-- Industry Experience Card -->
+                            <a href="industryupdate.html" class="group flex flex-col p-8 bg-white dark:bg-gray-800/50 rounded-2xl border border-gray-200 dark:border-gray-700 hover:border-green-500 dark:hover:border-green-500 shadow-sm hover:shadow-xl transition-all duration-300 cursor-pointer">
+                                <div class="w-14 h-14 bg-green-500 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                                    <span class="material-symbols-outlined text-white text-3xl">business_center</span>
+                                </div>
+                                <h3 class="text-xl font-bold text-[#0d121b] dark:text-white mb-3">Industry Experience</h3>
+                                <p class="text-gray-600 dark:text-gray-400 mb-6 flex-grow">
+                                    Production-grade AI systems, work experience with global clients, and scalable software architecture.
+                                </p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="px-3 py-1 text-xs font-medium text-green-600 bg-green-500/10 rounded-full">Production AI</span>
+                                    <span class="px-3 py-1 text-xs font-medium text-green-600 bg-green-500/10 rounded-full">Scalability</span>
+                                    <span class="px-3 py-1 text-xs font-medium text-green-600 bg-green-500/10 rounded-full">LLMs</span>
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <p class="text-center text-sm text-gray-500 dark:text-gray-400 mt-6">
+                            <span class="material-symbols-outlined text-base align-middle mr-1">info</span>
+                            Click any card above to explore detailed portfolios
+                        </p>
+                    </section>
+                </div>
+            </div>
+
+            <!-- Stats Section - White Background -->
+            <div class="w-full bg-white dark:bg-background-dark">
+                <div class="w-full max-w-[1280px] mx-auto px-6 py-16 sm:py-20">
+                    <section>
+                        <div class="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-6">
+                            <div class="flex flex-col gap-2 rounded-xl p-6 border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-gray-900/50 shadow-sm text-center">
+                                <p class="text-gray-500 dark:text-gray-400 text-xs font-semibold uppercase tracking-wider">Publications</p>
+                                <p class="text-[#0d121b] dark:text-white text-3xl font-bold leading-tight">10+</p>
+                            </div>
+                            <div class="flex flex-col gap-2 rounded-xl p-6 border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-gray-900/50 shadow-sm text-center">
+                                <p class="text-gray-500 dark:text-gray-400 text-xs font-semibold uppercase tracking-wider">Citations</p>
+                                <p class="text-[#0d121b] dark:text-white text-3xl font-bold leading-tight">100+</p>
+                            </div>
+                            <div class="flex flex-col gap-2 rounded-xl p-6 border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-gray-900/50 shadow-sm text-center">
+                                <p class="text-gray-500 dark:text-gray-400 text-xs font-semibold uppercase tracking-wider">h-index</p>
+                                <p class="text-[#0d121b] dark:text-white text-3xl font-bold leading-tight">6</p>
+                            </div>
+                            <div class="flex flex-col gap-2 rounded-xl p-6 border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-gray-900/50 shadow-sm text-center">
+                                <p class="text-gray-500 dark:text-gray-400 text-xs font-semibold uppercase tracking-wider">Projects</p>
+                                <p class="text-[#0d121b] dark:text-white text-3xl font-bold leading-tight">10+</p>
+                            </div>
+                            <div class="flex flex-col gap-2 rounded-xl p-6 border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-gray-900/50 shadow-sm text-center">
+                                <p class="text-gray-500 dark:text-gray-400 text-xs font-semibold uppercase tracking-wider">Users Impacted</p>
+                                <p class="text-[#0d121b] dark:text-white text-3xl font-bold leading-tight">1.5K+</p>
+                            </div>
+                            <div class="flex flex-col gap-2 rounded-xl p-6 border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-gray-900/50 shadow-sm text-center">
+                                <p class="text-gray-500 dark:text-gray-400 text-xs font-semibold uppercase tracking-wider">Experience</p>
+                                <p class="text-[#0d121b] dark:text-white text-3xl font-bold leading-tight">3+ yrs</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <!-- About Section - Light Gray Background -->
+            <div class="w-full bg-gray-50 dark:bg-gray-900/50 border-y border-gray-200 dark:border-gray-800" id="about">
+                <div class="w-full max-w-[1280px] mx-auto px-6 py-16 sm:py-20">
+                    <section class="scroll-mt-20">
+                        <div class="flex flex-col items-center gap-12 md:flex-row md:gap-16">
+                            <div class="w-full max-w-md md:w-1/2">
+                                <div class="aspect-square w-full bg-cover bg-center rounded-xl shadow-lg" 
+                                     style='background-image: url("photos/academic\ pic.jpeg");'></div>
+                            </div>
+                            <div class="flex w-full flex-col gap-4 md:w-1/2">
+                                <h2 class="text-[#0d121b] dark:text-white text-3xl font-bold leading-tight tracking-tight">About Me</h2>
+                                <p class="text-gray-600 dark:text-gray-400">
+                                    I work across both research and industry, combining academic depth with hands-on engineering. Over the years, I've contributed to published research in trustworthy healthcare AI and built production systems used by thousands of people. Some of my work includes developing the Zenyora AI wellness platform, creating a real-time RAG-based sales agent, and building M-TRUST, an open-source toolkit for fairness and explainability in medical AI.
+                                </p>
+                                <p class="text-gray-600 dark:text-gray-400">
+                                    I enjoy working on problems where accuracy alone is not enough—systems that need transparency, fairness, and real-world reliability. My current focus spans multimodal medical AI, bias mitigation, LLM-based decision support, and scalable ML systems for everyday use.
+                                </p>
+                                <p class="text-gray-600 dark:text-gray-400">
+                                    Growing up in rural Bangladesh where healthcare access was limited, I saw firsthand the need for democratizing medical care and education. This experience led me to found OgroPath, an AI-powered platform that makes medical entrance exam preparation accessible to students across Bangladesh, especially in underserved communities.
+                                </p>
+                                <p class="text-gray-600 dark:text-gray-400">
+                                    Whether in research labs or production environments, I aim to build AI that people can trust—and that genuinely improves lives.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <!-- Entrepreneurship & Impact Section - White Background -->
+            <div class="w-full bg-white dark:bg-background-dark" id="ogropath-venture">
+                <div class="w-full max-w-[1280px] mx-auto px-6 py-16 sm:py-20">
+                    <section class="scroll-mt-20">
+                        <div class="relative overflow-hidden rounded-2xl border-2 border-primary dark:border-primary bg-gradient-to-br from-primary/5 via-white to-primary/5 dark:from-primary/10 dark:via-gray-900/50 dark:to-primary/10 p-8 md:p-12 shadow-2xl">
+                            <!-- Badge -->
+                            <div class="absolute top-4 right-4">
+                                <span class="bg-gradient-to-r from-green-500 to-emerald-600 text-white text-xs font-bold px-4 py-2 rounded-full shadow-lg flex items-center gap-2">
+                                    <span class="material-symbols-outlined text-base">rocket_launch</span>
+                                    FOUNDER & LEAD ENGINEER
+                                </span>
+                            </div>
+
+                            <div class="grid md:grid-cols-2 gap-8 items-center">
+                                <!-- Left: Content -->
+                                <div class="order-2 md:order-1">
+                                    <div class="flex items-center gap-3 mb-4">
+                                        <span class="material-symbols-outlined text-primary text-5xl">health_and_safety</span>
                                         <div>
-                                            <p class="font-bold text-[#0d121b] dark:text-white">AI Question Generator</p>
-                                            <p class="text-sm text-gray-600 dark:text-gray-400">NLP-powered from PDFs</p>
+                                            <h2 class="text-3xl md:text-4xl font-black text-[#0d121b] dark:text-white">OgroPath</h2>
+                                            <p class="text-primary font-semibold">AI-Powered Medical Exam Prep Platform</p>
                                         </div>
                                     </div>
-                                    <div class="flex items-start gap-3">
+                                    
+                                    <p class="text-gray-700 dark:text-gray-300 text-lg mb-6 leading-relaxed">
+                                        Founded to democratize medical education for students across Bangladesh, especially in underserved rural communities. OgroPath combines NLP-based question generation with adaptive learning to make medical entrance exam preparation accessible to all.
+                                    </p>
+
+                                    <!-- Key Features -->
+                                    <div class="grid grid-cols-2 gap-4 mb-6">
+                                        <div class="flex items-start gap-3">
+                                            <span class="material-symbols-outlined text-primary text-2xl">psychology</span>
+                                            <div>
+                                                <p class="font-bold text-[#0d121b] dark:text-white">AI Question Generator</p>
+                                                <p class="text-sm text-gray-600 dark:text-gray-400">NLP-powered from PDFs</p>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-start gap-3">
                                         <span class="material-symbols-outlined text-primary text-2xl">quiz</span>
                                         <div>
                                             <p class="font-bold text-[#0d121b] dark:text-white">21K+ Questions</p>
@@ -282,168 +348,181 @@
                             </div>
                         </div>
                     </div>
-                </section>
+                    </section>
+                </div>
+            </div>
 
-                <!-- Pathways Section -->
-                <section class="mt-20 sm:mt-28">
-                    <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
-                        <a href="academicupdate.html" class="group flex flex-col gap-4 rounded-xl p-8 border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900/50 hover:border-primary dark:hover:border-primary transition-all duration-300 shadow-sm hover:shadow-xl">
-                            <div class="text-primary text-4xl">
-                                <span class="material-symbols-outlined">science</span>
-                            </div>
-                            <h3 class="text-xl font-bold text-[#0d121b] dark:text-white">Academic Research</h3>
-                            <p class="text-gray-600 dark:text-gray-400">Advancing trustworthy AI for healthcare through maternal health prediction, bias mitigation frameworks, and multimodal medical AI systems. Published in Healthcare Analytics, PLOS ONE, and IEEE conferences.</p>
-                        </a>
-                        <a href="industryupdate.html" class="group flex flex-col gap-4 rounded-xl p-8 border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900/50 hover:border-primary dark:hover:border-primary transition-all duration-300 shadow-sm hover:shadow-xl">
-                            <div class="text-primary text-4xl">
-                                <span class="material-symbols-outlined">business_center</span>
-                            </div>
-                            <h3 class="text-xl font-bold text-[#0d121b] dark:text-white">Industry Solutions</h3>
-                            <p class="text-gray-600 dark:text-gray-400">Building production AI systems that drive measurable impact: OgroPath , Zenyora , M-TRUST fairness toolkit , and ML solutions serving 10K+ students at Programming Hero.</p>
-                        </a>
-                    </div>
-                </section>
+            <!-- Pathways Section - Light Gray Background -->
+            <div class="w-full bg-gray-50 dark:bg-gray-900/50 border-y border-gray-200 dark:border-gray-800">
+                <div class="w-full max-w-[1280px] mx-auto px-6 py-16 sm:py-20">
+                    <section>
+                        <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
+                            <a href="academicupdate.html" class="group flex flex-col gap-4 rounded-xl p-8 border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800/50 hover:border-primary dark:hover:border-primary transition-all duration-300 shadow-sm hover:shadow-xl">
+                                <div class="text-primary text-4xl">
+                                    <span class="material-symbols-outlined">science</span>
+                                </div>
+                                <h3 class="text-xl font-bold text-[#0d121b] dark:text-white">Academic Research</h3>
+                                <p class="text-gray-600 dark:text-gray-400">Advancing trustworthy AI for healthcare through maternal health prediction, bias mitigation frameworks, and multimodal medical AI systems. Published in Healthcare Analytics, PLOS ONE, and IEEE conferences.</p>
+                            </a>
+                            <a href="industryupdate.html" class="group flex flex-col gap-4 rounded-xl p-8 border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800/50 hover:border-primary dark:hover:border-primary transition-all duration-300 shadow-sm hover:shadow-xl">
+                                <div class="text-primary text-4xl">
+                                    <span class="material-symbols-outlined">business_center</span>
+                                </div>
+                                <h3 class="text-xl font-bold text-[#0d121b] dark:text-white">Industry Solutions</h3>
+                                <p class="text-gray-600 dark:text-gray-400">Building production AI systems that drive measurable impact: OgroPath , Zenyora , M-TRUST fairness toolkit , and ML solutions serving 10K+ students at Programming Hero.</p>
+                            </a>
+                        </div>
+                    </section>
+                </div>
+            </div>
 
-                <!-- Featured Work -->
-                <section class="mt-20 sm:mt-28 scroll-mt-20" id="work">
-                    <h2 class="text-[#0d121b] dark:text-white text-3xl font-bold leading-tight tracking-tight text-center">Featured Work</h2>
-                    <div class="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-                        <!-- OgroPath - Flagship Product -->
-                        <div onclick="openModal('ogropath')" class="flex flex-col overflow-hidden rounded-xl border-2 border-primary bg-white dark:bg-gray-900/50 shadow-lg transition-all hover:shadow-2xl relative cursor-pointer">
-                            <div class="absolute top-3 right-3 z-10">
-                                <span class="bg-primary text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg">FLAGSHIP PRODUCT</span>
-                            </div>
-                            <div class="aspect-video w-full bg-cover bg-center" 
-                                 style='background-image: url("photos/ogropath.png");'></div>
-                            <div class="flex flex-1 flex-col p-6 bg-gradient-to-br from-primary/5 to-transparent dark:from-primary/10">
-                                <h3 class="text-xl font-bold text-[#0d121b] dark:text-white flex items-center gap-2">
-                                    OgroPath
-                                    <span class="material-symbols-outlined text-primary text-2xl">verified</span>
-                                </h3>
-                                <p class="mt-2 flex-1 text-sm text-gray-600 dark:text-gray-400 font-medium">AI-powered telemedicine platform democratizing healthcare access. Serving 50K+ users across Bangladesh with 5K+ consultations/month and 99.5% uptime.</p>
-                                <div class="mt-4 flex flex-wrap gap-2">
-                                    <span class="rounded-full bg-primary/10 px-3 py-1 text-xs font-medium text-primary dark:bg-primary/20 border border-primary/20">Django</span>
-                                    <span class="rounded-full bg-primary/10 px-3 py-1 text-xs font-medium text-primary dark:bg-primary/20 border border-primary/20">React</span>
-                                    <span class="rounded-full bg-primary/10 px-3 py-1 text-xs font-medium text-primary dark:bg-primary/20 border border-primary/20">AWS</span>
+            <!-- Featured Work Section - White Background -->
+            <div class="w-full bg-white dark:bg-background-dark" id="work">
+                <div class="w-full max-w-[1280px] mx-auto px-6 py-16 sm:py-20">
+                    <section class="scroll-mt-20">
+                        <h2 class="text-[#0d121b] dark:text-white text-3xl font-bold leading-tight tracking-tight text-center">Featured Work</h2>
+                        <div class="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+                            <!-- OgroPath - Flagship Product -->
+                            <div onclick="openModal('ogropath')" class="flex flex-col overflow-hidden rounded-xl border-2 border-primary bg-gray-50 dark:bg-gray-900/50 shadow-lg transition-all hover:shadow-2xl relative cursor-pointer">
+                                <div class="absolute top-3 right-3 z-10">
+                                    <span class="bg-primary text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg">FLAGSHIP PRODUCT</span>
                                 </div>
-                                <div class="mt-4 text-primary text-sm font-semibold flex items-center gap-1">
-                                    <span>Click for details</span>
-                                    <span class="material-symbols-outlined text-lg">arrow_forward</span>
+                                <div class="aspect-video w-full bg-cover bg-center" 
+                                     style='background-image: url("photos/ogropath.png");'></div>
+                                <div class="flex flex-1 flex-col p-6 bg-gradient-to-br from-primary/5 to-transparent dark:from-primary/10">
+                                    <h3 class="text-xl font-bold text-[#0d121b] dark:text-white flex items-center gap-2">
+                                        OgroPath
+                                        <span class="material-symbols-outlined text-primary text-2xl">verified</span>
+                                    </h3>
+                                    <p class="mt-2 flex-1 text-sm text-gray-600 dark:text-gray-400 font-medium">AI-powered telemedicine platform democratizing healthcare access. Serving 50K+ users across Bangladesh with 5K+ consultations/month and 99.5% uptime.</p>
+                                    <div class="mt-4 flex flex-wrap gap-2">
+                                        <span class="rounded-full bg-primary/10 px-3 py-1 text-xs font-medium text-primary dark:bg-primary/20 border border-primary/20">Django</span>
+                                        <span class="rounded-full bg-primary/10 px-3 py-1 text-xs font-medium text-primary dark:bg-primary/20 border border-primary/20">React</span>
+                                        <span class="rounded-full bg-primary/10 px-3 py-1 text-xs font-medium text-primary dark:bg-primary/20 border border-primary/20">AWS</span>
+                                    </div>
+                                    <div class="mt-4 text-primary text-sm font-semibold flex items-center gap-1">
+                                        <span>Click for details</span>
+                                        <span class="material-symbols-outlined text-lg">arrow_forward</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div onclick="openModal('zenyora')" class="flex flex-col overflow-hidden rounded-xl border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-gray-900/50 shadow-sm transition-all hover:shadow-xl cursor-pointer">
+                                <div class="aspect-video w-full bg-cover bg-center" 
+                                     style='background-image: url("photos/Zenyora.png");'></div>
+                                <div class="flex flex-1 flex-col p-6">
+                                    <h3 class="text-lg font-bold text-[#0d121b] dark:text-white flex items-center gap-2">
+                                        Zenyora
+                                        <span class="bg-green-500 text-white text-xs font-bold px-2 py-0.5 rounded">SaaS</span>
+                                    </h3>
+                                    <p class="mt-2 flex-1 text-sm text-gray-600 dark:text-gray-400">AI-powered educational platform for personalized learning. 30K+ active users, 95% satisfaction rate.</p>
+                                    <div class="mt-4 flex flex-wrap gap-2">
+                                        <span class="rounded-full bg-primary/10 px-3 py-1 text-xs font-medium text-primary dark:bg-primary/20">Next.js</span>
+                                        <span class="rounded-full bg-primary/10 px-3 py-1 text-xs font-medium text-primary dark:bg-primary/20">OpenAI</span>
+                                        <span class="rounded-full bg-primary/10 px-3 py-1 text-xs font-medium text-primary dark:bg-primary/20">PostgreSQL</span>
+                                    </div>
+                                    <div class="mt-4 text-primary text-sm font-semibold flex items-center gap-1">
+                                        <span>Click for details</span>
+                                        <span class="material-symbols-outlined text-lg">arrow_forward</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div onclick="openModal('mtrust')" class="flex flex-col overflow-hidden rounded-xl border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-gray-900/50 shadow-sm transition-all hover:shadow-xl cursor-pointer">
+                                <div class="aspect-video w-full bg-cover bg-center" 
+                                     style='background-image: url("photos/biasdetecion.png");'></div>
+                                <div class="flex flex-1 flex-col p-6">
+                                    <h3 class="text-lg font-bold text-[#0d121b] dark:text-white flex items-center gap-2">
+                                        M-TRUST
+                                        <span class="bg-purple-500 text-white text-xs font-bold px-2 py-0.5 rounded">Open Source</span>
+                                    </h3>
+                                    <p class="mt-2 flex-1 text-sm text-gray-600 dark:text-gray-400">Open-source fairness toolkit for medical AI. 30.8% bias reduction, 98% accuracy, 1K+ PyPI downloads.</p>
+                                    <div class="mt-4 flex flex-wrap gap-2">
+                                        <span class="rounded-full bg-primary/10 px-3 py-1 text-xs font-medium text-primary dark:bg-primary/20">Python</span>
+                                        <span class="rounded-full bg-primary/10 px-3 py-1 text-xs font-medium text-primary dark:bg-primary/20">PyTorch</span>
+                                        <span class="rounded-full bg-primary/10 px-3 py-1 text-xs font-medium text-primary dark:bg-primary/20">Fairness</span>
+                                    </div>
+                                    <div class="mt-4 text-primary text-sm font-semibold flex items-center gap-1">
+                                        <span>Click for details</span>
+                                        <span class="material-symbols-outlined text-lg">arrow_forward</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div onclick="openModal('zenyora')" class="flex flex-col overflow-hidden rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900/50 shadow-sm transition-all hover:shadow-xl cursor-pointer">
-                            <div class="aspect-video w-full bg-cover bg-center" 
-                                 style='background-image: url("photos/Zenyora.png");'></div>
-                            <div class="flex flex-1 flex-col p-6">
-                                <h3 class="text-lg font-bold text-[#0d121b] dark:text-white flex items-center gap-2">
-                                    Zenyora
-                                    <span class="bg-green-500 text-white text-xs font-bold px-2 py-0.5 rounded">SaaS</span>
-                                </h3>
-                                <p class="mt-2 flex-1 text-sm text-gray-600 dark:text-gray-400">AI-powered educational platform for personalized learning. 30K+ active users, 95% satisfaction rate.</p>
-                                <div class="mt-4 flex flex-wrap gap-2">
-                                    <span class="rounded-full bg-primary/10 px-3 py-1 text-xs font-medium text-primary dark:bg-primary/20">Next.js</span>
-                                    <span class="rounded-full bg-primary/10 px-3 py-1 text-xs font-medium text-primary dark:bg-primary/20">OpenAI</span>
-                                    <span class="rounded-full bg-primary/10 px-3 py-1 text-xs font-medium text-primary dark:bg-primary/20">PostgreSQL</span>
-                                </div>
-                                <div class="mt-4 text-primary text-sm font-semibold flex items-center gap-1">
-                                    <span>Click for details</span>
-                                    <span class="material-symbols-outlined text-lg">arrow_forward</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div onclick="openModal('mtrust')" class="flex flex-col overflow-hidden rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900/50 shadow-sm transition-all hover:shadow-xl cursor-pointer">
-                            <div class="aspect-video w-full bg-cover bg-center" 
-                                 style='background-image: url("photos/biasdetecion.png");'></div>
-                            <div class="flex flex-1 flex-col p-6">
-                                <h3 class="text-lg font-bold text-[#0d121b] dark:text-white flex items-center gap-2">
-                                    M-TRUST
-                                    <span class="bg-purple-500 text-white text-xs font-bold px-2 py-0.5 rounded">Open Source</span>
-                                </h3>
-                                <p class="mt-2 flex-1 text-sm text-gray-600 dark:text-gray-400">Open-source fairness toolkit for medical AI. 30.8% bias reduction, 98% accuracy, 1K+ PyPI downloads.</p>
-                                <div class="mt-4 flex flex-wrap gap-2">
-                                    <span class="rounded-full bg-primary/10 px-3 py-1 text-xs font-medium text-primary dark:bg-primary/20">Python</span>
-                                    <span class="rounded-full bg-primary/10 px-3 py-1 text-xs font-medium text-primary dark:bg-primary/20">PyTorch</span>
-                                    <span class="rounded-full bg-primary/10 px-3 py-1 text-xs font-medium text-primary dark:bg-primary/20">Fairness</span>
-                                </div>
-                                <div class="mt-4 text-primary text-sm font-semibold flex items-center gap-1">
-                                    <span>Click for details</span>
-                                    <span class="material-symbols-outlined text-lg">arrow_forward</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                    </section>
+                </div>
+            </div>
 
-                <!-- Skills Section -->
-                <section class="mt-20 sm:mt-28 scroll-mt-20" id="skills">
-                    <h2 class="text-[#0d121b] dark:text-white text-3xl font-bold leading-tight tracking-tight text-center">Core Competencies</h2>
-                    <div class="mt-12 grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2">
-                        <div class="space-y-6">
-                            <div>
-                                <div class="flex justify-between">
-                                    <p class="font-medium text-[#0d121b] dark:text-white">Python (ML/AI)</p>
-                                    <p class="text-sm text-gray-500 dark:text-gray-400">95%</p>
+            <!-- Skills Section - Light Gray Background -->
+            <div class="w-full bg-gray-50 dark:bg-gray-900/50 border-y border-gray-200 dark:border-gray-800" id="skills">
+                <div class="w-full max-w-[1280px] mx-auto px-6 py-16 sm:py-20">
+                    <section class="scroll-mt-20">
+                        <h2 class="text-[#0d121b] dark:text-white text-3xl font-bold leading-tight tracking-tight text-center">Core Competencies</h2>
+                        <div class="mt-12 grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2">
+                            <div class="space-y-6 p-6 bg-white dark:bg-gray-800/50 rounded-xl border border-gray-200 dark:border-gray-700">
+                                <div>
+                                    <div class="flex justify-between">
+                                        <p class="font-medium text-[#0d121b] dark:text-white">Python (ML/AI)</p>
+                                        <p class="text-sm text-gray-500 dark:text-gray-400">95%</p>
+                                    </div>
+                                    <div class="mt-2 h-2.5 w-full rounded-full bg-gray-200 dark:bg-gray-700">
+                                        <div class="h-2.5 rounded-full bg-primary" style="width: 95%"></div>
+                                    </div>
                                 </div>
-                                <div class="mt-2 h-2.5 w-full rounded-full bg-gray-200 dark:bg-gray-700">
-                                    <div class="h-2.5 rounded-full bg-primary" style="width: 95%"></div>
+                                <div>
+                                    <div class="flex justify-between">
+                                        <p class="font-medium text-[#0d121b] dark:text-white">PyTorch / TensorFlow</p>
+                                        <p class="text-sm text-gray-500 dark:text-gray-400">90%</p>
+                                    </div>
+                                    <div class="mt-2 h-2.5 w-full rounded-full bg-gray-200 dark:bg-gray-700">
+                                        <div class="h-2.5 rounded-full bg-primary" style="width: 90%"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="flex justify-between">
+                                        <p class="font-medium text-[#0d121b] dark:text-white">LLMs & RAG Systems</p>
+                                        <p class="text-sm text-gray-500 dark:text-gray-400">92%</p>
+                                    </div>
+                                    <div class="mt-2 h-2.5 w-full rounded-full bg-gray-200 dark:bg-gray-700">
+                                        <div class="h-2.5 rounded-full bg-primary" style="width: 92%"></div>
+                                    </div>
                                 </div>
                             </div>
-                            <div>
-                                <div class="flex justify-between">
-                                    <p class="font-medium text-[#0d121b] dark:text-white">PyTorch / TensorFlow</p>
-                                    <p class="text-sm text-gray-500 dark:text-gray-400">90%</p>
+                            <div class="space-y-6 p-6 bg-white dark:bg-gray-800/50 rounded-xl border border-gray-200 dark:border-gray-700">
+                                <div>
+                                    <div class="flex justify-between">
+                                        <p class="font-medium text-[#0d121b] dark:text-white">Fairness & XAI</p>
+                                        <p class="text-sm text-gray-500 dark:text-gray-400">88%</p>
+                                    </div>
+                                    <div class="mt-2 h-2.5 w-full rounded-full bg-gray-200 dark:bg-gray-700">
+                                        <div class="h-2.5 rounded-full bg-primary" style="width: 88%"></div>
+                                    </div>
                                 </div>
-                                <div class="mt-2 h-2.5 w-full rounded-full bg-gray-200 dark:bg-gray-700">
-                                    <div class="h-2.5 rounded-full bg-primary" style="width: 90%"></div>
+                                <div>
+                                    <div class="flex justify-between">
+                                        <p class="font-medium text-[#0d121b] dark:text-white">FastAPI / Flask</p>
+                                        <p class="text-sm text-gray-500 dark:text-gray-400">88%</p>
+                                    </div>
+                                    <div class="mt-2 h-2.5 w-full rounded-full bg-gray-200 dark:bg-gray-700">
+                                        <div class="h-2.5 rounded-full bg-primary" style="width: 88%"></div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div>
-                                <div class="flex justify-between">
-                                    <p class="font-medium text-[#0d121b] dark:text-white">LLMs & RAG Systems</p>
-                                    <p class="text-sm text-gray-500 dark:text-gray-400">92%</p>
-                                </div>
-                                <div class="mt-2 h-2.5 w-full rounded-full bg-gray-200 dark:bg-gray-700">
-                                    <div class="h-2.5 rounded-full bg-primary" style="width: 92%"></div>
+                                <div>
+                                    <div class="flex justify-between">
+                                        <p class="font-medium text-[#0d121b] dark:text-white">Docker / Cloud (AWS/Azure)</p>
+                                        <p class="text-sm text-gray-500 dark:text-gray-400">85%</p>
+                                    </div>
+                                    <div class="mt-2 h-2.5 w-full rounded-full bg-gray-200 dark:bg-gray-700">
+                                        <div class="h-2.5 rounded-full bg-primary" style="width: 85%"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="space-y-6">
-                            <div>
-                                <div class="flex justify-between">
-                                    <p class="font-medium text-[#0d121b] dark:text-white">Fairness & XAI</p>
-                                    <p class="text-sm text-gray-500 dark:text-gray-400">88%</p>
-                                </div>
-                                <div class="mt-2 h-2.5 w-full rounded-full bg-gray-200 dark:bg-gray-700">
-                                    <div class="h-2.5 rounded-full bg-primary" style="width: 88%"></div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="flex justify-between">
-                                    <p class="font-medium text-[#0d121b] dark:text-white">FastAPI / Flask</p>
-                                    <p class="text-sm text-gray-500 dark:text-gray-400">88%</p>
-                                </div>
-                                <div class="mt-2 h-2.5 w-full rounded-full bg-gray-200 dark:bg-gray-700">
-                                    <div class="h-2.5 rounded-full bg-primary" style="width: 88%"></div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="flex justify-between">
-                                    <p class="font-medium text-[#0d121b] dark:text-white">Docker / Cloud (AWS/Azure)</p>
-                                    <p class="text-sm text-gray-500 dark:text-gray-400">85%</p>
-                                </div>
-                                <div class="mt-2 h-2.5 w-full rounded-full bg-gray-200 dark:bg-gray-700">
-                                    <div class="h-2.5 rounded-full bg-primary" style="width: 85%"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                    </section>
+                </div>
             </div>
         </main>
 
-        <!-- Footer -->
-        <footer class="w-full bg-white dark:bg-gray-900/50 border-t border-gray-200 dark:border-gray-800" id="contact">
+        <!-- Footer - White Background -->
+        <footer class="w-full bg-white dark:bg-background-dark border-t border-gray-200 dark:border-gray-800" id="contact">
             <div class="mx-auto max-w-[1280px] px-6 py-16 text-center">
                 <h2 class="text-3xl font-bold text-[#0d121b] dark:text-white">Let's Connect</h2>
                 <p class="mx-auto mt-4 max-w-lg text-gray-600 dark:text-gray-400">I'm open to PhD opportunities, research collaborations, and industry roles focused on trustworthy AI for healthcare. Let's build accessible healthcare solutions together.</p>
